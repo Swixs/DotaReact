@@ -1,3 +1,7 @@
 a {
     font-family: 'Noto Sans', sans-serif
 }
+
+body{
+    margin: auto 0;
+}

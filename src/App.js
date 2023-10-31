@@ -1,11 +1,12 @@
 import './App.css';
+import Header from './components/Header/Header';
+import Video from './components/Header/Video/video';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-         
-      </header>
+      <Header />
+      <Video />
     </div>
   );
 }
