@@ -10,10 +10,10 @@ const HeaderLine = () => {
                     DOTA2
                 </div>
             </button>
-            <button>Game</button>
-            <button>Heroes</button>
-            <button>News</button>
-            <button>Esports</button>
+            <button  className={classLine.button}>Game</button>
+            <button className={classLine.button}>Heroes</button>
+            <button className={classLine.button}>News</button>
+            <button className={classLine.button}>Esports</button>
         </div>
     );
 };

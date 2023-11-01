@@ -6,7 +6,7 @@ const Video = () => {
         <div className={ClassVideo.videoContainer}>
             <video autoPlay muted loop className={ClassVideo.video}>
                 <source src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm"
-                    type="video/webm" width="640" height="360" />
+                    type="video/webm" width="640" height="160" />
             </video>
             <div className={ClassVideo.overlay}></div>
             <div className={ClassVideo.bottomOverlay}></div>
