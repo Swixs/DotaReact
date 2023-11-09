@@ -6,8 +6,8 @@ import Video from './Video/video';
 const Header = () => {
     return (
         <div className={classHeader.header}>
-                <Video />
                 <HeaderLine />
+                <Video />
         </div>
     );
 }
