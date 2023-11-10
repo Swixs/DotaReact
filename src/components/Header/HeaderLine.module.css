@@ -25,6 +25,7 @@
     letter-spacing: 6px;
     color: aliceblue;
     margin-left: 30px;
+    text-decoration: none;
 }
 
 .button {
@@ -35,6 +36,7 @@
     border: none;
     padding-bottom: 10px;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .button:hover {

@@ -1,26 +1,30 @@
 import React from "react";
-import classLine from './HeaderLine.module.css'
+import { Link, useNavigate } from 'react-router-dom';
+import classLine from './HeaderLine.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import ButtonPlay from "./ButtonPlay";
-
-
+import { Routes, Route } from 'react-router-dom';
+import Heroes from "../Pages/Herous/Heroes";
+import Esports from "../Pages/Esports/Esports";
+import News from "../Pages/News/News";
 
 const HeaderLine = () => {
+    const navigate = useNavigate();
 
     const linkLogin = () => {
-        window.location.href = 'https://steamcommunity.com/oauth/login?client_id=9B2C1229&response_type=token&state=home';
+        navigate('https://steamcommunity.com/oauth/login?client_id=9B2C1229&response_type=token&state=home');
     }
 
     return (
         <div className={classLine.items}>
-            <button className={classLine.logoItem}>
+            <Link to="/" className={classLine.logoItem}>
                 <div className={classLine.logo}>
                     <img src={require('../../img/logoDota.png')} height={40} alt="Dota 2 Logo" className={classLine.img} />
                     DOTA2
                 </div>
-            </button>
+            </Link>
 
             <div className={classLine.dropdown}>
                 <button className={classLine.dropbtn}>Game
@@ -32,9 +36,9 @@ const HeaderLine = () => {
                     <a href="#">Previous updates</a>
                 </div>
             </div>
-            <button className={classLine.button}>Heroes</button>
-            <button className={classLine.button}>News</button>
-            <button className={classLine.button}>Esports</button>
+            <Link to="/heroes" className={classLine.button}>Heroes</Link>
+            <Link to="/news" className={classLine.button}>News</Link>
+            <Link to="/esprots" className={classLine.button}>Esports</Link>
 
             <div className={classLine.rightBtns}>
                 <button className={classLine.btnLogin} onClick={linkLogin}>login</button>
@@ -54,6 +58,12 @@ const HeaderLine = () => {
             </div>
 
             <ButtonPlay />
+
+            <Routes>
+                <Route path="/heroes" element={<Heroes />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/esports" element={<Esports />} />
+            </Routes>
         </div>
     );
 };
