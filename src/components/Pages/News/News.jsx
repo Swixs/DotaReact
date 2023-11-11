@@ -1,7 +1,9 @@
+import HeaderLine from "../../Header/HeaderLine"
+
 const News = () => {
     return (
         <div>
-            News
+            <HeaderLine />
         </div>
     )
 }

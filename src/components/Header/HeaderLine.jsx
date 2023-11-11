@@ -7,7 +7,7 @@ import { faCaretDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import ButtonPlay from "./ButtonPlay";
 import { Routes, Route } from 'react-router-dom';
 import Heroes from "../Pages/Herous/Heroes";
-import Esports from "../Pages/Esports/Esports";
+import Esports from "../Pages/Esports/esports";
 import News from "../Pages/News/News";
 
 const HeaderLine = () => {
@@ -38,7 +38,7 @@ const HeaderLine = () => {
             </div>
             <Link to="/heroes" className={classLine.button}>Heroes</Link>
             <Link to="/news" className={classLine.button}>News</Link>
-            <Link to="/esprots" className={classLine.button}>Esports</Link>
+            <Link to="/esports" className={classLine.button}>Esports</Link>
 
             <div className={classLine.rightBtns}>
                 <button className={classLine.btnLogin} onClick={linkLogin}>login</button>

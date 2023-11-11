@@ -1,0 +1,23 @@
+
+.text{
+    padding-top: 150px;
+
+}
+
+.title{
+    font-weight:600;
+    font-size: 4rem;
+    color: azure;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.subtitle{
+    font-weight:500;
+    font-size: 1.2rem;
+    color: azure;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+}
