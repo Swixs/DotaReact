@@ -22,9 +22,9 @@
     font-size: 2rem;
     color: aliceblue;
     position: absolute;
-    bottom: -10px;
+    top: 100px;
     left: 20%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(1%);
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     z-index: 0;
@@ -36,12 +36,13 @@
 }
 
 .btn:hover .hoverText {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -10px);
     opacity: 1;
     z-index: 3;
 }
 
-.pictAtribute{
+
+.pictAtribute {
     margin-right: 10px;
     width: 40px;
     height: 40px;
