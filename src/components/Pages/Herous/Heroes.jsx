@@ -3,6 +3,7 @@ import HeaderLine from "../../Header/HeaderLine";
 import classHeroes from './Heroes.module.css';
 import HeroesText from './HeroesComponent/HeroesText';
 import HeroesInput from './HeroesComponent/HeroesFilterInput';
+import Abaddon from './HeroesButtonns/Abaddon';
 
 
 const Heroes = () => {
@@ -11,6 +12,9 @@ const Heroes = () => {
             <HeaderLine />
             <HeroesText />
             <HeroesInput />
+            <div className={classHeroes.container}>
+                <Abaddon />
+            </div>
         </div>
     );
 };

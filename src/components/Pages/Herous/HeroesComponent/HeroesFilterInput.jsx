@@ -1,6 +1,15 @@
 import classHeroesInput from './HeroesfilterInput.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 const HeroesInput = () => {
+
+    function onAtribute() {
+        console.log(1)
+    }
+
+
     return (
         <div className={classHeroesInput.box}>
             <div className={classHeroesInput.clue}>
@@ -12,7 +21,7 @@ const HeroesInput = () => {
             </div>
 
             <div>
-                <button className={classHeroesInput.btnAtribute} >
+                <button className={classHeroesInput.btnAtribute} onClick={onAtribute} >
                     <img className={classHeroesInput.atribute} src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/herogrid/filter-str-active.png" alt="atribute" />
                 </button>
 
@@ -45,8 +54,10 @@ const HeroesInput = () => {
                     <img className={classHeroesInput.atribute} src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/herogrid/filter-diamond.png" alt="" />
                 </button>
             </div>
-
-            <input className={classHeroesInput.input} type="text"  />
+            <div className={classHeroesInput.boxInput}>
+                <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#636363", }} fontSize={25} width={50} />
+                <input className={classHeroesInput.input} type="text" />
+            </div>
         </div>
     )
 }

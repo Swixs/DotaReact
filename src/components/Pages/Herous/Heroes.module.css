@@ -5,3 +5,13 @@
     background-repeat: no-repeat;
     background-size: cover; 
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 350px;
+    width: 1200px;
+    margin-top: 10px;
+    z-index: 10;
+    position: relative;
+}

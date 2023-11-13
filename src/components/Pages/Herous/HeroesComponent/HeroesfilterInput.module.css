@@ -71,10 +71,25 @@
 }
 
 .input{
-    margin-left: 80px;
-    background-color: rgb(40, 40, 40);
     border: none;
-    height: 50px;
-    width: 250px;
     z-index: 4;
+    height: 30px;
+    background-color: rgb(40, 40, 40);
+}
+
+.boxInput{
+    background-color: rgb(40, 40, 40);
+    z-index: 3;
+    width: 250px;
+    height: 50px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="text"]:focus {
+    border: none;
+    outline: none;
+    background-color: grey;
 }
