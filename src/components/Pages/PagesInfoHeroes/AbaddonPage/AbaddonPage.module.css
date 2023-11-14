@@ -308,7 +308,7 @@
     left: 580px;
 }
 
-.textAbilities{
+.textAbilities {
     margin-left: 160px;
     text-transform: uppercase;
     color: #fff;
@@ -317,5 +317,70 @@
     align-items: center;
     font-size: 1.2rem;
     letter-spacing: 1px;
+}
 
+
+.statsLine {
+    border-top: 2px solid #464646;
+    border-bottom: 2px solid #3c3c3c;
+    background-color: #1c1c1c;
+    top: 150px;
+    width: auto;
+    height: 250px;
+    position: relative;
+}
+
+.pictureHero {
+    width: 150px;
+    height: 84px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.lineDisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.displayColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.healthBox {
+    background: linear-gradient(to right, #286323, #7AF03C);
+    width: 150px;
+    height: 20px;
+    margin-left: 250px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding-left: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.healthBoxSpan {
+    color: #1c1c1c;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.manaBox {
+    background: linear-gradient(to right, #1056DB, #73F5FE);
+    width: 150px;
+    height: 20px;
+    margin-left: 250px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding-left: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.manaBoxSpan{
+    color: #1c1c1c;
+    font-size: 12px;
+    margin-left: 10px;
 }

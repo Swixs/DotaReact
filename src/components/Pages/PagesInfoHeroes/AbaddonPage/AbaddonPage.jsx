@@ -4,6 +4,7 @@ import classAbaddonPage from './AbaddonPage.module.css';
 import AbaddonText from './AbaddonComponents/AbaddonText';
 import AbaddonTextReverse from './AbaddonComponents/AbaddonTextReverse';
 import AbaddonRightPage from './AbaddonComponents/AbaddoneRight/AbaddoneRight';
+import AbaddoneStatsLine from './AbaddonStatsLine/AbaddonStatsLine';
 
 const AbaddonPage = () => {
     return (
@@ -16,6 +17,10 @@ const AbaddonPage = () => {
                     <div className={classAbaddonPage.pageFlex}>
                         <AbaddonText />
                         <AbaddonRightPage />
+                    </div>
+
+                    <div className={classAbaddonPage.statsLine}>
+                        <AbaddoneStatsLine />
                     </div>
 
                 </div>
