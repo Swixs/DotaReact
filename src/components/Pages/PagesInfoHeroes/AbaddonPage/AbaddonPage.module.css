@@ -1,0 +1,153 @@
+.page {
+    background: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg");
+    height: 200vh;
+    max-height: max-content;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pageContent {
+    padding-top: 150px;
+}
+
+.span {
+    color: rgb(80, 80, 80);
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.textAtr {
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-left: 200px;
+}
+
+.txtArt {
+    margin-left: 10px;
+}
+
+.textReverse {
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    color: antiquewhite;
+    flex-direction: row;
+    display: flex;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.grayBar {
+    width: 2px;
+    height: 415px;
+    background-color: rgb(72, 72, 72);
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    left: 81px;
+}
+
+.title {
+    height: 130px;
+    font-size: 7rem;
+    color: #fff;
+    margin-left: 200px;
+    text-transform: uppercase;
+    font-family: 'Vollkorn', serif;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.5rem;
+    color: #a5e0f3;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+.spanList {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Vollkorn', serif;
+}
+
+.text {
+    margin-left: 200px;
+    width: 590px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Vollkorn', serif;
+    color: #fff;
+}
+
+.btnText {
+    margin-left: 190px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background: none;
+    color: #525252;
+    text-decoration: underline;
+    border: none;
+    font-weight: 400;
+    padding: 0;
+}
+
+.buttonContainer {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 590px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Vollkorn', serif;
+    color: #fff;
+}
+
+
+.scrollableText {
+    overflow-y: auto;
+    margin-top: 10px;
+    width: 850px;
+}
+
+.history {
+    margin-left: 200px;
+    font-size: 1.3rem;
+    line-height: 28px;
+    font-weight: 200;
+    font-family: 'Vollkorn', serif;
+    margin-right: 30px;
+    height: 380px;
+
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to right, rgba(29, 29, 29, 0.9) 0%, rgba(241, 241, 241, 0) 100%);
+    border-radius: 6px;
+    height: 400px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #525252;
+    border-radius: 6px;
+}

@@ -5,6 +5,7 @@ import Heroes from './components/Pages/Herous/Heroes';
 import News from './components/Pages/News/News';
 import Esports from './components/Pages/Esports/esports';
 import Main from './components/Pages/Main/Main';
+import AbaddonPage from './components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/heroes" element={<Heroes />} />
         <Route path="/news" element={<News />} />
         <Route path="/esports" element={<Esports />} />
+        <Route path="/abaddon" element={<AbaddonPage />} />
       </Routes>
     </BrowserRouter>
   );
