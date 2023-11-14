@@ -239,7 +239,7 @@
     border: 2px solid #fff;
 }
 
-.buttonCube:hover .box{
+.buttonCube:hover .box {
     background-color: #fff;
 }
 
@@ -300,4 +300,22 @@
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-name: AbaddonPage_AbaddonPage_heropage_BarIn_3WL4m__3dJE9__H7dXd;
+}
+
+.AbaddoneSkils {
+    position: relative;
+    top: 430px;
+    left: 580px;
+}
+
+.textAbilities{
+    margin-left: 160px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+
 }

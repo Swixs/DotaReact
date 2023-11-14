@@ -1,6 +1,7 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import AbaddoneSkils from './AbaddoneSkills';
 
 const AbaddonRightPage = () => {
 
@@ -43,6 +44,12 @@ const AbaddonRightPage = () => {
                     type="video/webm"
                 />
             </video>
+
+
+            <div className={classAbaddonPage.AbaddoneSkils}>
+                <AbaddoneSkils />
+            </div>
+
         </div>
     );
 };
