@@ -1,6 +1,7 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 import { useState } from 'react';
 import AbaddonHistory from './AbaddonHistory';
+import AbaddonType from './AbaddonType';
 
 const AbaddonListSpels = () => {
     const [showFullHistory, setShowFullHistory] = useState(false);
@@ -29,15 +30,21 @@ const AbaddonListSpels = () => {
         }
     };
 
+    const getAbaddonType = () => {
+        return showFullHistory ? null : <AbaddonType />;
+    };
+
     return (
         <div className={classAbaddonPage.container}>
             {getContent()}
 
-            <div className={classAbaddonPage.buttonContainer}>
+            <div>
                 <button className={classAbaddonPage.btnText} onClick={toggleFullHistory}>
                     {showFullHistory ? 'Close History' : 'Read Full History'}
                 </button>
             </div>
+
+            {getAbaddonType()}
         </div>
     );
 }

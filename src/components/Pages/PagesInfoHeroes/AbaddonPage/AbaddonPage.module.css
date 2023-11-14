@@ -1,10 +1,14 @@
 .page {
     background: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg");
-    height: 200vh;
-    max-height: max-content;
+    height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.pageFlex {
+    display: flex;
+    flex-direction: row;
 }
 
 .pageContent {
@@ -37,7 +41,7 @@
     transform-origin: left bottom;
     white-space: nowrap;
     position: absolute;
-    top: 600px;
+    top: 750px;
     left: 100px;
     color: antiquewhite;
     flex-direction: row;
@@ -48,7 +52,7 @@
 
 .grayBar {
     width: 2px;
-    height: 415px;
+    height: 565px;
     background-color: rgb(72, 72, 72);
     margin-right: 10px;
     position: absolute;
@@ -94,7 +98,6 @@
 .btnText {
     margin-left: 190px;
     width: 150px;
-    height: 50px;
     font-size: 18px;
     background: none;
     color: #525252;
@@ -102,10 +105,6 @@
     border: none;
     font-weight: 400;
     padding: 0;
-}
-
-.buttonContainer {
-    margin-top: 10px;
 }
 
 .container {
@@ -117,6 +116,8 @@
     font-weight: 400;
     font-family: 'Vollkorn', serif;
     color: #fff;
+    z-index: 10;
+    position: relative;
 }
 
 
@@ -150,4 +151,153 @@
 ::-webkit-scrollbar-thumb {
     background-color: #525252;
     border-radius: 6px;
+}
+
+.typeTitle {
+    font-size: 1.5rem;
+    color: #717171;
+    text-transform: uppercase;
+    font-family: 'Vollkorn', serif;
+    margin-top: 30px;
+}
+
+.displayType {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contentType {
+    margin-left: 200px;
+}
+
+.typeAtr {
+    width: 25px;
+    height: 25px;
+}
+
+.textType {
+    margin-left: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cubeComplexity {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+}
+
+.cube {
+    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    transform: rotateZ(45deg);
+}
+
+.video {
+    height: 1415px;
+    width: 1133px;
+    position: absolute;
+    top: -20px;
+    left: 775px;
+}
+
+.btnArrow {
+    background: none;
+    color: rgb(161, 160, 160);
+    border: 2px solid rgb(161, 160, 160);
+    width: 35px;
+    height: 70px;
+    position: relative;
+    top: -7px;
+    left: 925px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btnArrowRight {
+    background: none;
+    color: rgb(161, 160, 160);
+    border: 2px solid rgb(161, 160, 160);
+    width: 35px;
+    height: 70px;
+    position: relative;
+    left: 936px;
+    top: -7px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btnArrowRight:hover,
+.btnArrow:hover,
+.buttonCube:hover {
+    border: 2px solid #fff;
+}
+
+.buttonCube:hover .box{
+    background-color: #fff;
+}
+
+.btnArrow:hover .arrowColor,
+.btnArrowRight:hover .arrowColor {
+    color: #fff;
+}
+
+.buttonCube {
+    width: 95px;
+    position: relative;
+    top: -20px;
+    left: 930px;
+    background: none;
+    color: rgb(161, 160, 160);
+    border: 2px solid rgb(161, 160, 160);
+    height: 70px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.buttonCubeTop {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.buttonCubeBottom {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.box {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    background: rgb(161, 160, 160);
+}
+
+
+.background {
+    z-index: 0;
+    top: -290px;
+    left: 960px;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, .3764705882);
+    position: absolute;
+    transform: skewY(-45deg) translateX(-50vw);
+    overflow: hidden;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: AbaddonPage_AbaddonPage_heropage_BarIn_3WL4m__3dJE9__H7dXd;
 }

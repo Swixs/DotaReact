@@ -3,6 +3,7 @@ import HeaderLine from '../../../Header/HeaderLine';
 import classAbaddonPage from './AbaddonPage.module.css';
 import AbaddonText from './AbaddonComponents/AbaddonText';
 import AbaddonTextReverse from './AbaddonComponents/AbaddonTextReverse';
+import AbaddonRightPage from './AbaddonComponents/AbaddoneRight/AbaddoneRight';
 
 const AbaddonPage = () => {
     return (
@@ -11,8 +12,12 @@ const AbaddonPage = () => {
             <div className={classAbaddonPage.pageContent}>
                 <div className={classAbaddonPage.textWrapper}>
                     <AbaddonTextReverse />
-                    <AbaddonText />
-                    
+
+                    <div className={classAbaddonPage.pageFlex}>
+                        <AbaddonText />
+                        <AbaddonRightPage />
+                    </div>
+
                 </div>
             </div>
         </div>

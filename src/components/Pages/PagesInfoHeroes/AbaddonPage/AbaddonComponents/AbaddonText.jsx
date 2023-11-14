@@ -1,5 +1,5 @@
 import classAbaddonPage from '../AbaddonPage.module.css'
-import AbaddonListSpels from './AbadonTextSpels'
+import AbaddonListSpels from './AbadonLIstSpels'
 
 const AbaddonText = () => {
     return (

@@ -8,6 +8,7 @@
     height: 40px;
     margin-top: 20px;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .img {
