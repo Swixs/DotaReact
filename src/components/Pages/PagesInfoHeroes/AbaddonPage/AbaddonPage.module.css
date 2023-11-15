@@ -334,7 +334,8 @@
     width: 150px;
     height: 84px;
     margin-left: 250px;
-    margin-top: 50px;
+    margin-top: 30px;
+
 }
 
 .lineDisplay {
@@ -342,15 +343,26 @@
     flex-direction: row;
 }
 
+.displayColumnAtr {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: -30px;
+}
+
 .displayColumn {
     display: flex;
     flex-direction: column;
 }
 
+
+
+
+
 .healthBox {
     background: linear-gradient(to right, #286323, #7AF03C);
     width: 150px;
-    height: 20px;
+    height: 25px;
     margin-left: 250px;
     font-size: 16px;
     color: #fff;
@@ -369,7 +381,7 @@
 .manaBox {
     background: linear-gradient(to right, #1056DB, #73F5FE);
     width: 150px;
-    height: 20px;
+    height: 25px;
     margin-left: 250px;
     font-size: 16px;
     color: #fff;
@@ -379,8 +391,140 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.manaBoxSpan{
+.manaBoxSpan {
     color: #1c1c1c;
     font-size: 12px;
     margin-left: 10px;
+}
+
+.titleAtr {
+    margin-left: 400px;
+    font-size: 1.5rem;
+    color: grey;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.statsLineAtr {
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.textAtrStats {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.textAtrStatsSpan {
+    color: #717171;
+    font-size: 1.2rem;
+}
+
+.border {
+    width: 1px;
+    height: 160px;
+    margin-left: 180px;
+    margin-top: -130px;
+    background-color: grey;
+}
+
+.barBackground {
+    height: 7px;
+    width: 150px;
+    background-color: #4c4c4c;
+    margin-bottom: 15px;
+}
+
+.barConteiner {
+    height: 7px;
+    width: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+
+.textRoles {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.Roles {
+    margin-left: 50px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.displayColumnRoles {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.barConteiner70 {
+    height: 7px;
+    width: 110px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+.borderRight {
+    width: 1px;
+    height: 160px;
+    margin-left: 1340px;
+    margin-top: -180px;
+    background-color: grey;
+}
+
+.titleRoles {
+    margin-left: 990px;
+    font-size: 1.5rem;
+    color: grey;
+    text-transform: uppercase;
+    margin-top: -19px;
+}
+
+.statsDisplay {
+    margin-left: 100px;
+}
+
+.titleStats {
+    color: #717171;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.statsPoint {
+    color: #fff;
+    font-size: 16px;
+}
+
+.statsPict {
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.Stats {
+    margin-top: 190px;
+    font-size: 1.5rem;
+    color: grey;
+    text-transform: uppercase;
+    position: relative;
+    left: -270px;
 }

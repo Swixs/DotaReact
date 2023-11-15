@@ -13,12 +13,10 @@ const AbaddonPage = () => {
             <div className={classAbaddonPage.pageContent}>
                 <div className={classAbaddonPage.textWrapper}>
                     <AbaddonTextReverse />
-
                     <div className={classAbaddonPage.pageFlex}>
                         <AbaddonText />
                         <AbaddonRightPage />
                     </div>
-
                     <div className={classAbaddonPage.statsLine}>
                         <AbaddoneStatsLine />
                     </div>
