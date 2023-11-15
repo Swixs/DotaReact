@@ -1,17 +1,17 @@
 .videoContainer {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 6.25%;
     z-index: -1;
 }
 
 video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: none;
     height: 115vh;
-    object-fit: cover;
+    position: relative;
+    top: -130px;
 }
 
 .overlay {
@@ -19,7 +19,7 @@ video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 73%;
     z-index: 0;
 }
 
@@ -32,4 +32,3 @@ video {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
 }
-
