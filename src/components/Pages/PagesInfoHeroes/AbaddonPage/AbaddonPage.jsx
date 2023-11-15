@@ -5,6 +5,7 @@ import AbaddonText from './AbaddonComponents/AbaddonText';
 import AbaddonTextReverse from './AbaddonComponents/AbaddonTextReverse';
 import AbaddonRightPage from './AbaddonComponents/AbaddoneRight/AbaddoneRight';
 import AbaddoneStatsLine from './AbaddonStatsLine/AbaddonStatsLine';
+import AbaddoneAbility from './AbaddonAbility/AbaddonAbility';
 
 const AbaddonPage = () => {
     return (
@@ -21,6 +22,10 @@ const AbaddonPage = () => {
                         <AbaddoneStatsLine />
                     </div>
 
+                    <div>
+                        <AbaddoneAbility />
+                    </div>
+        
                 </div>
             </div>
         </div>
