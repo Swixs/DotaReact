@@ -8,17 +8,17 @@ import Main from './components/Pages/Main/Main';
 import AbaddonPage from './components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage';
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/heroes" element={<Heroes />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/esports" element={<Esports />} />
-        <Route path="/abaddon" element={<AbaddonPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
+   return (
+      <BrowserRouter>
+         <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/heroes" element={<Heroes />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/esports" element={<Esports />} />
+            <Route path="/abaddon" element={<AbaddonPage />} />
+         </Routes>
+      </BrowserRouter>
+   );
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

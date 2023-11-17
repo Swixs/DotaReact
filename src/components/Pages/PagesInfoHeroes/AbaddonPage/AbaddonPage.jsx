@@ -8,28 +8,27 @@ import AbaddoneStatsLine from './AbaddonStatsLine/AbaddonStatsLine';
 import AbaddoneAbility from './AbaddonAbility/AbaddonAbility';
 
 const AbaddonPage = () => {
-    return (
-        <div className={classAbaddonPage.page}>
-            <HeaderLine />
-            <div className={classAbaddonPage.pageContent}>
-                <div className={classAbaddonPage.textWrapper}>
-                    <AbaddonTextReverse />
-                    <div className={classAbaddonPage.pageFlex}>
-                        <AbaddonText />
-                        <AbaddonRightPage />
-                    </div>
-                    <div className={classAbaddonPage.statsLine}>
-                        <AbaddoneStatsLine />
-                    </div>
+   return (
+      <div className={classAbaddonPage.page}>
+         <HeaderLine />
+         <div className={classAbaddonPage.pageContent}>
+            <div className={classAbaddonPage.textWrapper}>
+               <AbaddonTextReverse />
+               <div className={classAbaddonPage.pageFlex}>
+                  <AbaddonText />
+                  <AbaddonRightPage />
+               </div>
+               <div className={classAbaddonPage.statsLine}>
+                  <AbaddoneStatsLine />
+               </div>
 
-                    <div>
-                        <AbaddoneAbility />
-                    </div>
-        
-                </div>
+               <div>
+                  <AbaddoneAbility />
+               </div>
             </div>
-        </div>
-    );
-}
+         </div>
+      </div>
+   );
+};
 
 export default AbaddonPage;
