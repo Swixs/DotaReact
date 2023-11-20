@@ -553,8 +553,8 @@ video {
 }
 
 .videoContainerAbility {
-    width: 1100px;
-    margin: auto;
+    width: 1000px;
+    margin-left: 410px;
     overflow: hidden;
     position: relative;
     left: -230px;
@@ -575,4 +575,177 @@ video {
 .spell {
     width: 80px;
     height: 80px;
+    transition: 0.1s ease-in-out;
+}
+
+.btn {
+    position: relative;
+    top: -130px;
+    left: 350px;
+    background: none;
+    border: none;
+    width: 83px;
+    padding: 0;
+    height: 83px;
+    margin-left: 20px;
+}
+
+.spell:hover {
+    width: 83px;
+    height: 85px;
+}
+
+.abilitiesInfo {
+    background-color: #1c1c1c;
+    position: relative;
+    top: -725px;
+    left: 1055px;
+    width: 650px;
+    height: 516px;
+}
+
+.nameSpell {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.textSpell {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.pictureSpell {
+    height: 120px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.abilityStats {
+    background-color: #000000;
+    height: 375px;
+    padding-top: 20px;
+}
+
+.textAbility {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #717171;
+    margin-left: 30px;
+}
+
+
+.spanAbility {
+    color: #fff;
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+.spanAbilityMagical {
+    color: rgb(163, 220, 238);
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+.abilityStatsRight {
+    position: relative;
+    top: -350px;
+    left: 310px;
+    width: 110px;
+}
+
+.spanAbilityRight {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+.textAbilityRight {
+    margin-top: -3px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #717171;
+}
+
+.spanAbilityRight {
+    width: 135px;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    left: 130px;
+    top: -45px;
+}
+
+.statsAbilityBottom {
+    position: relative;
+    top: 10px;
+    left: -280px;
+    width: 325px;
+}
+
+.spanAbilityBottom {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.textAbilityBottom {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #717171;
+}
+
+.timeSpellPict {
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.linetimeSpell {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeSpellStats {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.manaBlock {
+    height: 20px;
+    width: 20px;
+    background-color: #3f79e7;
+    border-radius: 5px;
+    position: relative;
+    top: -20px;
+    left: 530px;
+}
+
+.manaText {
+    position: relative;
+    font-size: 1.2rem;
+    top: -25px;
+    left: 540px;
+    color: #fff;
+}
+
+.historySpell{
+    background-color: #1c1c1c;
+    width: 580px;
+    height: 60px;
+    color: #909090;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    font-weight: 200;
 }

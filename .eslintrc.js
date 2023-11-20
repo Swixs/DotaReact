@@ -12,16 +12,16 @@ module.exports = {
       {
          env: {
             node: true,
-            es5: true
+            es6: true,
          },
-         files: ['.eslintrc.{js,cjs}'],
+         files: ['.eslintrc.js'],
          parserOptions: {
-            sourceType: 'script',
+            sourceType: 'module',
          },
       },
    ],
    parserOptions: {
-      ecmaVersion: 'latest',
+      ecmaVersion: 2021,
       sourceType: 'module',
    },
    plugins: ['react'],

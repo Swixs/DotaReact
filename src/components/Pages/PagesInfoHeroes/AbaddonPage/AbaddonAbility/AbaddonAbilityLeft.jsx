@@ -1,30 +1,21 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
+import AbilityVideo from './AbaddonAbilityVideo';
+import AbilityButtons from './AbilityButtons';
+import AbilityLineInfo from './AbilityLineInfo';
+import AbilityStats from './AbilityStats';
+import AbilityStatsRight from './AbilityStatsRight';
 
 const AbaddoneAbilityLeft = () => {
-   function click() {
-      console.log(1);
-   }
-
    return (
       <div>
-         <div className={classAbaddonPage.videoContainerAbility}>
-            <video
-               className={classAbaddonPage.videoAbility}
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_death_coil.webm"
-               autoPlay
-               muted
-               loop
-            ></video>
-         </div>
-
+         <AbilityVideo />
          <div>
-            <button onClick={click} className={classAbaddonPage.btn}>
-               <img
-                  className={classAbaddonPage.spell}
-                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_death_coil.png"
-                  alt="firstSpell"
-               />
-            </button>
+            <AbilityButtons />
+            <div className={classAbaddonPage.abilitiesInfo}>
+               <AbilityLineInfo />
+               <AbilityStats />
+               <AbilityStatsRight />
+            </div>
          </div>
       </div>
    );
