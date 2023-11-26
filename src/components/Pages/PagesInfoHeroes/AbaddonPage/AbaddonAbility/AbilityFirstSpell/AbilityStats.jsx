@@ -1,4 +1,4 @@
-import classAbaddonPage from '../AbaddonPage.module.css';
+import classAbaddonPage from '../../AbaddonPage.module.css';
 
 const AbilityStats = () => {
    return (

@@ -562,7 +562,7 @@ video {
 }
 
 .videoAbility {
-    width: 85%;
+    width: 100%;
     box-shadow: 5px 0px 5px #000000;
     height: auto;
     position: relative;
@@ -573,33 +573,33 @@ video {
 
 
 .spell {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     transition: 0.1s ease-in-out;
 }
 
 .btn {
     position: relative;
-    top: -130px;
-    left: 350px;
+    top: 360px;
+    left: -970px;
     background: none;
     border: none;
     width: 83px;
     padding: 0;
     height: 83px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .spell:hover {
-    width: 85px;
-    height: 85px;
+    width: 95px;
+    height: 95px;
 }
 
 .abilitiesInfo {
     background-color: #1c1c1c;
     position: relative;
-    top: -725px;
-    left: 1055px;
+    top: -235px;
+    left: -200px;
     width: 650px;
     height: 516px;
 }
@@ -740,7 +740,7 @@ video {
     color: #fff;
 }
 
-.historySpell{
+.historySpell {
     background-color: #1c1c1c;
     width: 580px;
     height: 60px;

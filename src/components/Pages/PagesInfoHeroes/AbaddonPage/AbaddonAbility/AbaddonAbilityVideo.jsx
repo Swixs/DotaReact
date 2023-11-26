@@ -1,11 +1,19 @@
+import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbilityVideo = () => {
+const AbilityVideo = ({ selectedAbility }) => {
+   const videoUrls = {
+      ability1:
+         'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_death_coil.webm',
+      ability2:
+         'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_aphotic_shield.mp4',
+   };
+
    return (
       <div className={classAbaddonPage.videoContainerAbility}>
          <video
             className={classAbaddonPage.videoAbility}
-            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_death_coil.webm"
+            src={videoUrls[selectedAbility]}
             autoPlay
             muted
             loop

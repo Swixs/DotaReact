@@ -1,20 +1,25 @@
-import classAbaddonPage from '../AbaddonPage.module.css';
+import React, { useState } from 'react';
 import AbilityVideo from './AbaddonAbilityVideo';
 import AbilityButtons from './AbilityButtons';
-import AbilityLineInfo from './AbilityLineInfo';
-import AbilityStats from './AbilityStats';
-import AbilityStatsRight from './AbilityStatsRight';
+import classAbaddonPage from '../AbaddonPage.module.css';
+import AbilityFirstSpell from './AbilityFirstSpell/AbilityFirstSpellContent';
+import AbilitySecondSpell from './AbilitySecondSpell/AbilitySecondContent';
 
 const AbaddoneAbilityLeft = () => {
+   const [selectedAbility, setSelectedAbility] = useState(null);
+
+   const selectAbility = ability => {
+      setSelectedAbility(ability);
+   };
+
    return (
-      <div>
-         <AbilityVideo />
-         <div>
-            <AbilityButtons />
+      <div className={classAbaddonPage.pageFlex}>
+         <AbilityVideo selectedAbility={selectedAbility} />
+         <div className={classAbaddonPage.pageContent}>
+            <AbilityButtons onSelectAbility={selectAbility} />
             <div className={classAbaddonPage.abilitiesInfo}>
-               <AbilityLineInfo />
-               <AbilityStats />
-               <AbilityStatsRight />
+               {selectedAbility === 'ability1' && <AbilityFirstSpell />}
+               {selectedAbility === 'ability2' && <AbilitySecondSpell />}
             </div>
          </div>
       </div>
