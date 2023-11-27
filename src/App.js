@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Heroes from './components/Pages/Herous/Heroes';
 import News from './components/Pages/News/News';
-import Esports from './components/Pages/Esports/esports';
+import Esports from './../src/components/Pages/Esports/Esports';
 import Main from './components/Pages/Main/Main';
 import AbaddonPage from './components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage';
 

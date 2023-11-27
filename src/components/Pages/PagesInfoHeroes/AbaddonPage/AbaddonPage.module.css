@@ -621,7 +621,7 @@ video {
 
 .pictureSpell {
     height: 120px;
-    width: 120px;
+    width: 100px;
     margin-top: 20px;
     margin-left: 20px;
     padding-bottom: 20px;
@@ -667,7 +667,32 @@ video {
     margin-left: 30px;
 }
 
+.spanSecondAbilityRight {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    position: relative;
+    top: -72px;
+    left: 200px;
+}
+.spanFirstAbilityRight {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    position: relative;
+    top: -24px;
+    left: 70px;
+}
+
 .textAbilityRight {
+    margin-top: -3px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #717171;
+}
+
+.textSecondAbilityRight {
+    width: 200px;
     margin-top: -3px;
     font-size: 1rem;
     font-weight: 400;
@@ -697,10 +722,21 @@ video {
     font-weight: 600;
 }
 
+.spanSecondAbilityBottom {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 600px;
+    white-space: nowrap;
+}
+
+
 .textAbilityBottom {
     font-size: 1rem;
     font-weight: 400;
     color: #717171;
+    white-space: nowrap;
 }
 
 .timeSpellPict {
@@ -729,23 +765,39 @@ video {
     border-radius: 5px;
     position: relative;
     top: -20px;
-    left: 530px;
+    left: 400px;
 }
 
 .manaText {
     position: relative;
     font-size: 1.2rem;
     top: -25px;
-    left: 540px;
+    left: 415px;
     color: #fff;
 }
 
 .historySpell {
     background-color: #1c1c1c;
     width: 580px;
-    height: 60px;
+    height: 35px;
     color: #909090;
     font-size: 0.9rem;
     padding: 5px 10px;
     font-weight: 200;
+}
+
+.brDiv {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.textSpellSecond {
+    width: 500px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
 }
