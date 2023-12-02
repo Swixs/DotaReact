@@ -786,6 +786,17 @@ video {
     font-weight: 200;
 }
 
+.historyTherdSpell{
+    background-color: #1c1c1c;
+    width: 580px;
+    height: 35px;
+    color: #909090;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-weight: 200; 
+}
+
 .brDiv {
     margin-left: 20px;
     font-size: 1rem;

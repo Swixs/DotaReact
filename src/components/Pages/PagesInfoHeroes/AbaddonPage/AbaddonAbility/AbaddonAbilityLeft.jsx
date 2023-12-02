@@ -4,6 +4,7 @@ import AbilityButtons from './AbilityButtons';
 import classAbaddonPage from '../AbaddonPage.module.css';
 import AbilityFirstSpell from './AbilityFirstSpell/AbilityFirstSpellContent';
 import AbilitySecondSpell from './AbilitySecondSpell/AbilitySecondContent';
+import AbilityTherdSpell from './AbilityTherdSpell/AbilityTherdSpell';
 
 const AbaddoneAbilityLeft = () => {
    const [selectedAbility, setSelectedAbility] = useState(null);
@@ -20,6 +21,7 @@ const AbaddoneAbilityLeft = () => {
             <div className={classAbaddonPage.abilitiesInfo}>
                {selectedAbility === 'ability1' && <AbilityFirstSpell />}
                {selectedAbility === 'ability2' && <AbilitySecondSpell />}
+               {selectedAbility === 'ability3' && <AbilityTherdSpell />}
             </div>
          </div>
       </div>
