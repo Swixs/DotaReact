@@ -6,6 +6,7 @@ import AbaddonTextReverse from './AbaddonComponents/AbaddonTextReverse';
 import AbaddonRightPage from './AbaddonComponents/AbaddoneRight/AbaddoneRight';
 import AbaddoneStatsLine from './AbaddonStatsLine/AbaddonStatsLine';
 import AbaddoneAbility from './AbaddonAbility/AbaddonAbility';
+import FooterButtons from './FooterButtons/FooterButtons';
 
 const AbaddonPage = () => {
    return (
@@ -24,6 +25,10 @@ const AbaddonPage = () => {
 
                <div>
                   <AbaddoneAbility />
+               </div>
+
+               <div>
+                  <FooterButtons />
                </div>
             </div>
          </div>

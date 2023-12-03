@@ -43,6 +43,17 @@ const AbilityButtons = ({ onSelectAbility }) => {
             />
          </button>
 
+         <button
+            onClick={() => abilityBtn('ability4')}
+            className={classAbaddonPage.btn}
+         >
+            <img
+               className={classAbaddonPage.spell}
+               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_borrowed_time.png"
+               alt="secondSpell"
+            />
+         </button>
+
          {selectedButton && (
             <div>
                <p>Selected Button: {selectedButton}</p>

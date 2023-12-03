@@ -1,34 +1,42 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilityStatsRight = () => {
+const AbilityFourthStatsRight = () => {
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
-         <div className={classAbaddonPage.textAbilityRight}>
-            PIERCES SPELL IMMUNITY:
-         </div>
+         <div className={classAbaddonPage.textSecondAbilityRight}>DISABLE:</div>
 
-         <div className={classAbaddonPage.spanAbilityRight}>
-            Allies Yes Enemies No
-         </div>
+         <div className={classAbaddonPage.spanFourthAbilityRight}>No</div>
 
          <div>
             <div className={classAbaddonPage.statsAbilityBottom}>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  SELF DAMAGE:
+                  HEALTH THRESHOLD:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     40.0%
+                     400.0
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DAMAGE/HEAL:
+                  DURATION:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     100.0 / 175.0 / 250.0 / 325.0
+                     4.0 / 5.0 / 6.0
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  CAST RANGE:
+                  DURATION:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     600.0 / 625.0 / 650.0 / 675.0
+                     7.0 / 8.0 / 9.0
+                  </span>
+               </div>
+               <div className={classAbaddonPage.textAbilityBottom}>
+                  DAMAGE THRESHOLD:
+                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                     525.0
+                  </span>
+               </div>
+               <div className={classAbaddonPage.textAbilityBottom}>
+                  RANGE:
+                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                     1200.0
                   </span>
                </div>
 
@@ -40,18 +48,19 @@ const AbilityStatsRight = () => {
                   />
 
                   <div className={classAbaddonPage.timeSpellStats}>
-                     6.5 / 6.0 / 5.5 / 5.0
+                     70.0 / 60.0 / 50.0
                   </div>
                </div>
 
                <div className={classAbaddonPage.lineDisplay}>
                   <div className={classAbaddonPage.manaBlock}></div>
-                  <div className={classAbaddonPage.manaText}>50</div>
+                  <div className={classAbaddonPage.manaText}>0 / 0 / 0</div>
                </div>
 
-               <div className={classAbaddonPage.historyFirstSpell}>
-                  A mysterious vapor from the Font of Avernus now infuses the
-                  breath of Abaddon, who releases it at will.
+               <div className={classAbaddonPage.historyFourthSpell}>
+                  The most unnatural of all the gifts of the Font of Avernus,
+                  this power defies mortal understanding. What should hurt,
+                  instead heals; and what should kill gives strength anew.
                </div>
             </div>
          </div>
@@ -59,4 +68,4 @@ const AbilityStatsRight = () => {
    );
 };
 
-export default AbilityStatsRight;
+export default AbilityFourthStatsRight;

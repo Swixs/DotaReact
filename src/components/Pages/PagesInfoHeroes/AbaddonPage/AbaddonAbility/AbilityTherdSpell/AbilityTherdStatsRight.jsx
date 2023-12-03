@@ -43,9 +43,9 @@ const AbilityTherdStatsRight = () => {
                   </span>
                </div>
 
-               <div className={classAbaddonPage.historyTherdSpell}>
-                  The powers of the black mist rise to absorb attacks like the
-                  black mist absorbs light.
+               <div className={classAbaddonPage.historyFirstSpell}>
+                  While the baptized draw strength from the Font, the gifts of
+                  Avernus are debilitating to the uninitiated.
                </div>
             </div>
          </div>
