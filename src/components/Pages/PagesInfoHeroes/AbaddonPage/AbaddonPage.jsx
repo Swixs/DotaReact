@@ -27,7 +27,7 @@ const AbaddonPage = () => {
                   <AbaddoneAbility />
                </div>
 
-               <div>
+               <div className={classAbaddonPage.footerButtons}>
                   <FooterButtons />
                </div>
             </div>
