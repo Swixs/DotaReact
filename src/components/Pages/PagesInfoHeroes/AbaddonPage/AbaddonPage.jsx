@@ -7,6 +7,7 @@ import AbaddonRightPage from './AbaddonComponents/AbaddoneRight/AbaddoneRight';
 import AbaddoneStatsLine from './AbaddonStatsLine/AbaddonStatsLine';
 import AbaddoneAbility from './AbaddonAbility/AbaddonAbility';
 import FooterButtons from './FooterButtons/FooterButtons';
+import FooterLine from './FooterButtons/FooterLine';
 
 const AbaddonPage = () => {
    return (
@@ -29,6 +30,7 @@ const AbaddonPage = () => {
 
                <div className={classAbaddonPage.footerButtons}>
                   <FooterButtons />
+                  <FooterLine />
                </div>
             </div>
          </div>
