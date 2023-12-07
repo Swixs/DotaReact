@@ -3,7 +3,7 @@ import { useState } from 'react';
 import AbaddonHistory from './AbaddonHistory';
 import AbaddonType from './AbaddonType';
 
-const AbaddonListSpels = () => {
+const AbaddonListSpels = props => {
    const [showFullHistory, setShowFullHistory] = useState(false);
 
    const toggleFullHistory = () => {
@@ -14,7 +14,7 @@ const AbaddonListSpels = () => {
       if (showFullHistory) {
          return (
             <div className={classAbaddonPage.scrollableText}>
-               <AbaddonHistory />
+               <AbaddonHistory props={props.posts} />
             </div>
          );
       } else {

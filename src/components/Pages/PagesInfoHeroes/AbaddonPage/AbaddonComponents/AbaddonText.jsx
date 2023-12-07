@@ -1,26 +1,29 @@
+import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 import AbaddonListSpels from './AbadonLIstSpels';
 
-const AbaddonText = () => {
+const AbaddonText = props => {
    return (
       <div>
-         <div className={classAbaddonPage.textAtr}>
-            <img
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png"
-               alt="atribute"
-               width={35}
-               height={35}
-            />
-            <div className={classAbaddonPage.txtArt}>Universal</div>
-         </div>
+         {props.posts.map(post => (
+            <div key={post.id}>
+               <div className={classAbaddonPage.textAtr}>
+                  <img
+                     src={post.imageUrl}
+                     alt="attribute"
+                     width={35}
+                     height={35}
+                  />
+                  <div className={classAbaddonPage.txtArt}>{post.textAtr}</div>
+               </div>
 
-         <div className={classAbaddonPage.title}>Abaddon</div>
+               <div className={classAbaddonPage.title}>{post.name}</div>
 
-         <div className={classAbaddonPage.subtitle}>
-            SHIELDS HIS ALLIES OR HIMSELF FROM ATTACKS
-         </div>
+               <div className={classAbaddonPage.subtitle}>{post.subtitle}</div>
 
-         <AbaddonListSpels />
+               <AbaddonListSpels props={props.posts} />
+            </div>
+         ))}
       </div>
    );
 };

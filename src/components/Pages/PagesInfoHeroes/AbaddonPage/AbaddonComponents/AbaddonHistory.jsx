@@ -1,16 +1,21 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const AbaddonHistory = () => {
+   const history = [
+      {
+         firstChapterHistory: `The Font of Avernus is the source of a family's strength, a crack in 
+         primal stones from which vapors of prophetic power have issued for generations. Each 
+         newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism 
+         they are given an innate connection to the mystic energies of the land. They grow up 
+         believing themselves fierce protectors of their lineal traditions, the customs of the 
+         realm--but what they really are protecting is the Font itself. And the motives of the 
+         mist are unclear.`,
+      },
+   ];
+
    return (
       <div className={classAbaddonPage.history}>
-         The Font of Avernus is the source of a family's strength, a crack in
-         primal stones from which vapors of prophetic power have issued for
-         generations. Each newborn of the cavernous House Avernus is bathed in
-         the black mist, and by this baptism they are given an innate connection
-         to the mystic energies of the land. They grow up believing themselves
-         fierce protectors of their lineal traditions, the customs of the
-         realm--but what they really are protecting is the Font itself. And the
-         motives of the mist are unclear.
+         {history[0].firstChapterHistory}
          <br />
          <br />
          When the infant Abaddon was bathed in the Font, they say something went
