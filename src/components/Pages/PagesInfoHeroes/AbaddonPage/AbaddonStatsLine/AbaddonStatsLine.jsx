@@ -1,22 +1,28 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbaddoneStatsLine = () => {
+const AbaddoneStatsLine = props => {
    return (
       <div>
          <div className={classAbaddonPage.lineDisplay}>
             <div className={classAbaddonPage.displayColumn}>
                <img
                   className={classAbaddonPage.pictureHero}
-                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png"
+                  src={props.stats[0].imgHero}
                   alt="heroPict"
                />
                <div className={classAbaddonPage.healthBox}>
-                  604
-                  <span className={classAbaddonPage.healthBoxSpan}> +3.2 </span>
+                  {props.stats[0].health}
+                  <span className={classAbaddonPage.healthBoxSpan}>
+                     {' '}
+                     {props.stats[0].healthRegeneration}
+                  </span>
                </div>
                <div className={classAbaddonPage.manaBox}>
-                  303
-                  <span className={classAbaddonPage.manaBoxSpan}> +1.2 </span>
+                  {props.stats[0].mana}
+                  <span className={classAbaddonPage.manaBoxSpan}>
+                     {' '}
+                     {props.stats[0].manaRegeneration}{' '}
+                  </span>
                </div>
 
                <div className={classAbaddonPage.titleAtr}>Attributes</div>
@@ -26,40 +32,40 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.displayColumnAtr}>
                      <div className={classAbaddonPage.textAtrStats}>
                         <img
-                           src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png"
+                           src={props.stats[0].strengthAtr}
                            alt="atribute"
                            className={classAbaddonPage.statsLineAtr}
                         />
-                        22{' '}
+                        {props.stats[0].strengthAtrNumber}{' '}
                         <span className={classAbaddonPage.textAtrStatsSpan}>
                            {' '}
-                           +2.2{' '}
+                           {props.stats[0].strengthAtrNumberPlus}{' '}
                         </span>
                      </div>
 
                      <div className={classAbaddonPage.textAtrStats}>
                         <img
-                           src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png"
+                           src={props.stats[0].agilityAtr}
                            alt="atribute"
                            className={classAbaddonPage.statsLineAtr}
                         />
-                        23{' '}
+                        {props.stats[0].agilityAtrNumber}{' '}
                         <span className={classAbaddonPage.textAtrStatsSpan}>
                            {' '}
-                           +1.3
+                           {props.stats[0].agilityAtrNumberPlus}
                         </span>
                      </div>
 
                      <div className={classAbaddonPage.textAtrStats}>
                         <img
-                           src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png"
+                           src={props.stats[0].intelligenciAtr}
                            alt="atribute"
                            className={classAbaddonPage.statsLineAtr}
                         />
-                        19{' '}
+                        {props.stats[0].intelligenciAtrNumber}{' '}
                         <span className={classAbaddonPage.textAtrStatsSpan}>
                            {' '}
-                           +1.6
+                           {props.stats[0].intelligenciAtrNumberPlus}
                         </span>
                      </div>
                   </div>
@@ -72,7 +78,7 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.textRoles}>
                      Carry
                      <div className={classAbaddonPage.barBackground}>
-                        <div className={classAbaddonPage.barConteiner}></div>
+                        <div className={props.stats[0].carryBarConteiner}></div>
                      </div>
                   </div>
                   <div className={classAbaddonPage.textRoles}>
@@ -89,7 +95,9 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.textRoles}>
                      Support
                      <div className={classAbaddonPage.barBackground}>
-                        <div className={classAbaddonPage.barConteiner70}></div>
+                        <div
+                           className={props.stats[0].supportBarConteiner}
+                        ></div>
                      </div>
                   </div>
                   <div className={classAbaddonPage.textRoles}>
@@ -110,7 +118,9 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.textRoles}>
                      Durable
                      <div className={classAbaddonPage.barBackground}>
-                        <div className={classAbaddonPage.barConteiner70}></div>
+                        <div
+                           className={props.stats[0].durableBarConteiner}
+                        ></div>
                      </div>
                   </div>
                   <div className={classAbaddonPage.textRoles}>
@@ -126,37 +136,37 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png"
+                        src={props.stats[0].attackLogo}
                         alt="PowerImg"
                      />
-                     46-56
+                     {props.stats[0].attackNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_time.png"
+                        src={props.stats[0].attackTimeLogo}
                         alt="IntervalPower"
                      />
-                     1.5
+                     {props.stats[0].attackTimeNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png"
+                        src={props.stats[0].attackDistanceLogo}
                         alt="RangeImg"
                      />
-                     150
+                     {props.stats[0].attackDistanceNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_projectile_speed.png"
+                        src={props.stats[0].attackSpeedLogo}
                         alt="speed"
                      />
-                     900
+                     {props.stats[0].attackSpeedNumber}
                   </div>
                </div>
 
@@ -165,19 +175,19 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png"
+                        src={props.stats[0].defenseLogo}
                         alt="DefenseImg"
                      />
-                     2.8
+                     {props.stats[0].defenseNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_magic_resist.png"
+                        src={props.stats[0].magicResistLogo}
                         alt="MagicResiste"
                      />
-                     25%
+                     {props.stats[0].magicResistNumber}
                   </div>
                </div>
 
@@ -186,28 +196,28 @@ const AbaddoneStatsLine = () => {
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png"
+                        src={props.stats[0].speedMobilityLogo}
                         alt="Speed"
                      />
-                     325
+                     {props.stats[0].speedMobilityNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_turn_rate.png"
+                        src={props.stats[0].speedRateLogo}
                         alt="RateImg"
                      />
-                     0.6
+                     {props.stats[0].speedMobilityNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_vision.png"
+                        src={props.stats[0].visionLogo}
                         alt="VisionImg"
                      />
-                     1800/800
+                     {props.stats[0].visionNumber}
                   </div>
                </div>
             </div>

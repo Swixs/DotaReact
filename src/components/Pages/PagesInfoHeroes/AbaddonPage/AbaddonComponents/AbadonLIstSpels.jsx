@@ -9,7 +9,6 @@ const AbaddonListSpels = props => {
    const toggleFullHistory = () => {
       setShowFullHistory(!showFullHistory);
    };
-
    const getContent = () => {
       if (showFullHistory) {
          return (
@@ -39,7 +38,7 @@ const AbaddonListSpels = props => {
    };
 
    const getAbaddonType = () => {
-      return showFullHistory ? null : <AbaddonType />;
+      return showFullHistory ? null : <AbaddonType type={props.type} />;
    };
 
    return (

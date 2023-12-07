@@ -2,7 +2,7 @@ import classAbaddonPage from '../AbaddonPage.module.css';
 import AbaddonListSpels from './AbadonLIstSpels';
 
 const AbaddonText = props => {
-   const { posts, history } = props;
+   const { posts, history, type } = props;
 
    if (!posts) {
       return null;
@@ -25,7 +25,7 @@ const AbaddonText = props => {
 
                <div className={classAbaddonPage.subtitle}>{post.subtitle}</div>
 
-               <AbaddonListSpels history={history} />
+               <AbaddonListSpels history={history} type={type} />
             </div>
          ))}
       </div>

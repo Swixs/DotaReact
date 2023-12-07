@@ -1,3 +1,5 @@
+import classAbaddonPage from '../components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage.module.css';
+
 const state = {
    posts: [
       {
@@ -47,6 +49,60 @@ const state = {
          nameSpellFirst: `self-healing`,
          nameSpellSecond: ` Shielding allies`,
          nameSpellThird: `double-edged`,
+      },
+   ],
+   type: [
+      {
+         imgType:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+         nameType: 'MELEE',
+      },
+   ],
+   video: [
+      {
+         videoHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.webm`,
+      },
+   ],
+   stats: [
+      {
+         imgHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png`,
+         health: 604,
+         mana: 303,
+         healthRegeneration: '+3.2',
+         manaRegeneration: '+1.2',
+         strengthAtr: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png`,
+         strengthAtrNumber: '22',
+         strengthAtrNumberPlus: '+2.2',
+         agilityAtr:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
+         agilityAtrNumber: '23',
+         agilityAtrNumberPlus: '+1.3',
+         intelligenciAtr:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
+         intelligenciAtrNumber: '19',
+         intelligenciAtrNumberPlus: '+1.6',
+         carryBarConteiner: classAbaddonPage.barConteiner,
+         supportBarConteiner: classAbaddonPage.barConteiner70,
+         durableBarConteiner: classAbaddonPage.barConteiner70,
+         attackLogo:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
+         attackNumber: `46-56`,
+         attackTimeLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_time.png`,
+         attackTimeNumber: `1.5`,
+         attackDistanceLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png`,
+         attackDistanceNumber: `150`,
+         attackSpeedLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_projectile_speed.png`,
+         attackSpeedNumber: `900`,
+         defenseLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png`,
+         defenseNumber: `2.8`,
+         magicResistLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_magic_resist.png`,
+         magicResistNumber: `25%`,
+         speedMobilityLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+         speedMobilityNumber: `325`,
+         speedRateLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+         speedRateNumber: `0.6`,
+         visionLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_vision.png`,
+         visionNumber: `1800/800`,
       },
    ],
 };

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import AbaddoneSkils from './AbaddoneSkills';
 
-const AbaddonRightPage = () => {
+const AbaddonRightPage = props => {
    function btn() {
       console.log(1);
    }
@@ -48,10 +48,7 @@ const AbaddonRightPage = () => {
          <div className={classAbaddonPage.background}></div>
 
          <video className={classAbaddonPage.video} autoPlay muted loop>
-            <source
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.webm"
-               type="video/webm"
-            />
+            <source src={props.video[0].videoHero} type="video/webm" />
          </video>
 
          <div className={classAbaddonPage.AbaddoneSkils}>

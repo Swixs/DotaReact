@@ -18,13 +18,14 @@ const AbaddonPage = props => {
                <TextReverse posts={props.state.posts} />
                <div className={classAbaddonPage.pageFlex}>
                   <AbaddonText
+                     type={props.state.type}
                      posts={props.state.posts}
                      history={props.state.history}
                   />
-                  <AbaddonRightPage />
+                  <AbaddonRightPage video={props.state.video} />
                </div>
                <div className={classAbaddonPage.statsLine}>
-                  <AbaddoneStatsLine />
+                  <AbaddoneStatsLine stats={props.state.stats} />
                </div>
 
                <div>
