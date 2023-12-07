@@ -16,7 +16,7 @@ const AbaddoneAbilityLeft = () => {
 
    return (
       <div className={classAbaddonPage.pageFlex}>
-         <AbilityVideo selectedAbility={selectedAbility} /> 
+         <AbilityVideo selectedAbility={selectedAbility} />
          <div className={classAbaddonPage.pageContent}>
             <AbilityButtons onSelectAbility={selectAbility} />
             <div className={classAbaddonPage.abilitiesInfo}>
