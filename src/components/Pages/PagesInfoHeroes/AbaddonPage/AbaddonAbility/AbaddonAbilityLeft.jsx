@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AbilityVideo from './AbaddonAbilityVideo';
 import AbilityButtons from './AbilityButtons';
 import classAbaddonPage from '../AbaddonPage.module.css';
@@ -13,6 +13,10 @@ const AbaddoneAbilityLeft = () => {
    const selectAbility = ability => {
       setSelectedAbility(ability);
    };
+
+   useEffect(() => {
+      selectAbility('ability1');
+   }, []);
 
    return (
       <div className={classAbaddonPage.pageFlex}>
