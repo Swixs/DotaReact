@@ -14,22 +14,25 @@ const AbaddonListSpels = props => {
       if (showFullHistory) {
          return (
             <div className={classAbaddonPage.scrollableText}>
-               <AbaddonHistory props={props.posts} />
+               <AbaddonHistory history={props.history} />
             </div>
          );
       } else {
          return (
             <div className={classAbaddonPage.text}>
-               Able to transform enemy attacks into{' '}
-               <span className={classAbaddonPage.spanList}>self-healing</span>,
-               Abaddon can survive almost any assault.{' '}
+               {props.history[1].summaryTextFirst}{' '}
                <span className={classAbaddonPage.spanList}>
-                  Shielding allies{' '}
+                  {props.history[2].nameSpellFirst}
+               </span>
+               ,{props.history[1].summaryTextSecond}{' '}
+               <span className={classAbaddonPage.spanList}>
+                  {props.history[2].nameSpellSecond}{' '}
                </span>{' '}
-               and launching his{' '}
-               <span className={classAbaddonPage.spanList}>double-edged </span>{' '}
-               coil at a friend or foe, he is always ready to ride into the
-               thick of battle.
+               {props.history[1].summaryTextThird}{' '}
+               <span className={classAbaddonPage.spanList}>
+                  {props.history[2].nameSpellThird}{' '}
+               </span>{' '}
+               {props.history[1].summaryTextFourth}
             </div>
          );
       }

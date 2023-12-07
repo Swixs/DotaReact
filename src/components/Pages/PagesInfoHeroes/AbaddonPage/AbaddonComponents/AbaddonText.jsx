@@ -1,8 +1,12 @@
-import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 import AbaddonListSpels from './AbadonLIstSpels';
 
 const AbaddonText = props => {
+   const { posts, history } = props;
+
+   if (!posts) {
+      return null;
+   }
    return (
       <div>
          {props.posts.map(post => (
@@ -21,7 +25,7 @@ const AbaddonText = props => {
 
                <div className={classAbaddonPage.subtitle}>{post.subtitle}</div>
 
-               <AbaddonListSpels props={props.posts} />
+               <AbaddonListSpels history={history} />
             </div>
          ))}
       </div>

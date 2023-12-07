@@ -1,10 +1,16 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const TextReverse = props => {
+   const { posts } = props;
+
+   if (!posts) {
+      return null;
+   }
+
    return (
       <div>
          <div className={classAbaddonPage.grayBar}></div>
-         {props.posts.map(post => (
+         {posts.map(post => (
             <div key={post.id} className={classAbaddonPage.textReverse}>
                <img
                   src={post.imageUrl}

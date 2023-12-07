@@ -15,9 +15,12 @@ const AbaddonPage = props => {
          <HeaderLine />
          <div className={classAbaddonPage.pageContent}>
             <div className={classAbaddonPage.textWrapper}>
-               <TextReverse posts={props.posts} />
+               <TextReverse posts={props.state.posts} />
                <div className={classAbaddonPage.pageFlex}>
-                  <AbaddonText posts={props.posts} />
+                  <AbaddonText
+                     posts={props.state.posts}
+                     history={props.state.history}
+                  />
                   <AbaddonRightPage />
                </div>
                <div className={classAbaddonPage.statsLine}>
