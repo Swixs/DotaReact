@@ -1,6 +1,6 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilityStatsRight = () => {
+const AbilityStatsRight = props => {
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
          <div className={classAbaddonPage.textAbilityRight}>
@@ -8,7 +8,7 @@ const AbilityStatsRight = () => {
          </div>
 
          <div className={classAbaddonPage.spanAbilityRight}>
-            Allies Yes Enemies No
+            {props.firstSpellsDetails[0].immunitySpell}
          </div>
 
          <div>
@@ -16,42 +16,43 @@ const AbilityStatsRight = () => {
                <div className={classAbaddonPage.textAbilityBottom}>
                   SELF DAMAGE:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     40.0%
+                     {props.firstSpellsDetails[0].selfDamageSpell}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
                   DAMAGE/HEAL:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     100.0 / 175.0 / 250.0 / 325.0
+                     {props.firstSpellsDetails[0].DamageOrHealSpell}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
                   CAST RANGE:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     600.0 / 625.0 / 650.0 / 675.0
+                     {props.firstSpellsDetails[0].rangeSpell}
                   </span>
                </div>
 
                <div className={classAbaddonPage.linetimeSpell}>
                   <img
-                     src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png"
+                     src={props.firstSpellsDetails[0].timeLogoSpell}
                      alt="timeSpell"
                      className={classAbaddonPage.timeSpellPict}
                   />
 
                   <div className={classAbaddonPage.timeSpellStats}>
-                     6.5 / 6.0 / 5.5 / 5.0
+                     {props.firstSpellsDetails[0].timeSpell}
                   </div>
                </div>
 
                <div className={classAbaddonPage.lineDisplay}>
                   <div className={classAbaddonPage.manaBlock}></div>
-                  <div className={classAbaddonPage.manaText}>50</div>
+                  <div className={classAbaddonPage.manaText}>
+                     {props.firstSpellsDetails[0].manaSpell}
+                  </div>
                </div>
 
                <div className={classAbaddonPage.historyFirstSpell}>
-                  A mysterious vapor from the Font of Avernus now infuses the
-                  breath of Abaddon, who releases it at will.
+                  {props.firstSpellsDetails[0].historySpell}
                </div>
             </div>
          </div>

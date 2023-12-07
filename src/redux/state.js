@@ -105,6 +105,50 @@ const state = {
          visionNumber: `1800/800`,
       },
    ],
+   videoSpells: [
+      {
+         videoSpellFirst:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_death_coil.webm',
+         videoSpellSecond:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_aphotic_shield.mp4',
+         videoSpellThird:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_frostmourne.mp4',
+         videoSpellFoutrh:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_borrowed_time.mp4',
+      },
+   ],
+   spellsImg: [
+      {
+         firstSpell:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_death_coil.png',
+         secondSpell:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_aphotic_shield.png',
+         thirdSpell:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_frostmourne.png',
+         fourthSpell:
+            'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_borrowed_time.png',
+      },
+   ],
+   firstSpellsDetails: [
+      {
+         nameSpell: `MIST COIL`,
+         textSpell: `Abaddon releases a coil of deathly mist that can damage an
+          enemy unit or heal a friendly unit at the cost of some of
+          Abaddon's health.`,
+         targetSpell: `Unit Target`,
+         affectsSpell: `Heroes`,
+         damageTypeSpell: `Magical`,
+         immunitySpell: 'Allies Yes Enemies No',
+         selfDamageSpell: '40.0%',
+         DamageOrHealSpell: `100.0 / 175.0 / 250.0 / 325.0`,
+         rangeSpell: `600.0 / 625.0 / 650.0 / 675.0`,
+         timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+         timeSpell: ` 6.5 / 6.0 / 5.5 / 5.0`,
+         manaSpell: `50`,
+         historySpell: `A mysterious vapor from the Font of Avernus now infuses the
+       breath of Abaddon, who releases it at will.`,
+      },
+   ],
 };
 
 export default state;

@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbilityButtons = ({ onSelectAbility }) => {
+const AbilityButtons = ({ onSelectAbility, spellsImg }) => {
    const [selectedButton, setSelectedButton] = useState(null);
 
    const abilityBtn = ability => {
       setSelectedButton(ability);
       onSelectAbility(ability);
    };
-
    return (
       <div>
          <button
@@ -17,7 +16,7 @@ const AbilityButtons = ({ onSelectAbility }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_death_coil.png"
+               src={spellsImg[0].firstSpell}
                alt="firstSpell"
             />
          </button>
@@ -27,7 +26,7 @@ const AbilityButtons = ({ onSelectAbility }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_aphotic_shield.png"
+               src={spellsImg[0].secondSpell}
                alt="secondSpell"
             />
          </button>
@@ -38,7 +37,7 @@ const AbilityButtons = ({ onSelectAbility }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_frostmourne.png"
+               src={spellsImg[0].thirdSpell}
                alt="secondSpell"
             />
          </button>
@@ -49,7 +48,7 @@ const AbilityButtons = ({ onSelectAbility }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_borrowed_time.png"
+               src={spellsImg[0].fourthSpell}
                alt="secondSpell"
             />
          </button>

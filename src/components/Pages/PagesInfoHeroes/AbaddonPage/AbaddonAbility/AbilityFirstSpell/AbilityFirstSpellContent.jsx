@@ -3,12 +3,15 @@ import AbilityLineInfo from './AbilityLineInfo';
 import AbilityStats from './AbilityStats';
 import AbilityStatsRight from './AbilityStatsRight';
 
-const AbilityFirstSpell = () => {
+const AbilityFirstSpell = props => {
    return (
       <div>
-         <AbilityLineInfo />
-         <AbilityStats />
-         <AbilityStatsRight />
+         <AbilityLineInfo
+            spellsImg={props.spellsImg}
+            firstSpellsDetails={props.firstSpellsDetails}
+         />
+         <AbilityStats firstSpellsDetails={props.firstSpellsDetails} />
+         <AbilityStatsRight firstSpellsDetails={props.firstSpellsDetails} />
       </div>
    );
 };

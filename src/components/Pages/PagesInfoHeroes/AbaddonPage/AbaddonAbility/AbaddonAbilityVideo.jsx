@@ -1,17 +1,15 @@
 import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbilityVideo = ({ selectedAbility }) => {
-   const videoUrls = {
-      ability1:
-         'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_death_coil.webm',
-      ability2:
-         'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_aphotic_shield.mp4',
-      ability3:
-         'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_frostmourne.mp4',
-      ability4:
-         'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/abaddon/abaddon_borrowed_time.mp4',
-   };
+const AbilityVideo = ({ selectedAbility, videoSpells }) => {
+   const videoUrls = videoSpells
+      ? {
+           ability1: videoSpells[0].videoSpellFirst,
+           ability2: videoSpells[0].videoSpellSecond,
+           ability3: videoSpells[0].videoSpellThird,
+           ability4: videoSpells[0].videoSpellFoutrh,
+        }
+      : {};
 
    return (
       <div className={classAbaddonPage.videoContainerAbility}>

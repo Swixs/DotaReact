@@ -29,7 +29,11 @@ const AbaddonPage = props => {
                </div>
 
                <div>
-                  <AbaddoneAbility />
+                  <AbaddoneAbility
+                     videoSpells={props.state.videoSpells}
+                     spellsImg={props.state.spellsImg}
+                     firstSpellsDetails={props.state.firstSpellsDetails}
+                  />
                </div>
 
                <div className={classAbaddonPage.footerButtons}>
