@@ -36,6 +36,7 @@ module.exports = {
          'warn',
          {
             endOfLine: 'auto',
+            printWidth: 80,
          },
       ],
    },

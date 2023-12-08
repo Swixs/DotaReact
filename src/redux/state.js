@@ -149,6 +149,61 @@ const state = {
        breath of Abaddon, who releases it at will.`,
       },
    ],
+   secondSpellsDetails: [
+      {
+         nameSpell: `APHOTIC SHIELD`,
+         textSpell: `Summons dark energies around an ally unit, creating an all
+         damage barrier that absorbs a set amount of damage before
+         expiring. When the barrier is destroyed it will burst and deal
+         damage equal to the amount it could absorb to an area around
+         it. Removes certain types of negative buffs and stuns on cast.`,
+         subtextSpell: `DISPEL TYPE: Strong Dispel`,
+         targetSpell: `Unit Target`,
+         affectsSpell: `Allied Units`,
+         damageTypeSpell: `Magical`,
+         durationSpell: `15.0`,
+         burstRadiusSpell: `675.0`,
+         barrierSpell: `120.0 / 150.0 / 180.0 / 210.0`,
+         immunitySpell: 'No',
+         dissableSpell: `Yes`,
+         timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+         timeSpell: `12.0 / 10.0 / 8.0 / 6.0`,
+         manaSpell: `95 / 110 / 125 / 140`,
+         historySpell: `The powers of the black mist rise to absorb attacks like the black mist absorbs light.`,
+      },
+   ],
+   thirdSpellsDetails: [
+      {
+         nameSpell: `CURSE OF AVERNUS`,
+         textSpell: `Abaddon strikes an enemy, slowing the target's movement speed. If the target gets hit 4.0 times, they become affected
+          by a chilling curse causing them to be silenced and slowed, and all attacks against them gain an attack speed boost.`,
+         abilitySpell: `Passive`,
+         durationSpell: `5.0`,
+         basicSlowSpell: `10.0% / 15.0% / 20.0% / 25.0%`,
+         curseDurationSpell: `4.5`,
+         curseSlowSpell: `15.0% / 30.0% / 45.0% / 60.0%`,
+         curseAttackSpeedSpell: `60.0 / 80.0 / 100.0 / 120.0`,
+         immunitySpell: 'No',
+         dissableSpell: `Yes`,
+         historySpell: `While the baptized draw strength from the Font, the gifts of Avernus are debilitating to the uninitiated.`,
+      },
+   ],
+   fourthSpellsDetails: [
+      {
+         nameSpell: `BORROWED TIME`,
+         textSpell: `When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will automatically activate if your health falls below 400.0.`,
+         subtextSpell: `DISPEL TYPE: Strong Dispel`,
+         abilitySpell: `No Target`,
+         durationSpell: `5.0`,
+         basicSlowSpell: `10.0% / 15.0% / 20.0% / 25.0%`,
+         curseDurationSpell: `4.5`,
+         curseSlowSpell: `15.0% / 30.0% / 45.0% / 60.0%`,
+         curseAttackSpeedSpell: `60.0 / 80.0 / 100.0 / 120.0`,
+         immunitySpell: 'No',
+         dissableSpell: `Yes`,
+         historySpell: `While the baptized draw strength from the Font, the gifts of Avernus are debilitating to the uninitiated.`,
+      },
+   ],
 };
 
 export default state;

@@ -33,6 +33,8 @@ const AbaddonPage = props => {
                      videoSpells={props.state.videoSpells}
                      spellsImg={props.state.spellsImg}
                      firstSpellsDetails={props.state.firstSpellsDetails}
+                     secondSpellsDetails={props.state.secondSpellsDetails}
+                     thirdSpellsDetails={props.state.thirdSpellsDetails}
                   />
                </div>
 

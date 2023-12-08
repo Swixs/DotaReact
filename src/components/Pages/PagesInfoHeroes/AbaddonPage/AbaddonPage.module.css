@@ -1,1036 +1,1029 @@
 .page {
-    background: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg");
-    height: 100vh;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
+   background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg');
+   height: 100vh;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .pageAbility {
-    margin-top: 150px;
-    background: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg");
-    height: 100vh;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
+   margin-top: 150px;
+   background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//backgrounds/greyfade.jpg');
+   height: 100vh;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 video {
-    width: 100%;
-    height: 100%;
-    object-fit: none;
+   width: 100%;
+   height: 100%;
+   object-fit: none;
 }
 
 .pageFlex {
-    display: flex;
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
 }
 
 .pageContent {
-    padding-top: 150px;
+   padding-top: 150px;
 }
 
 .span {
-    color: rgb(80, 80, 80);
-    font-size: 1.4rem;
-    margin-left: 10px;
+   color: rgb(80, 80, 80);
+   font-size: 1.4rem;
+   margin-left: 10px;
 }
 
 .textAtr {
-    text-transform: uppercase;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    margin-left: 200px;
+   text-transform: uppercase;
+   color: #fff;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 1.5rem;
+   letter-spacing: 1px;
+   margin-left: 200px;
 }
 
 .txtArt {
-    margin-left: 10px;
+   margin-left: 10px;
 }
 
 .textReverse {
-    transform: rotate(-90deg);
-    transform-origin: left bottom;
-    white-space: nowrap;
-    position: absolute;
-    top: 750px;
-    left: 100px;
-    color: antiquewhite;
-    flex-direction: row;
-    display: flex;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+   transform: rotate(-90deg);
+   transform-origin: left bottom;
+   white-space: nowrap;
+   position: absolute;
+   top: 750px;
+   left: 100px;
+   color: antiquewhite;
+   flex-direction: row;
+   display: flex;
+   font-size: 1.5rem;
+   text-transform: uppercase;
 }
 
 .grayBar {
-    width: 2px;
-    height: 565px;
-    background-color: rgb(72, 72, 72);
-    margin-right: 10px;
-    position: absolute;
-    top: 0;
-    left: 81px;
+   width: 2px;
+   height: 565px;
+   background-color: rgb(72, 72, 72);
+   margin-right: 10px;
+   position: absolute;
+   top: 0;
+   left: 81px;
 }
 
 .title {
-    height: 130px;
-    font-size: 7rem;
-    color: #fff;
-    margin-left: 200px;
-    text-transform: uppercase;
-    font-family: 'Vollkorn', serif;
-    font-weight: 600;
+   height: 130px;
+   font-size: 7rem;
+   color: #fff;
+   margin-left: 200px;
+   text-transform: uppercase;
+   font-family: 'Vollkorn', serif;
+   font-weight: 600;
 }
 
 .subtitle {
-    font-weight: 400;
-    font-family: 'Vollkorn', serif;
-    font-size: 1.5rem;
-    color: #a5e0f3;
-    text-transform: uppercase;
-    margin-left: 200px;
+   font-weight: 400;
+   font-family: 'Vollkorn', serif;
+   font-size: 1.5rem;
+   color: #a5e0f3;
+   text-transform: uppercase;
+   margin-left: 200px;
 }
 
 .spanList {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: #fff;
-    font-family: 'Vollkorn', serif;
+   font-size: 1.4rem;
+   font-weight: 800;
+   color: #fff;
+   font-family: 'Vollkorn', serif;
 }
 
 .text {
-    margin-left: 200px;
-    width: 590px;
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-family: 'Vollkorn', serif;
-    color: #fff;
+   margin-left: 200px;
+   width: 590px;
+   font-size: 1.4rem;
+   font-weight: 400;
+   font-family: 'Vollkorn', serif;
+   color: #fff;
 }
 
 .btnText {
-    margin-left: 190px;
-    width: 150px;
-    font-size: 18px;
-    background: none;
-    color: #525252;
-    text-decoration: underline;
-    border: none;
-    font-weight: 400;
-    padding: 0;
+   margin-left: 190px;
+   width: 150px;
+   font-size: 18px;
+   background: none;
+   color: #525252;
+   text-decoration: underline;
+   border: none;
+   font-weight: 400;
+   padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 590px;
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-family: 'Vollkorn', serif;
-    color: #fff;
-    z-index: 10;
-    position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 590px;
+   font-size: 1.4rem;
+   font-weight: 400;
+   font-family: 'Vollkorn', serif;
+   color: #fff;
+   z-index: 10;
+   position: relative;
 }
 
-
 .scrollableText {
-    overflow-y: auto;
-    margin-top: 10px;
-    width: 850px;
+   overflow-y: auto;
+   margin-top: 10px;
+   width: 850px;
 }
 
 .history {
-    margin-left: 200px;
-    font-size: 1.3rem;
-    line-height: 28px;
-    font-weight: 200;
-    font-family: 'Vollkorn', serif;
-    margin-right: 30px;
-    height: 380px;
-
+   margin-left: 200px;
+   font-size: 1.3rem;
+   line-height: 28px;
+   font-weight: 200;
+   font-family: 'Vollkorn', serif;
+   margin-right: 30px;
+   height: 380px;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: linear-gradient(to right, rgba(29, 29, 29, 0.9) 0%, rgba(241, 241, 241, 0) 100%);
-    border-radius: 6px;
-    height: 400px;
+   background: linear-gradient(
+      to right,
+      rgba(29, 29, 29, 0.9) 0%,
+      rgba(241, 241, 241, 0) 100%
+   );
+   border-radius: 6px;
+   height: 400px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #525252;
-    border-radius: 6px;
+   background-color: #525252;
+   border-radius: 6px;
 }
 
 .typeTitle {
-    font-size: 1.5rem;
-    color: #717171;
-    text-transform: uppercase;
-    font-family: 'Vollkorn', serif;
-    margin-top: 30px;
+   font-size: 1.5rem;
+   color: #717171;
+   text-transform: uppercase;
+   font-family: 'Vollkorn', serif;
+   margin-top: 30px;
 }
 
 .displayType {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
 .contentType {
-    margin-left: 200px;
+   margin-left: 200px;
 }
 
 .typeAtr {
-    width: 25px;
-    height: 25px;
+   width: 25px;
+   height: 25px;
 }
 
 .textType {
-    margin-left: 10px;
-    font-size: 1rem;
-    text-transform: uppercase;
+   margin-left: 10px;
+   font-size: 1rem;
+   text-transform: uppercase;
 }
 
 .cubeComplexity {
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    transform: rotateZ(45deg);
+   width: 15px;
+   height: 15px;
+   background-color: #fff;
+   transform: rotateZ(45deg);
 }
 
 .cube {
-    margin-left: 20px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #fff;
-    transform: rotateZ(45deg);
+   margin-left: 20px;
+   width: 15px;
+   height: 15px;
+   border: 1px solid #fff;
+   transform: rotateZ(45deg);
 }
 
 .video {
-    height: 1415px;
-    width: 1133px;
-    position: absolute;
-    top: -20px;
-    left: 775px;
+   height: 1415px;
+   width: 1133px;
+   position: absolute;
+   top: -20px;
+   left: 775px;
 }
 
 .btnArrow {
-    background: none;
-    color: rgb(161, 160, 160);
-    border: 2px solid rgb(161, 160, 160);
-    width: 35px;
-    height: 70px;
-    position: relative;
-    top: -7px;
-    left: 925px;
-    font-size: 25px;
-    cursor: pointer;
-    z-index: 10;
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   width: 35px;
+   height: 70px;
+   position: relative;
+   top: -7px;
+   left: 925px;
+   font-size: 25px;
+   cursor: pointer;
+   z-index: 10;
 }
 
 .btnArrowRight {
-    background: none;
-    color: rgb(161, 160, 160);
-    border: 2px solid rgb(161, 160, 160);
-    width: 35px;
-    height: 70px;
-    position: relative;
-    left: 936px;
-    top: -7px;
-    font-size: 25px;
-    cursor: pointer;
-    z-index: 10;
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   width: 35px;
+   height: 70px;
+   position: relative;
+   left: 936px;
+   top: -7px;
+   font-size: 25px;
+   cursor: pointer;
+   z-index: 10;
 }
 
 .btnArrowRight:hover,
 .btnArrow:hover,
 .buttonCube:hover {
-    border: 2px solid #fff;
+   border: 2px solid #fff;
 }
 
 .buttonCube:hover .box {
-    background-color: #fff;
+   background-color: #fff;
 }
 
 .btnArrow:hover .arrowColor,
 .btnArrowRight:hover .arrowColor {
-    color: #fff;
+   color: #fff;
 }
 
 .buttonCube {
-    width: 95px;
-    position: relative;
-    top: -20px;
-    left: 930px;
-    background: none;
-    color: rgb(161, 160, 160);
-    border: 2px solid rgb(161, 160, 160);
-    height: 70px;
-    cursor: pointer;
-    z-index: 10;
+   width: 95px;
+   position: relative;
+   top: -20px;
+   left: 930px;
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   height: 70px;
+   cursor: pointer;
+   z-index: 10;
 }
 
 .buttonCubeTop {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    padding-top: 5px;
+   display: flex;
+   flex-direction: row;
+   padding-left: 10px;
+   padding-top: 5px;
 }
 
 .buttonCubeBottom {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
+   display: flex;
+   flex-direction: row;
+   padding-left: 10px;
 }
 
 .box {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    width: 15px;
-    height: 15px;
-    background: rgb(161, 160, 160);
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 5px;
+   margin-right: 5px;
+   width: 15px;
+   height: 15px;
+   background: rgb(161, 160, 160);
 }
 
-
 .background {
-    z-index: 0;
-    top: -290px;
-    left: 960px;
-    width: 100%;
-    height: 700px;
-    background-color: rgba(0, 0, 0, .3764705882);
-    position: absolute;
-    transform: skewY(-45deg) translateX(-50vw);
-    overflow: hidden;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: AbaddonPage_AbaddonPage_heropage_BarIn_3WL4m__3dJE9__H7dXd;
+   z-index: 0;
+   top: -290px;
+   left: 960px;
+   width: 100%;
+   height: 700px;
+   background-color: rgba(0, 0, 0, 0.3764705882);
+   position: absolute;
+   transform: skewY(-45deg) translateX(-50vw);
+   overflow: hidden;
+   animation-duration: 1.5s;
+   animation-timing-function: ease-out;
+   animation-delay: 0s;
+   animation-iteration-count: 1;
+   animation-name: AbaddonPage_AbaddonPage_heropage_BarIn_3WL4m__3dJE9__H7dXd;
 }
 
 .AbaddoneSkils {
-    position: relative;
-    top: 430px;
-    left: 580px;
+   position: relative;
+   top: 430px;
+   left: 580px;
 }
 
 .textAbilities {
-    margin-left: 160px;
-    text-transform: uppercase;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+   margin-left: 160px;
+   text-transform: uppercase;
+   color: #fff;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 1.2rem;
+   letter-spacing: 1px;
 }
 
-
 .statsLine {
-    border-top: 2px solid #464646;
-    border-bottom: 2px solid #3c3c3c;
-    background-color: #1c1c1c;
-    top: 150px;
-    width: auto;
-    height: 250px;
-    position: relative;
+   border-top: 2px solid #464646;
+   border-bottom: 2px solid #3c3c3c;
+   background-color: #1c1c1c;
+   top: 150px;
+   width: auto;
+   height: 250px;
+   position: relative;
 }
 
 .pictureHero {
-    width: 150px;
-    height: 84px;
-    margin-left: 250px;
-    margin-top: 30px;
-
+   width: 150px;
+   height: 84px;
+   margin-left: 250px;
+   margin-top: 30px;
 }
 
 .lineDisplay {
-    display: flex;
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
 }
 
 .displayColumnAtr {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-left: -30px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+   margin-left: -30px;
 }
 
 .displayColumn {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
-
-
-
-
 .healthBox {
-    background: linear-gradient(to right, #286323, #7AF03C);
-    width: 150px;
-    height: 25px;
-    margin-left: 250px;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    padding-left: 40px;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+   background: linear-gradient(to right, #286323, #7af03c);
+   width: 150px;
+   height: 25px;
+   margin-left: 250px;
+   font-size: 16px;
+   color: #fff;
+   text-align: center;
+   padding-left: 40px;
+   font-weight: 600;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .healthBoxSpan {
-    color: #1c1c1c;
-    font-size: 12px;
-    margin-left: 10px;
+   color: #1c1c1c;
+   font-size: 12px;
+   margin-left: 10px;
 }
 
 .manaBox {
-    background: linear-gradient(to right, #1056DB, #73F5FE);
-    width: 150px;
-    height: 25px;
-    margin-left: 250px;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    padding-left: 40px;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+   background: linear-gradient(to right, #1056db, #73f5fe);
+   width: 150px;
+   height: 25px;
+   margin-left: 250px;
+   font-size: 16px;
+   color: #fff;
+   text-align: center;
+   padding-left: 40px;
+   font-weight: 600;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .manaBoxSpan {
-    color: #1c1c1c;
-    font-size: 12px;
-    margin-left: 10px;
+   color: #1c1c1c;
+   font-size: 12px;
+   margin-left: 10px;
 }
 
 .titleAtr {
-    margin-left: 400px;
-    font-size: 1.5rem;
-    color: grey;
-    text-transform: uppercase;
-    margin-top: 20px;
+   margin-left: 400px;
+   font-size: 1.5rem;
+   color: grey;
+   text-transform: uppercase;
+   margin-top: 20px;
 }
 
 .statsLineAtr {
-    margin-bottom: 10px;
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+   margin-bottom: 10px;
+   width: 35px;
+   height: 35px;
+   margin-right: 10px;
 }
 
 .textAtrStats {
-    font-size: 1.6rem;
-    color: #fff;
+   font-size: 1.6rem;
+   color: #fff;
 }
 
 .textAtrStatsSpan {
-    color: #717171;
-    font-size: 1.2rem;
+   color: #717171;
+   font-size: 1.2rem;
 }
 
 .border {
-    width: 1px;
-    height: 160px;
-    margin-left: 180px;
-    margin-top: -130px;
-    background-color: grey;
+   width: 1px;
+   height: 160px;
+   margin-left: 180px;
+   margin-top: -130px;
+   background-color: grey;
 }
 
 .barBackground {
-    height: 7px;
-    width: 150px;
-    background-color: #4c4c4c;
-    margin-bottom: 15px;
+   height: 7px;
+   width: 150px;
+   background-color: #4c4c4c;
+   margin-bottom: 15px;
 }
 
 .barConteiner {
-    height: 7px;
-    width: 40px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
-    transition-property: width;
-    transition-duration: 5s;
-    transition-delay: 2s;
+   height: 7px;
+   width: 40px;
+   background-color: #fff;
+   box-shadow:
+      0px 0px 10px #427ed1,
+      0px 0px 10px #427ed1;
+   transition-property: width;
+   transition-duration: 5s;
+   transition-delay: 2s;
 }
 
-
 .textRoles {
-    font-size: 16px;
-    color: #fff;
-    font-weight: 600;
+   font-size: 16px;
+   color: #fff;
+   font-weight: 600;
 }
 
 .Roles {
-    margin-left: 50px;
-    margin-top: 45px;
-    display: flex;
-    flex-direction: row;
-
+   margin-left: 50px;
+   margin-top: 45px;
+   display: flex;
+   flex-direction: row;
 }
 
 .displayColumnRoles {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
 }
 
 .barConteiner70 {
-    height: 7px;
-    width: 110px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
-    transition-property: width;
-    transition-duration: 5s;
-    transition-delay: 2s;
+   height: 7px;
+   width: 110px;
+   background-color: #fff;
+   box-shadow:
+      0px 0px 10px #427ed1,
+      0px 0px 10px #427ed1;
+   transition-property: width;
+   transition-duration: 5s;
+   transition-delay: 2s;
 }
 
 .borderRight {
-    width: 1px;
-    height: 160px;
-    margin-left: 1340px;
-    margin-top: -180px;
-    background-color: grey;
+   width: 1px;
+   height: 160px;
+   margin-left: 1340px;
+   margin-top: -180px;
+   background-color: grey;
 }
 
 .titleRoles {
-    margin-left: 990px;
-    font-size: 1.5rem;
-    color: grey;
-    text-transform: uppercase;
-    margin-top: -19px;
+   margin-left: 990px;
+   font-size: 1.5rem;
+   color: grey;
+   text-transform: uppercase;
+   margin-top: -19px;
 }
 
 .statsDisplay {
-    margin-left: 100px;
+   margin-left: 100px;
 }
 
 .titleStats {
-    color: #717171;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+   color: #717171;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   margin-left: 10px;
 }
 
 .statsPoint {
-    color: #fff;
-    font-size: 16px;
+   color: #fff;
+   font-size: 16px;
 }
 
 .statsPict {
-    margin-right: 8px;
-    width: 25px;
-    height: 25px;
-    margin-bottom: 5px;
+   margin-right: 8px;
+   width: 25px;
+   height: 25px;
+   margin-bottom: 5px;
 }
 
 .Stats {
-    margin-top: 190px;
-    font-size: 1.5rem;
-    color: grey;
-    text-transform: uppercase;
-    position: relative;
-    left: -270px;
+   margin-top: 190px;
+   font-size: 1.5rem;
+   color: grey;
+   text-transform: uppercase;
+   position: relative;
+   left: -270px;
 }
 
 .titleAbility {
-    padding-top: 100px;
-    margin-left: 900px;
-    font-size: 2rem;
-    color: #fff;
-    font-family: 'Vollkorn', serif;
+   padding-top: 100px;
+   margin-left: 900px;
+   font-size: 2rem;
+   color: #fff;
+   font-family: 'Vollkorn', serif;
 }
 
 .videoContainerAbility {
-    width: 1000px;
-    margin-left: 410px;
-    overflow: hidden;
-    position: relative;
-    left: -230px;
-    top: 30px;
+   width: 1000px;
+   margin-left: 410px;
+   overflow: hidden;
+   position: relative;
+   left: -230px;
+   top: 30px;
 }
 
 .videoAbility {
-    width: 100%;
-    box-shadow: 5px 0px 5px #000000;
-    height: auto;
-    position: relative;
-    border-radius: 3px;
-    height: 665px;
-    padding-top: 130px;
+   width: 100%;
+   box-shadow: 5px 0px 5px #000000;
+   height: auto;
+   position: relative;
+   border-radius: 3px;
+   height: 665px;
+   padding-top: 130px;
 }
 
-
 .spell {
-    width: 90px;
-    height: 90px;
-    transition: 0.1s ease-in-out;
+   width: 90px;
+   height: 90px;
+   transition: 0.1s ease-in-out;
 }
 
 .btn {
-    position: relative;
-    top: 360px;
-    left: -970px;
-    background: none;
-    border: none;
-    width: 83px;
-    padding: 0;
-    height: 83px;
-    margin-left: 15px;
+   position: relative;
+   top: 360px;
+   left: -970px;
+   background: none;
+   border: none;
+   width: 83px;
+   padding: 0;
+   height: 83px;
+   margin-left: 15px;
 }
 
 .spell:hover {
-    width: 95px;
-    height: 95px;
+   width: 95px;
+   height: 95px;
 }
 
 .abilitiesInfo {
-    background-color: #1c1c1c;
-    position: relative;
-    top: -235px;
-    left: -200px;
-    width: 650px;
-    height: 516px;
+   background-color: #1c1c1c;
+   position: relative;
+   top: -235px;
+   left: -200px;
+   width: 650px;
+   height: 516px;
 }
 
 .nameSpell {
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #fff;
+   margin-top: 20px;
+   margin-left: 20px;
+   font-size: 1.7rem;
+   font-weight: 600;
+   color: #fff;
 }
 
 .textSpell {
-    margin-left: 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
+   margin-left: 20px;
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
 }
 
 .pictureSpell {
-    height: 120px;
-    width: 100px;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding-bottom: 20px;
+   height: 120px;
+   width: 100px;
+   margin-top: 20px;
+   margin-left: 20px;
+   padding-bottom: 20px;
 }
 
 .abilityStats {
-    background-color: #000000;
-    height: 375px;
-    padding-top: 20px;
+   background-color: #000000;
+   height: 375px;
+   padding-top: 20px;
 }
 
 .textAbility {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #717171;
-    margin-left: 30px;
+   font-size: 1rem;
+   font-weight: 400;
+   color: #717171;
+   margin-left: 30px;
 }
 
-
 .spanAbility {
-    color: #fff;
-    font-weight: 200;
-    margin-left: 5px;
+   color: #fff;
+   font-weight: 200;
+   margin-left: 5px;
 }
 
 .spanAbilityMagical {
-    color: rgb(163, 220, 238);
-    font-weight: 200;
-    margin-left: 5px;
+   color: rgb(163, 220, 238);
+   font-weight: 200;
+   margin-left: 5px;
 }
 
 .abilityStatsRight {
-    position: relative;
-    top: -350px;
-    left: 310px;
-    width: 110px;
+   position: relative;
+   top: -350px;
+   left: 310px;
+   width: 110px;
 }
 
 .spanAbilityRight {
-    color: #fff;
-    font-weight: 200;
-    font-size: 1rem;
-    margin-left: 30px;
+   color: #fff;
+   font-weight: 200;
+   font-size: 1rem;
+   margin-left: 30px;
 }
 
 .spanSecondAbilityRight {
-    color: #fff;
-    font-weight: 200;
-    font-size: 1rem;
-    position: relative;
-    top: -72px;
-    left: 200px;
+   color: #fff;
+   font-weight: 200;
+   font-size: 1rem;
+   position: relative;
+   top: -72px;
+   left: 200px;
 }
 
 .spanFourthAbilityRight {
-    color: #fff;
-    font-weight: 200;
-    font-size: 1rem;
-    position: relative;
-    top: -24px;
-    left: 80px;
+   color: #fff;
+   font-weight: 200;
+   font-size: 1rem;
+   position: relative;
+   top: -24px;
+   left: 80px;
 }
 
 .spanFirstAbilityRight {
-    color: #fff;
-    font-weight: 200;
-    font-size: 1rem;
-    position: relative;
-    top: -24px;
-    left: 70px;
+   color: #fff;
+   font-weight: 200;
+   font-size: 1rem;
+   position: relative;
+   top: -24px;
+   left: 70px;
 }
 
 .textAbilityRight {
-    margin-top: -3px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #717171;
+   margin-top: -3px;
+   font-size: 1rem;
+   font-weight: 400;
+   color: #717171;
 }
 
 .textSecondAbilityRight {
-    width: 200px;
-    margin-top: -3px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #717171;
+   width: 200px;
+   margin-top: -3px;
+   font-size: 1rem;
+   font-weight: 400;
+   color: #717171;
 }
 
 .spanAbilityRight {
-    width: 135px;
-    font-size: 1rem;
-    font-weight: 400;
-    position: relative;
-    left: 130px;
-    top: -45px;
+   width: 135px;
+   font-size: 1rem;
+   font-weight: 400;
+   position: relative;
+   left: 130px;
+   top: -45px;
 }
 
 .statsAbilityBottom {
-    position: relative;
-    top: 10px;
-    left: -280px;
-    width: 325px;
+   position: relative;
+   top: 10px;
+   left: -280px;
+   width: 325px;
 }
 
 .spanAbilityBottom {
-    margin-left: 10px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
+   margin-left: 10px;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 600;
 }
 
 .spanSecondAbilityBottom {
-    margin-left: 10px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 600px;
-    white-space: nowrap;
+   margin-left: 10px;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 600;
+   width: 600px;
+   white-space: nowrap;
 }
 
-
 .textAbilityBottom {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #717171;
-    white-space: nowrap;
+   font-size: 1rem;
+   font-weight: 400;
+   color: #717171;
+   white-space: nowrap;
 }
 
 .timeSpellPict {
-    margin-top: 30px;
-    border-radius: 5px;
-    width: 20px;
-    height: 20px;
+   margin-top: 30px;
+   border-radius: 5px;
+   width: 20px;
+   height: 20px;
 }
 
 .linetimeSpell {
-    display: flex;
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
 }
 
 .timeSpellStats {
-    margin-top: 25px;
-    margin-left: 10px;
-    font-size: 1.2rem;
-    color: #fff;
+   margin-top: 25px;
+   margin-left: 10px;
+   font-size: 1.2rem;
+   color: #fff;
 }
 
 .manaBlock {
-    height: 20px;
-    width: 20px;
-    background-color: #3f79e7;
-    border-radius: 5px;
-    position: relative;
-    top: -20px;
-    left: 400px;
+   height: 20px;
+   width: 20px;
+   background-color: #3f79e7;
+   border-radius: 5px;
+   position: relative;
+   top: -20px;
+   left: 400px;
 }
 
 .manaText {
-    position: relative;
-    font-size: 1.2rem;
-    top: -25px;
-    left: 415px;
-    color: #fff;
+   position: relative;
+   font-size: 1.2rem;
+   top: -25px;
+   left: 415px;
+   color: #fff;
 }
 
 .historySpell {
-    background-color: #1c1c1c;
-    width: 580px;
-    height: 35px;
-    color: #909090;
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    font-weight: 200;
+   background-color: #1c1c1c;
+   width: 580px;
+   height: 35px;
+   color: #909090;
+   font-size: 0.9rem;
+   padding: 5px 10px;
+   font-weight: 200;
 }
 
 .historyFourthSpell {
-    background-color: #1c1c1c;
-    width: 580px;
-    height: 55px;
-    color: #909090;
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    font-weight: 200;
+   background-color: #1c1c1c;
+   width: 580px;
+   height: 55px;
+   color: #909090;
+   font-size: 0.9rem;
+   padding: 5px 10px;
+   font-weight: 200;
 }
 
 .historyFirstSpell {
-    background-color: #1c1c1c;
-    width: 580px;
-    height: 50px;
-    color: #909090;
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    font-weight: 200;
-    margin-top: 25px;
+   background-color: #1c1c1c;
+   width: 580px;
+   height: 50px;
+   color: #909090;
+   font-size: 0.9rem;
+   padding: 5px 10px;
+   font-weight: 200;
+   margin-top: 25px;
 }
 
 .historyTherdSpell {
-    background-color: #1c1c1c;
-    width: 580px;
-    height: 35px;
-    color: #909090;
-    font-size: 0.9rem;
-    margin-top: 30px;
-    padding: 5px 10px;
-    font-weight: 200;
+   background-color: #1c1c1c;
+   width: 580px;
+   height: 35px;
+   color: #909090;
+   font-size: 0.9rem;
+   margin-top: 30px;
+   padding: 5px 10px;
+   font-weight: 200;
 }
 
 .brDiv {
-    margin-left: 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
+   margin-left: 20px;
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
 }
 
 .textSpellSecond {
-    width: 500px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
+   width: 500px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
 }
 
 .buttonLeft {
-    width: 854px;
-    background: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/grey_painterly_wide.png");
-    height: 150px;
-    background-size: cover;
-    z-index: 10;
-    position: relative;
-    border: none;
+   width: 854px;
+   background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/grey_painterly_wide.png');
+   height: 150px;
+   background-size: cover;
+   z-index: 10;
+   position: relative;
+   border: none;
 }
 
 .buttonRight {
-    width: 854px;
-    background: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/grey_painterly_wide.png");
-    height: 150px;
-    background-size: cover;
-    z-index: 10;
-    position: relative;
-    border: none;
+   width: 854px;
+   background: url('https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/grey_painterly_wide.png');
+   height: 150px;
+   background-size: cover;
+   z-index: 10;
+   position: relative;
+   border: none;
 }
 
 .buttonCenter {
-    padding-left: 50px;
-    padding-top: 35px;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 150px;
-    background-color: rgb(22, 22, 22);
-    z-index: 1;
-    position: relative;
-    border: none;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+   padding-left: 50px;
+   padding-top: 35px;
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   height: 150px;
+   background-color: rgb(22, 22, 22);
+   z-index: 1;
+   position: relative;
+   border: none;
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .backgroundButtons {
-    background-color: #000000;
-    height: 208px;
-    width: 1908px;
-    position: relative;
-    top: 0px;
-    z-index: 30;
+   background-color: #000000;
+   height: 208px;
+   width: 1908px;
+   position: relative;
+   top: 0px;
+   z-index: 30;
 }
 
 .lineButtons {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    z-index: 10;
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   z-index: 10;
 }
 
 .buttonHeight {
-    height: 0;
+   height: 0;
 }
 
 .buttonPictureRight {
-    position: relative;
-    width: 0;
-    top: -170px;
-    left: 390px;
+   position: relative;
+   width: 0;
+   top: -170px;
+   left: 390px;
 }
 
 .buttonPictureLeft {
-    position: relative;
-    width: 110px;
-    top: -175px;
-    left: 20px;
-    z-index: 10;
-
+   position: relative;
+   width: 110px;
+   top: -175px;
+   left: 20px;
+   z-index: 10;
 }
 
 .buttonLeft:hover .buttonPictureLeft img {
-    transform: translateY(-20px);
+   transform: translateY(-20px);
 }
 
 .buttonRight:hover .buttonPictureRight img {
-    transform: translateY(-20px);
+   transform: translateY(-20px);
 }
 
 .buttonPictureRight img,
 .buttonPictureLeft img {
-    transition: transform 0.3s ease;
+   transition: transform 0.3s ease;
 }
 
-
-
-
 .buttonText {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    top: 30px;
-    left: 50px;
-    color: aliceblue;
-    font-size: 16px;
-    text-align: left;
-    width: 300px;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   top: 30px;
+   left: 50px;
+   color: aliceblue;
+   font-size: 16px;
+   text-align: left;
+   width: 300px;
 }
 
 .buttonTextAtr {
-    height: 20px;
-    width: 20px;
+   height: 20px;
+   width: 20px;
 }
 
 .titleButton {
-    font-size: 30px;
-    position: relative;
-    top: -10px;
-    font-weight: 600;
+   font-size: 30px;
+   position: relative;
+   top: -10px;
+   font-weight: 600;
 }
 
 .subTitleButton {
-    font-size: 25px;
-    position: relative;
-    top: -20px;
+   font-size: 25px;
+   position: relative;
+   top: -20px;
 }
 
 .buttonPictureRight::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 20px;
-    /* Высота сияния снизу */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
-    pointer-events: none;
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 20px;
+   /* Высота сияния снизу */
+   background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5)
+   );
+   pointer-events: none;
 }
 
 .buttonTextLeft {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    top: 30px;
-    left: 600px;
-    color: aliceblue;
-    font-size: 16px;
-    text-align: left;
-    width: 300px;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   top: 30px;
+   left: 600px;
+   color: aliceblue;
+   font-size: 16px;
+   text-align: left;
+   width: 300px;
 }
 
 .textCenterButton {
-    padding-left: 8px;
-    color: #fff;
+   padding-left: 8px;
+   color: #fff;
 }
 
 .btnCenterCube {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(159, 159, 159);
-    position: relative;
-    z-index: 20;
-    margin: 2px;
+   width: 30px;
+   height: 30px;
+   background-color: rgb(159, 159, 159);
+   position: relative;
+   z-index: 20;
+   margin: 2px;
 }
 
-
 .buttonCenter:hover .btnCenterCube {
-    background-color: #fff;
-    transition: 0.6s;
+   background-color: #fff;
+   transition: 0.6s;
 }
 
 .footerLine {
-    position: relative;
-    top: 215px;
-    left: 788px;
-    z-index: 30;
-    width: 500px;
+   position: relative;
+   top: 215px;
+   left: 788px;
+   z-index: 30;
+   width: 500px;
 }
 
 .footerLogoDota {
-    width: 200px;
-    height: 40px;
-    margin-left: 60px;
+   width: 200px;
+   height: 40px;
+   margin-left: 60px;
 }
 
 .footerLogoValve {
-    width: 100px;
-    height: 30px;
+   width: 100px;
+   height: 30px;
 }
 
 .footerLogoText {
-    position: relative;
-    top: 235px;
-    color: grey;
-    left: 750px;
-    z-index: 30;
-    width: 450px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 600;
+   position: relative;
+   top: 235px;
+   color: grey;
+   left: 750px;
+   z-index: 30;
+   width: 450px;
+   text-align: center;
+   font-size: 12px;
+   font-weight: 600;
 }

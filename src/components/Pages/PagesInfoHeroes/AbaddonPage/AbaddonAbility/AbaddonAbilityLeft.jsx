@@ -36,8 +36,18 @@ const AbaddoneAbilityLeft = props => {
                      firstSpellsDetails={props.firstSpellsDetails}
                   />
                )}
-               {selectedAbility === 'ability2' && <AbilitySecondSpell />}
-               {selectedAbility === 'ability3' && <AbilityTherdSpell />}
+               {selectedAbility === 'ability2' && (
+                  <AbilitySecondSpell
+                     spellsImg={props.spellsImg}
+                     secondSpellsDetails={props.secondSpellsDetails}
+                  />
+               )}
+               {selectedAbility === 'ability3' && (
+                  <AbilityTherdSpell
+                     spellsImg={props.spellsImg}
+                     thirdSpellsDetails={props.thirdSpellsDetails}
+                  />
+               )}
                {selectedAbility === 'ability4' && <AbilityFourthSpell />}
             </div>
          </div>

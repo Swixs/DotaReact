@@ -3,12 +3,17 @@ import AbilityTherdLineInfo from './TherdAbilityLineInfo';
 import AbilityTherdStatsRight from './AbilityTherdStatsRight';
 import AbilityTherdStats from './AbilityTherdStats';
 
-const AbilityTherdSpell = () => {
+const AbilityTherdSpell = props => {
    return (
       <div>
-         <AbilityTherdLineInfo />
-         <AbilityTherdStats />
-         <AbilityTherdStatsRight />
+         <AbilityTherdLineInfo
+            spellsImg={props.spellsImg}
+            thirdSpellsDetails={props.thirdSpellsDetails}
+         />
+         <AbilityTherdStats thirdSpellsDetails={props.thirdSpellsDetails} />
+         <AbilityTherdStatsRight
+            thirdSpellsDetails={props.thirdSpellsDetails}
+         />
       </div>
    );
 };

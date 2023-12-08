@@ -1,95 +1,95 @@
 .box {
-    position: relative;
-    width: 1205px;
-    height: 80px;
-    margin-top: 80px;
-    margin-left: 350px;
-    display: flex;
-    flex-direction: row;
-    z-index: 4;
-    border: 1px solid black ;
-    border-radius: 5px;
-    align-items: center;
+   position: relative;
+   width: 1205px;
+   height: 80px;
+   margin-top: 80px;
+   margin-left: 350px;
+   display: flex;
+   flex-direction: row;
+   z-index: 4;
+   border: 1px solid black;
+   border-radius: 5px;
+   align-items: center;
 }
 
 .box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
 }
 
 .atribute {
-    background: none;
-    width: 44px;
-    height: 34px;
-    z-index: 2;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition-property: filter;
-    transition-timing-function: ease-in-out;
-    filter: brightness(0.5) saturate(0);
+   background: none;
+   width: 44px;
+   height: 34px;
+   z-index: 2;
+   background-size: cover;
+   background-repeat: no-repeat;
+   transition-property: filter;
+   transition-timing-function: ease-in-out;
+   filter: brightness(0.5) saturate(0);
 }
 
 .btnAtribute {
-    background: none;
-    position: relative;
-    margin-right: -10px;
-    margin-left: -7px;
-    border: none;
-    z-index: 2;
+   background: none;
+   position: relative;
+   margin-right: -10px;
+   margin-left: -7px;
+   border: none;
+   z-index: 2;
 }
 
 .btnAtribute::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 3;
 }
 
-.clue{
-    color: azure;
-    font-size: 1.5rem;
-    z-index: 4;
-    margin-left: 30px;
-    text-transform: uppercase;
+.clue {
+   color: azure;
+   font-size: 1.5rem;
+   z-index: 4;
+   margin-left: 30px;
+   text-transform: uppercase;
 }
 
-.text{
-    color: #6898e3;
-    font-size: 1.2rem;
-    margin-left: 70px;
-    text-transform: uppercase;
-    margin-right: 20px;
+.text {
+   color: #6898e3;
+   font-size: 1.2rem;
+   margin-left: 70px;
+   text-transform: uppercase;
+   margin-right: 20px;
 }
 
-.input{
-    border: none;
-    z-index: 4;
-    height: 30px;
-    background-color: rgb(40, 40, 40);
+.input {
+   border: none;
+   z-index: 4;
+   height: 30px;
+   background-color: rgb(40, 40, 40);
 }
 
-.boxInput{
-    background-color: rgb(40, 40, 40);
-    z-index: 3;
-    width: 250px;
-    height: 50px;
-    margin-left: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.boxInput {
+   background-color: rgb(40, 40, 40);
+   z-index: 3;
+   width: 250px;
+   height: 50px;
+   margin-left: 80px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
-input[type="text"]:focus {
-    border: none;
-    outline: none;
-    background-color: grey;
+input[type='text']:focus {
+   border: none;
+   outline: none;
+   background-color: grey;
 }

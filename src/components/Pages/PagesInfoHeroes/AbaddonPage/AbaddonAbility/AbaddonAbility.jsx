@@ -11,6 +11,8 @@ const AbaddoneAbility = props => {
                videoSpells={props.videoSpells}
                spellsImg={props.spellsImg}
                firstSpellsDetails={props.firstSpellsDetails}
+               secondSpellsDetails={props.secondSpellsDetails}
+               thirdSpellsDetails={props.thirdSpellsDetails}
             />
          </div>
       </div>
