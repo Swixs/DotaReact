@@ -1,9 +1,12 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const FooterButtonsLeft = props => {
+   const leftBtn = () => {
+      console.log(1);
+   };
    return (
       <div>
-         <button className={classAbaddonPage.buttonLeft}>
+         <button className={classAbaddonPage.buttonLeft} onClick={leftBtn}>
             <div className={classAbaddonPage.buttonTextLeft}>
                <div>PREVIOUS HERO</div>
                <div className={classAbaddonPage.titleButton}>

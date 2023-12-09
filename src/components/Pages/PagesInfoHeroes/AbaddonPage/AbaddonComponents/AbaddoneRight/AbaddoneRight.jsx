@@ -2,15 +2,12 @@ import classAbaddonPage from '../../AbaddonPage.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import AbaddoneSkils from './AbaddoneSkills';
+import { Link } from 'react-router-dom';
 
 const AbaddonRightPage = props => {
-   function btn() {
-      console.log(1);
-   }
-
    return (
       <div>
-         <button className={classAbaddonPage.btnArrow} onClick={btn}>
+         <button className={classAbaddonPage.btnArrow}>
             <FontAwesomeIcon
                icon={faCaretLeft}
                className={classAbaddonPage.arrowColor}
@@ -22,19 +19,21 @@ const AbaddonRightPage = props => {
          </button>
 
          <button className={classAbaddonPage.buttonCube}>
-            <div className={classAbaddonPage.buttonCubeTop}>
-               <div className={classAbaddonPage.box}></div>
-               <div className={classAbaddonPage.box}></div>
-               <div className={classAbaddonPage.box}></div>
-            </div>
-            <div className={classAbaddonPage.buttonCubeBottom}>
-               <div className={classAbaddonPage.box}></div>
-               <div className={classAbaddonPage.box}></div>
-               <div className={classAbaddonPage.box}></div>
-            </div>
+            <Link to="/heroes" className={classAbaddonPage.LinkStyle}>
+               <div className={classAbaddonPage.buttonCubeTop}>
+                  <div className={classAbaddonPage.box}></div>
+                  <div className={classAbaddonPage.box}></div>
+                  <div className={classAbaddonPage.box}></div>
+               </div>
+               <div className={classAbaddonPage.buttonCubeBottom}>
+                  <div className={classAbaddonPage.box}></div>
+                  <div className={classAbaddonPage.box}></div>
+                  <div className={classAbaddonPage.box}></div>
+               </div>
+            </Link>
          </button>
 
-         <button className={classAbaddonPage.btnArrowRight} onClick={btn}>
+         <button className={classAbaddonPage.btnArrowRight}>
             <FontAwesomeIcon
                icon={faCaretRight}
                className={classAbaddonPage.arrowColor}

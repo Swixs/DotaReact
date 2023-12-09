@@ -982,6 +982,13 @@ video {
 .textCenterButton {
    padding-left: 8px;
    color: #fff;
+   text-decoration: none;
+
+}
+
+.LinkStyle {
+   text-decoration: none;
+   color: inherit;
 }
 
 .btnCenterCube {
