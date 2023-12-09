@@ -1035,3 +1035,9 @@ video {
    font-size: 12px;
    font-weight: 600;
 }
+
+
+.btn:not(.activeButton) img {
+   filter: brightness(50%) grayscale(100%);
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}

@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbilityButtons = ({ onSelectAbility, spellsImg }) => {
-   const [selectedButton, setSelectedButton] = useState(null);
-
+const AbilityButtons = ({ onSelectAbility, spellsImg, activeButton }) => {
    const abilityBtn = ability => {
-      setSelectedButton(ability);
       onSelectAbility(ability);
    };
+
    return (
       <div>
          <button
             onClick={() => abilityBtn('ability1')}
-            className={classAbaddonPage.btn}
+            className={`${classAbaddonPage.btn} ${
+               activeButton === 'ability1' ? classAbaddonPage.activeButton : ''
+            }`}
          >
             <img
                className={classAbaddonPage.spell}
@@ -22,7 +22,9 @@ const AbilityButtons = ({ onSelectAbility, spellsImg }) => {
          </button>
          <button
             onClick={() => abilityBtn('ability2')}
-            className={classAbaddonPage.btn}
+            className={`${classAbaddonPage.btn} ${
+               activeButton === 'ability2' ? classAbaddonPage.activeButton : ''
+            }`}
          >
             <img
                className={classAbaddonPage.spell}
@@ -33,31 +35,29 @@ const AbilityButtons = ({ onSelectAbility, spellsImg }) => {
 
          <button
             onClick={() => abilityBtn('ability3')}
-            className={classAbaddonPage.btn}
+            className={`${classAbaddonPage.btn} ${
+               activeButton === 'ability3' ? classAbaddonPage.activeButton : ''
+            }`}
          >
             <img
                className={classAbaddonPage.spell}
                src={spellsImg[0].thirdSpell}
-               alt="secondSpell"
+               alt="thirdSpell"
             />
          </button>
 
          <button
             onClick={() => abilityBtn('ability4')}
-            className={classAbaddonPage.btn}
+            className={`${classAbaddonPage.btn} ${
+               activeButton === 'ability4' ? classAbaddonPage.activeButton : ''
+            }`}
          >
             <img
                className={classAbaddonPage.spell}
                src={spellsImg[0].fourthSpell}
-               alt="secondSpell"
+               alt="fourthSpell"
             />
          </button>
-
-         {selectedButton && (
-            <div>
-               <p>Selected Button: {selectedButton}</p>
-            </div>
-         )}
       </div>
    );
 };

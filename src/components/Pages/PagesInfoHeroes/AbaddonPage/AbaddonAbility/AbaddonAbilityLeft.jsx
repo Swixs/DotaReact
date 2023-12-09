@@ -8,10 +8,12 @@ import AbilityTherdSpell from './AbilityTherdSpell/AbilityTherdSpell';
 import AbilityFourthSpell from './AbilityFourthSpell/AbilityFourthSpell';
 
 const AbaddoneAbilityLeft = props => {
-   const [selectedAbility, setSelectedAbility] = useState(null);
+   const [selectedAbility, setSelectedAbility] = useState('ability1');
+   const [buttonActive, setButtonActive] = useState('ability1');
 
    const selectAbility = ability => {
       setSelectedAbility(ability);
+      setButtonActive(ability);
    };
 
    useEffect(() => {
@@ -28,6 +30,7 @@ const AbaddoneAbilityLeft = props => {
             <AbilityButtons
                onSelectAbility={selectAbility}
                spellsImg={props.spellsImg}
+               activeButton={buttonActive}
             />
             <div className={classAbaddonPage.abilitiesInfo}>
                {selectedAbility === 'ability1' && (
