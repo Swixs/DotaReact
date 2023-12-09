@@ -1,26 +1,25 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const FooterButtonsRight = () => {
+const FooterButtonsRight = props => {
    return (
       <div>
          <button className={classAbaddonPage.buttonRight}>
             <div className={classAbaddonPage.buttonText}>
                <div>NEXT HERO</div>
-               <div className={classAbaddonPage.titleButton}>ALCHEMIST</div>
+               <div className={classAbaddonPage.titleButton}>
+                  {props.rightButton[0].nameNextHero}
+               </div>
                <div className={classAbaddonPage.subTitleButton}>
                   <img
                      className={classAbaddonPage.buttonTextAtr}
-                     src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png"
+                     src={props.rightButton[0].atrNextHero}
                      alt="Power"
                   />
-                  MELEE
+                  {props.rightButton[0].typeNextHero}
                </div>
             </div>
             <div className={classAbaddonPage.buttonPictureRight}>
-               <img
-                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/alchemist.png"
-                  alt="nextHero"
-               />
+               <img src={props.rightButton[0].imgNextHero} alt="nextHero" />
             </div>
          </button>
       </div>

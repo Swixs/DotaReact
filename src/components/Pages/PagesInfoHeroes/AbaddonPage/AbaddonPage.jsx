@@ -35,11 +35,15 @@ const AbaddonPage = props => {
                      firstSpellsDetails={props.state.firstSpellsDetails}
                      secondSpellsDetails={props.state.secondSpellsDetails}
                      thirdSpellsDetails={props.state.thirdSpellsDetails}
+                     fourthSpellsDetails={props.state.fourthSpellsDetails}
                   />
                </div>
 
                <div className={classAbaddonPage.footerButtons}>
-                  <FooterButtons />
+                  <FooterButtons
+                     leftButton={props.state.leftButton}
+                     rightButton={props.state.rightButton}
+                  />
                   <FooterLine />
                </div>
             </div>

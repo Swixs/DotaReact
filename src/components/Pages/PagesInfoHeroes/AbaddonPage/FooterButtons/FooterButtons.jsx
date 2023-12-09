@@ -3,13 +3,13 @@ import classAbaddonPage from '../AbaddonPage.module.css';
 import FooterButtonsCenter from './FooterButtonsCenter';
 import FooterButtonsRight from './FooterButtonsRight';
 
-const FooterButtons = () => {
+const FooterButtons = props => {
    return (
       <div className={classAbaddonPage.buttonHeight}>
          <div className={classAbaddonPage.lineButtons}>
-            <FooterButtonsLeft />
+            <FooterButtonsLeft leftButton={props.leftButton} />
             <FooterButtonsCenter />
-            <FooterButtonsRight />
+            <FooterButtonsRight rightButton={props.rightButton} />
          </div>
          <div className={classAbaddonPage.backgroundButtons}></div>
       </div>

@@ -3,12 +3,17 @@ import AbilityFourthLineInfo from './AbilityFourthLineInfo';
 import AbilityFourthStats from './AbilityFourthStats';
 import AbilityFourthStatsRight from './AbilityFourthStatsRight';
 
-const AbilityFourthSpell = () => {
+const AbilityFourthSpell = props => {
    return (
       <div>
-         <AbilityFourthLineInfo />
-         <AbilityFourthStats />
-         <AbilityFourthStatsRight />
+         <AbilityFourthLineInfo
+            spellsImg={props.spellsImg}
+            fourthSpellsDetails={props.fourthSpellsDetails}
+         />
+         <AbilityFourthStats fourthSpellsDetails={props.fourthSpellsDetails} />
+         <AbilityFourthStatsRight
+            fourthSpellsDetails={props.fourthSpellsDetails}
+         />
       </div>
    );
 };

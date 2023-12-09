@@ -1,27 +1,26 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilityFourthLineInfo = () => {
+const AbilityFourthLineInfo = props => {
    return (
       <div>
          <div className={classAbaddonPage.lineDisplay}>
             <img
                className={classAbaddonPage.pictureSpell}
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/abaddon_borrowed_time.png"
+               src={props.spellsImg[0].fourthSpell}
                alt="firstSpell"
             />
 
             <div className={classAbaddonPage.displayColumn}>
-               <div className={classAbaddonPage.nameSpell}>BORROWED TIME</div>
+               <div className={classAbaddonPage.nameSpell}>
+                  {props.fourthSpellsDetails[0].nameSpell}
+               </div>
 
                <div className={classAbaddonPage.textSpellSecond}>
-                  When activated, all damage dealt to you will heal instead of
-                  harm. Most negative buffs will also be removed. If the ability
-                  is not on cooldown, it will automatically activate if your
-                  health falls below 400.0.
+                  {props.fourthSpellsDetails[0].textSpell}
                </div>
 
                <div className={classAbaddonPage.brDiv}>
-                  DISPEL TYPE: Strong Dispel
+                  {props.fourthSpellsDetails[0].subtextSpell}
                </div>
             </div>
          </div>

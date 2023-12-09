@@ -191,17 +191,37 @@ const state = {
    fourthSpellsDetails: [
       {
          nameSpell: `BORROWED TIME`,
-         textSpell: `When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will automatically activate if your health falls below 400.0.`,
+         textSpell: `When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed.
+          If the ability is not on cooldown, it will automatically activate if your health falls below 400.0.`,
          subtextSpell: `DISPEL TYPE: Strong Dispel`,
          abilitySpell: `No Target`,
-         durationSpell: `5.0`,
-         basicSlowSpell: `10.0% / 15.0% / 20.0% / 25.0%`,
-         curseDurationSpell: `4.5`,
-         curseSlowSpell: `15.0% / 30.0% / 45.0% / 60.0%`,
-         curseAttackSpeedSpell: `60.0 / 80.0 / 100.0 / 120.0`,
-         immunitySpell: 'No',
-         dissableSpell: `Yes`,
-         historySpell: `While the baptized draw strength from the Font, the gifts of Avernus are debilitating to the uninitiated.`,
+         healthSpell: `400.0`,
+         durationSpell: `4.0 / 5.0 / 6.0`,
+         secondDurationSpell: `7.0 / 8.0 / 9.0`,
+         damageSpell: `525.0`,
+         rangeSpell: `1200.0`,
+         dissableSpell: `No`,
+         historySpell: `The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding. 
+         What should hurt, instead heals; and what should kill gives strength anew.`,
+         timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+         timeSpell: `70.0 / 60.0 / 50.0`,
+         manaSpell: `0 / 0 / 0`,
+      },
+   ],
+   leftButton: [
+      {
+         namePreviousHero: `ZEUS`,
+         atrPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png`,
+         typePreviousHero: `RANGED`,
+         imgPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/zuus.png`,
+      },
+   ],
+   rightButton: [
+      {
+         nameNextHero: `ALCHEMIST`,
+         atrNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png`,
+         typeNextHero: `MELEE`,
+         imgNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/alchemist.png`,
       },
    ],
 };

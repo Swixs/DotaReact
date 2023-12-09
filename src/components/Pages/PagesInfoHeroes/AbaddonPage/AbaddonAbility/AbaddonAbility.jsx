@@ -13,6 +13,7 @@ const AbaddoneAbility = props => {
                firstSpellsDetails={props.firstSpellsDetails}
                secondSpellsDetails={props.secondSpellsDetails}
                thirdSpellsDetails={props.thirdSpellsDetails}
+               fourthSpellsDetails={props.fourthSpellsDetails}
             />
          </div>
       </div>
