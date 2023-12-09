@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import classLine from './HeaderLine.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import ButtonPlay from './ButtonPlay';
 import { Routes, Route } from 'react-router-dom';
+
+import ButtonPlay from './ButtonPlay';
 import Heroes from '../Pages/Herous/Heroes';
 import Esports from '../Pages/Esports/Esports';
 import News from '../Pages/News/News';
+
+import classLine from './HeaderLine.module.css';
 
 const HeaderLine = () => {
    const navigate = useNavigate();

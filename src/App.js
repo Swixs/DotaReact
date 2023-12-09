@@ -6,18 +6,23 @@ import Heroes from './components/Pages/Herous/Heroes';
 import News from './components/Pages/News/News';
 import Esports from './../src/components/Pages/Esports/Esports';
 import Main from './components/Pages/Main/Main';
-import AbaddonPage from './components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage';
-import state from './redux/state';
+// import AbaddonPage from './components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage';
+// import state from './redux/state';
+import Layout from './components/Layout';
 
 const App = () => {
    return (
       <BrowserRouter>
          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/heroes" element={<Heroes />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/esports" element={<Esports />} />
-            <Route path="/abaddon" element={<AbaddonPage state={state} />} />
+            <Route path="/" element={<Layout />}>
+               <Route index element={<Main />} />
+               <Route path="/heroes/" element={<Heroes />} />
+               <Route path="/heroes/:hero" element={<Hero />} />
+               {/* <Route path="/herro/:hero" element={<Hero />} /> */}
+               <Route path="/news" element={<News />} />
+               <Route path="/esports" element={<Esports />} />
+               {/* <Route path="abaddon" element={<AbaddonPage state={state} />} /> */}
+            </Route>
          </Routes>
       </BrowserRouter>
    );

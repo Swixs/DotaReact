@@ -10,6 +10,8 @@ import FooterButtons from './FooterButtons/FooterButtons';
 import FooterLine from './FooterButtons/FooterLine';
 
 const AbaddonPage = props => {
+   // const getInfoAboutHero = getIfo()
+
    return (
       <div className={classAbaddonPage.page}>
          <HeaderLine />
