@@ -7,6 +7,7 @@ import Heroes from './components/Pages/Herous/Heroes';
 import News from './components/Pages/News/News';
 import Esports from './../src/components/Pages/Esports/Esports';
 import Main from './components/Pages/Main/Main';
+import HeroDetails from './components/Pages/HeroDetails/HeroDetails';
 
 const App = () => {
    return (
@@ -21,11 +22,21 @@ const App = () => {
                }
             />
             <Route
-               path="/heroes/*"
+               path="/heroes"
                element={
                   <Layout>
                      <Routes>
                         <Route index element={<Heroes />} />
+                     </Routes>
+                  </Layout>
+               }
+            />
+            <Route
+               path="/heroes/:heroName"
+               element={
+                  <Layout>
+                     <Routes>
+                        <Route index element={<HeroDetails />} />
                      </Routes>
                   </Layout>
                }
