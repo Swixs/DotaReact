@@ -1,11 +1,5 @@
-import HeaderLine from '../../Header/HeaderLine';
-
 const News = () => {
-   return (
-      <div>
-         <HeaderLine />
-      </div>
-   );
+   return <div></div>;
 };
 
 export default News;

@@ -1,26 +1,26 @@
 import React from 'react';
-import HeaderLine from '../../Header/HeaderLine';
+import { Routes, Route, Link } from 'react-router-dom';
 import classHeroes from './Heroes.module.css';
 import HeroesText from './HeroesComponent/HeroesText';
 import HeroesInput from './HeroesComponent/HeroesFilterInput';
-import Abaddon from './HeroesButtonns/Abaddon/Abaddon';
-import Alchemist from './HeroesButtonns/Alchemist/Alchemist';
-import AncientApparation from './HeroesButtonns/AncientApparition/AncientApparation';
-import AntiMage from './HeroesButtonns/AntiMage/AntiMage';
-import ArcWarden from './HeroesButtonns/ArcWarden/ArcWarden';
+import Abaddone from './../Herous/HeroesButtonns/Abaddon/Abaddon';
+import HeroDetails from '../../../heroDetails';
 
 const Heroes = () => {
    return (
       <div className={classHeroes.page}>
-         <HeaderLine />
          <HeroesText />
          <HeroesInput />
          <div className={classHeroes.container}>
-            <Abaddon />
-            <Alchemist />
-            <AncientApparation />
-            <AntiMage />
-            <ArcWarden />
+            <Link to="/heroes/Abaddon">-
+               <Abaddone />
+            </Link>
+            <Link to="/heroes/Alchemist">Alchemist</Link>
+         </div>
+         <div className={classHeroes.container}>
+            <Routes>
+               <Route path="/:heroName" element={<HeroDetails />} />
+            </Routes>
          </div>
       </div>
    );

@@ -2,22 +2,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import Heroes from './components/Pages/Herous/Heroes';
 import News from './components/Pages/News/News';
 import Esports from './../src/components/Pages/Esports/Esports';
 import Main from './components/Pages/Main/Main';
-import AbaddonPage from './components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage';
-import state from './redux/state';
 
 const App = () => {
    return (
       <BrowserRouter>
          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/heroes" element={<Heroes />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/esports" element={<Esports />} />
-            <Route path="/abaddon" element={<AbaddonPage state={state} />} />
+            <Route
+               path="/"
+               element={
+                  <Layout>
+                     <Main />
+                  </Layout>
+               }
+            />
+            <Route
+               path="/heroes/*"
+               element={
+                  <Layout>
+                     <Routes>
+                        <Route index element={<Heroes />} />
+                     </Routes>
+                  </Layout>
+               }
+            />
+            <Route
+               path="/news"
+               element={
+                  <Layout>
+                     <News />
+                  </Layout>
+               }
+            />
+            <Route
+               path="/esports"
+               element={
+                  <Layout>
+                     <Esports />
+                  </Layout>
+               }
+            />
          </Routes>
       </BrowserRouter>
    );

@@ -260,3 +260,8 @@
    top: -2px;
    transition: 1s;
 }
+
+
+.back {
+   background-color: #3d3d3d;
+}
