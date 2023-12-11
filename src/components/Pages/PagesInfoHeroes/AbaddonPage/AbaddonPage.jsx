@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderLine from '../../../Header/HeaderLine';
 import classAbaddonPage from './AbaddonPage.module.css';
-import AbaddonText from './AbaddonComponents/AbaddonText';
+import Text from './AbaddonComponents/Text';
 import TextReverse from './AbaddonComponents/TextReverse';
 import AbaddonRightPage from './AbaddonComponents/AbaddoneRight/AbaddoneRight';
 import AbaddoneStatsLine from './AbaddonStatsLine/AbaddonStatsLine';
@@ -17,7 +17,7 @@ const AbaddonPage = props => {
             <div className={classAbaddonPage.textWrapper}>
                <TextReverse posts={props.state.posts} />
                <div className={classAbaddonPage.pageFlex}>
-                  <AbaddonText
+                  <Text
                      type={props.state.type}
                      posts={props.state.posts}
                      history={props.state.history}

@@ -1,7 +1,7 @@
 import classAbaddonPage from '../components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage.module.css';
 
 const state = {
-   AbadonePage: [
+   AbaddonePage: [
       {
          posts: [
             {
@@ -12,52 +12,57 @@ const state = {
                textAtr: 'Universal',
                number: 102,
                subtitle: 'SHIELDS HIS ALLIES OR HIMSELF FROM ATTACKS',
-            },
-         ],
-         history: [
-            {
-               firstChapterHistory: `The Font of Avernus is the source of a family's strength, a crack in 
-       primal stones from which vapors of prophetic power have issued for generations. Each 
-       newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism 
-       they are given an innate connection to the mystic energies of the land. They grow up 
-       believing themselves fierce protectors of their lineal traditions, the customs of the 
-       realm--but what they really are protecting is the Font itself. And the motives of the 
-       mist are unclear.`,
-               secondChapterHistory: `When the infant Abaddon was bathed in the Font, they say something went
-       awry. In the child's eyes there flared a light of comprehension that
-       startled all present and set the sacerdotes to whispering. He was
-       raised with every expectation of following the path all scions of
-       Avernus took--to train in war, that in times of need he might lead the
-       family's army in defense of the ancestral lands. But Abaddon was always
-       one apart. Where others trained with weapons, he bent himself to
-       meditation in the presence of the mist. He drank deep from the vapors
-       that welled from the Font, learning to blend his spirit with the
-       potency that flowed from far beneath the House; he became a creature of
-       the black mist.`,
-               thirdChapterHistory: `There was bitterness within the House Avernus--elders and young alike
-       accusing him of neglecting his responsibilities. But all such
-       accusations stopped when Abaddon rode into battle, and they saw how the
-       powers of the mist had given him mastery over life and death beyond
-       those of any lord the House had ever known.`,
-            },
-            {
-               summaryTextFirst: `Able to transform enemy attacks into`,
-               summaryTextSecond: ` Abaddon can survive almost any assault.`,
-               summaryTextThird: `and launching his`,
-               summaryTextFourth: `coil at a friend or foe, he is always ready to ride into the
-       thick of battle.`,
-            },
-            {
-               nameSpellFirst: `self-healing`,
-               nameSpellSecond: ` Shielding allies`,
-               nameSpellThird: `double-edged`,
-            },
-         ],
-         type: [
-            {
-               imgType:
-                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
-               nameType: 'MELEE',
+               type: [
+                  {
+                     imgType:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+                     nameType: 'MELEE',
+                  },
+               ],
+               history: [
+                  {
+                     firstChapterHistory: `The Font of Avernus is the source of a family's strength, a crack in 
+             primal stones from which vapors of prophetic power have issued for generations. Each 
+             newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism 
+             they are given an innate connection to the mystic energies of the land. They grow up 
+             believing themselves fierce protectors of their lineal traditions, the customs of the 
+             realm--but what they really are protecting is the Font itself. And the motives of the 
+             mist are unclear.`,
+                     secondChapterHistory: `When the infant Abaddon was bathed in the Font, they say something went
+             awry. In the child's eyes there flared a light of comprehension that
+             startled all present and set the sacerdotes to whispering. He was
+             raised with every expectation of following the path all scions of
+             Avernus took--to train in war, that in times of need he might lead the
+             family's army in defense of the ancestral lands. But Abaddon was always
+             one apart. Where others trained with weapons, he bent himself to
+             meditation in the presence of the mist. He drank deep from the vapors
+             that welled from the Font, learning to blend his spirit with the
+             potency that flowed from far beneath the House; he became a creature of
+             the black mist.`,
+                     thirdChapterHistory: `There was bitterness within the House Avernus--elders and young alike
+             accusing him of neglecting his responsibilities. But all such
+             accusations stopped when Abaddon rode into battle, and they saw how the
+             powers of the mist had given him mastery over life and death beyond
+             those of any lord the House had ever known.`,
+                  },
+                  {
+                     summaryTextFirst: `Able to transform enemy attacks into`,
+                     summaryTextSecond: ` Abaddon can survive almost any assault.`,
+                     summaryTextThird: `and launching his`,
+                     summaryTextFourth: `coil at a friend or foe, he is always ready to ride into the
+             thick of battle.`,
+                  },
+                  {
+                     nameSpellFirst: `self-healing`,
+                     nameSpellSecond: ` Shielding allies`,
+                     nameSpellThird: `double-edged`,
+                  },
+                  {
+                     firstLevel: classAbaddonPage.cubeComplexity,
+                     secondLevel: classAbaddonPage.cube,
+                     thirdLevel: classAbaddonPage.cube,
+                  },
+               ],
             },
          ],
          video: [
@@ -237,8 +242,131 @@ const state = {
                   'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png',
                name: 'Alchemist',
                textAtr: 'Strength',
-               number: 101,
-               subtitle: 'Alchemist its cooll',
+               number: 60,
+               subtitle: 'EARNS EXTRA GOLD FROM UNIT KILLS AND BOUNTY RUNES',
+               type: [
+                  {
+                     imgType:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+                     nameType: 'MELEE',
+                  },
+               ],
+               history: [
+                  {
+                     firstChapterHistory: `The sacred science of Chymistry was a Darkbrew family
+                      tradition, but no Darkbrew had ever shown the kind of 
+                     creativity, ambition, and recklessness of young Razzil. However,
+                      when adulthood came calling he pushed aside the family trade
+                       to try his hand at manufacturing gold through Alchemy.`,
+                     secondChapterHistory: `In an act of audacity befitting his reputation, Razzil announced
+                      he would transmute an entire mountain into gold. Following two 
+                      decades of research and spending and preparation, he failed 
+                      spectacularly, quickly finding himself imprisoned for the 
+                      widespread destruction his experiment wrought. Yet Razzil was 
+                      never one to take a setback lightly, and sought escape to 
+                      continue his research.`,
+                     thirdChapterHistory: `
+                     When his new cellmate turned out to be a fierce ogre, he found
+                     just the opportunity he needed. After convincing the ogre not to
+                     eat him, Razzil set about carefully concocting a tincture for it to
+                     drink, made from the moulds and mosses growing in the prison
+                     stone work. In a week's time, it seemed ready. When the ogre
+                     drank the potion, it flew into an unstoppable berserker rage,
+                     destroying the cell bars and exploding through walls and guards
+                     alike.
+                     They soon found themselves lost somewhere in the forest
+                     surrounding the city with a trail of wreckage in their wake and
+                     no signs of pursuit. In the tonic's afterglow, the ogre seemed
+                     serene, happy, and even eager. Resolving to work together, the
+                     pair set off to collect the materials needed to attempt Razzil's
+                     Alchemic transmutation once more.
+                  `,
+                  },
+                  {
+                     summaryTextFirst: `Synthesizing`,
+                     summaryTextSecond: ` from each and every kill, Alchemist has no trouble 
+                     gathering the tools needed to destroy his foes. Ambushing enemies with`,
+                     summaryTextThird: `and a host of`,
+                     summaryTextFourth: `, he battles to ensure his greedy escapades can remain uninterrupted..`,
+                  },
+                  {
+                     nameSpellFirst: `extra resources`,
+                     nameSpellSecond: ` corrosive acid`,
+                     nameSpellThird: `unstable chemicals`,
+                  },
+                  {
+                     firstLevel: classAbaddonPage.cubeComplexity,
+                     secondLevel: classAbaddonPage.cube,
+                     thirdLevel: classAbaddonPage.cube,
+                  },
+               ],
+            },
+         ],
+      },
+   ],
+   AncientapparitionPage: [
+      {
+         posts: [
+            {
+               id: 1,
+               imageUrl:
+                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
+               name: 'ANCIENT APPARITION',
+               textAtr: 'INTELLIGENCE',
+               number: 43,
+               subtitle:
+                  'LAUNCHES A POWERFUL ICY BLAST FROM ANYWHERE ON THE MAP',
+            },
+         ],
+         type: [
+            {
+               imgType:
+                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+               nameType: 'MELEE',
+            },
+         ],
+      },
+   ],
+   AntiMagePage: [
+      {
+         posts: [
+            {
+               id: 1,
+               imageUrl:
+                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
+               name: 'Anti-Mage',
+               textAtr: 'AGILITY',
+               number: 1,
+               subtitle: 'SLASHES HIS FOES WITH MANA-DRAINING ATTACKS',
+            },
+         ],
+         type: [
+            {
+               imgType:
+                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+               nameType: 'MELEE',
+            },
+         ],
+      },
+   ],
+   ArcWardenPage: [
+      {
+         posts: [
+            {
+               id: 1,
+               imageUrl:
+                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
+               name: 'Arc Warden',
+               textAtr: 'AGILITY',
+               number: 111,
+               subtitle: 'CREATES A COPY OF HIMSELF TO SPLIT PUSH',
+            },
+         ],
+         type: [
+            {
+               imgType:
+                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+               nameType: 'MELEE',
             },
          ],
       },

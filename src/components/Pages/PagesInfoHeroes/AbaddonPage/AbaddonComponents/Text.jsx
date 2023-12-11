@@ -1,15 +1,13 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 import AbaddonListSpels from './AbadonLIstSpels';
 
-const AbaddonText = props => {
-   const { posts, history, type } = props;
-
+const Text = ({ posts }) => {
    if (!posts) {
       return null;
    }
    return (
       <div>
-         {props.posts.map(post => (
+         {posts.map(post => (
             <div key={post.id}>
                <div className={classAbaddonPage.textAtr}>
                   <img
@@ -25,11 +23,11 @@ const AbaddonText = props => {
 
                <div className={classAbaddonPage.subtitle}>{post.subtitle}</div>
 
-               <AbaddonListSpels history={history} type={type} />
+               <AbaddonListSpels posts={posts} />
             </div>
          ))}
       </div>
    );
 };
 
-export default AbaddonText;
+export default Text;

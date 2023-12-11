@@ -1,6 +1,8 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const AbaddonType = props => {
+   console.log(props.history);
+
    return (
       <div className={classAbaddonPage.contentType}>
          <div className={classAbaddonPage.typeTitle}>Attack type</div>
@@ -18,9 +20,9 @@ const AbaddonType = props => {
          <div className={classAbaddonPage.typeTitle}>
             Complexity
             <div className={classAbaddonPage.displayType}>
-               <div className={classAbaddonPage.cubeComplexity}></div>
-               <div className={classAbaddonPage.cube}></div>
-               <div className={classAbaddonPage.cube}></div>
+               <div className={props.history[3].firstLevel}></div>
+               <div className={props.history[3].secondLevel}></div>
+               <div className={props.history[3].thirdLevel}></div>
             </div>
          </div>
       </div>
