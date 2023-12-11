@@ -8,6 +8,7 @@ import News from './components/Pages/News/News';
 import Esports from './../src/components/Pages/Esports/Esports';
 import Main from './components/Pages/Main/Main';
 import HeroDetails from './components/Pages/HeroDetails/HeroDetails';
+import state from './redux/state';
 
 const App = () => {
    return (
@@ -22,7 +23,7 @@ const App = () => {
                }
             />
             <Route
-               path="/heroes"
+               path="/heroes/*"
                element={
                   <Layout>
                      <Routes>
@@ -32,11 +33,11 @@ const App = () => {
                }
             />
             <Route
-               path="/heroes/:heroName"
+               path="/heroes/:heroName/*"
                element={
                   <Layout>
                      <Routes>
-                        <Route index element={<HeroDetails />} />
+                        <Route index element={<HeroDetails state={state} />} />
                      </Routes>
                   </Layout>
                }

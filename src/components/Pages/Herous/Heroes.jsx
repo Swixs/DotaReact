@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classHeroes from './Heroes.module.css';
 import HeroesText from './HeroesComponent/HeroesText';
 import HeroesInput from './HeroesComponent/HeroesFilterInput';
-import Abaddone from './../Herous/HeroesButtonns/Abaddon/Abaddon';
+import Abaddon from './HeroesButtonns/Abaddon/Abaddon';
 
 const Heroes = () => {
    return (
@@ -12,11 +12,10 @@ const Heroes = () => {
          <HeroesInput />
          <div className={classHeroes.container}>
             <Link to="/heroes/Abaddon">
-               <Abaddone />
+               <Abaddon />
             </Link>
             <Link to="/heroes/Alchemist">Alchemist</Link>
          </div>
-         <div className={classHeroes.container}></div>
       </div>
    );
 };
