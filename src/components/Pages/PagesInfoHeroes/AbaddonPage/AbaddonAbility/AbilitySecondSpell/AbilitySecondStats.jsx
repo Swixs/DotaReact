@@ -1,6 +1,6 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilitySecondStats = props => {
+const AbilitySecondStats = ({ posts }) => {
    return (
       <div>
          <div className={classAbaddonPage.abilityStats}>
@@ -8,7 +8,7 @@ const AbilitySecondStats = props => {
                <div className={classAbaddonPage.textAbility}>
                   ABILITY:
                   <span className={classAbaddonPage.spanAbility}>
-                     {props.secondSpellsDetails[0].targetSpell}
+                     {posts[0].secondSpellsDetails[0].targetSpell}
                   </span>
                </div>
             </div>
@@ -16,7 +16,7 @@ const AbilitySecondStats = props => {
                <div className={classAbaddonPage.textAbility}>
                   AFFECTS:
                   <span className={classAbaddonPage.spanAbility}>
-                     {props.secondSpellsDetails[0].affectsSpell}
+                     {posts[0].secondSpellsDetails[0].affectsSpell}
                   </span>
                </div>
             </div>
@@ -24,7 +24,7 @@ const AbilitySecondStats = props => {
                <div className={classAbaddonPage.textAbility}>
                   DAMAGE TYPE:
                   <span className={classAbaddonPage.spanAbilityMagical}>
-                     {props.secondSpellsDetails[0].damageTypeSpell}
+                     {posts[0].secondSpellsDetails[0].damageTypeSpell}
                   </span>
                </div>
             </div>

@@ -1,25 +1,25 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilitySecondLineInfo = props => {
+const AbilitySecondLineInfo = ({ posts }) => {
    return (
       <div>
          <div className={classAbaddonPage.lineDisplay}>
             <img
                className={classAbaddonPage.pictureSpell}
-               src={props.spellsImg[0].secondSpell}
+               src={posts[0].spellsImg[0].secondSpell}
                alt="firstSpell"
             />
 
             <div className={classAbaddonPage.displayColumn}>
                <div className={classAbaddonPage.nameSpell}>
-                  {props.secondSpellsDetails[0].nameSpell}
+                  {posts[0].secondSpellsDetails[0].nameSpell}
                </div>
 
                <div className={classAbaddonPage.textSpellSecond}>
-                  {props.secondSpellsDetails[0].textSpell}
+                  {posts[0].secondSpellsDetails[0].textSpell}
                </div>
                <div className={classAbaddonPage.brDiv}>
-                  {props.secondSpellsDetails[0].subtextSpell}
+                  {posts[0].secondSpellsDetails[0].subtextSpell}
                </div>
             </div>
          </div>

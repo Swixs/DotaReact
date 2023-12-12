@@ -1,21 +1,23 @@
 import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbilityVideo = ({ selectedAbility, videoSpells }) => {
-   const videoUrls = videoSpells
-      ? {
-           ability1: videoSpells[0].videoSpellFirst,
-           ability2: videoSpells[0].videoSpellSecond,
-           ability3: videoSpells[0].videoSpellThird,
-           ability4: videoSpells[0].videoSpellFoutrh,
-        }
-      : {};
+const AbilityVideo = ({ selectedAbility, posts }) => {
+   const videoUrl =
+      selectedAbility === 'ability1'
+         ? posts[0].videoSpells[0].videoSpellFirst
+         : selectedAbility === 'ability2'
+           ? posts[0].videoSpells[0].videoSpellSecond
+           : selectedAbility === 'ability3'
+             ? posts[0].videoSpells[0].videoSpellThird
+             : selectedAbility === 'ability4'
+               ? posts[0].videoSpells[0].videoSpellFoutrh
+               : '';
 
    return (
       <div className={classAbaddonPage.videoContainerAbility}>
          <video
             className={classAbaddonPage.videoAbility}
-            src={videoUrls[selectedAbility]}
+            src={videoUrl}
             autoPlay
             muted
             loop

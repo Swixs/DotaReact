@@ -4,7 +4,7 @@ import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import AbaddoneSkils from './AbaddoneSkills';
 import { Link } from 'react-router-dom';
 
-const AbaddonRightPage = props => {
+const AbaddonRightPage = ({ posts }) => {
    return (
       <div>
          <button className={classAbaddonPage.btnArrow}>
@@ -47,7 +47,7 @@ const AbaddonRightPage = props => {
          <div className={classAbaddonPage.background}></div>
 
          <video className={classAbaddonPage.video} autoPlay muted loop>
-            <source src={props.video[0].videoHero} type="video/webm" />
+            <source src={posts[0].video[0].videoHero} type="video/webm" />
          </video>
 
          <div className={classAbaddonPage.AbaddoneSkils}>

@@ -3,8 +3,11 @@ import { useLocation } from 'react-router-dom';
 
 import TextReverse from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/TextReverse';
 import Text from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/Text';
+import AbaddonRightPage from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/AbaddoneRight/AbaddoneRight';
+import AbaddoneStatsLine from '../PagesInfoHeroes/AbaddonPage/AbaddonStatsLine/AbaddonStatsLine';
 
 import classAbaddonPage from './../PagesInfoHeroes/AbaddonPage/AbaddonPage.module.css';
+import AbaddoneAbility from '../PagesInfoHeroes/AbaddonPage/AbaddonAbility/AbaddonAbility';
 
 const HeroDetails = props => {
    const location = useLocation();
@@ -36,6 +39,13 @@ const HeroDetails = props => {
                {posts && <TextReverse posts={posts} />}
                <div className={classAbaddonPage.pageFlex}>
                   {posts && <Text posts={posts} />}
+                  {posts && <AbaddonRightPage posts={posts} />}
+               </div>
+               <div className={classAbaddonPage.statsLine}>
+                  <AbaddoneStatsLine posts={posts} />
+               </div>
+               <div>
+                  <AbaddoneAbility posts={posts} />
                </div>
             </div>
          </div>

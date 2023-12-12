@@ -1,6 +1,6 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilityTherdStatsRight = props => {
+const AbilityTherdStatsRight = ({ posts }) => {
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
          <div className={classAbaddonPage.textSecondAbilityRight}>
@@ -8,10 +8,10 @@ const AbilityTherdStatsRight = props => {
          </div>
 
          <div className={classAbaddonPage.spanFirstAbilityRight}>
-            {props.thirdSpellsDetails[0].dissableSpell}
+            {posts[0].thirdSpellsDetails[0].dissableSpell}
          </div>
          <div className={classAbaddonPage.spanSecondAbilityRight}>
-            {props.thirdSpellsDetails[0].immunitySpell}
+            {posts[0].thirdSpellsDetails[0].immunitySpell}
          </div>
 
          <div>
@@ -19,36 +19,36 @@ const AbilityTherdStatsRight = props => {
                <div className={classAbaddonPage.textAbilityBottom}>
                   BASIC DURATION:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {props.thirdSpellsDetails[0].durationSpell}
+                     {posts[0].thirdSpellsDetails[0].durationSpell}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
                   BASIC SLOW:
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {props.thirdSpellsDetails[0].basicSlowSpell}
+                     {posts[0].thirdSpellsDetails[0].basicSlowSpell}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
                   CURSE DURATION:
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {props.thirdSpellsDetails[0].curseDurationSpell}
+                     {posts[0].thirdSpellsDetails[0].curseDurationSpell}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
                   CURSE SLOW:
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {props.thirdSpellsDetails[0].curseSlowSpell}
+                     {posts[0].thirdSpellsDetails[0].curseSlowSpell}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
                   CURSE ATTACK SPEED:
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {props.thirdSpellsDetails[0].curseAttackSpeedSpell}
+                     {posts[0].thirdSpellsDetails[0].curseAttackSpeedSpell}
                   </span>
                </div>
 
                <div className={classAbaddonPage.historyFirstSpell}>
-                  {props.thirdSpellsDetails[0].historySpell}
+                  {posts[0].thirdSpellsDetails[0].historySpell}
                </div>
             </div>
          </div>

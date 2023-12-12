@@ -3,17 +3,12 @@ import AbilitySecondLineInfo from './SecondAbilityLineInfo';
 import AbilitySecondStats from './AbilitySecondStats';
 import AbilitySecondStatsRight from './AbilitySecondStatsRight';
 
-const AbilitySecond = props => {
+const AbilitySecond = ({ posts }) => {
    return (
       <div>
-         <AbilitySecondLineInfo
-            spellsImg={props.spellsImg}
-            secondSpellsDetails={props.secondSpellsDetails}
-         />
-         <AbilitySecondStats secondSpellsDetails={props.secondSpellsDetails} />
-         <AbilitySecondStatsRight
-            secondSpellsDetails={props.secondSpellsDetails}
-         />
+         <AbilitySecondLineInfo posts={posts} />
+         <AbilitySecondStats posts={posts} />
+         <AbilitySecondStatsRight posts={posts} />
       </div>
    );
 };

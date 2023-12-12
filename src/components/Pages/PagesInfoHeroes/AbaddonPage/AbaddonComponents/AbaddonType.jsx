@@ -1,8 +1,6 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const AbaddonType = props => {
-   console.log(props.history);
-
    return (
       <div className={classAbaddonPage.contentType}>
          <div className={classAbaddonPage.typeTitle}>Attack type</div>

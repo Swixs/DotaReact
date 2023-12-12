@@ -7,7 +7,7 @@ import AbilitySecondSpell from './AbilitySecondSpell/AbilitySecondContent';
 import AbilityTherdSpell from './AbilityTherdSpell/AbilityTherdSpell';
 import AbilityFourthSpell from './AbilityFourthSpell/AbilityFourthSpell';
 
-const AbaddoneAbilityLeft = props => {
+const AbaddoneAbilityLeft = ({ posts }) => {
    const [selectedAbility, setSelectedAbility] = useState('ability1');
    const [buttonActive, setButtonActive] = useState('ability1');
 
@@ -21,41 +21,26 @@ const AbaddoneAbilityLeft = props => {
    }, []);
    return (
       <div className={classAbaddonPage.pageFlex}>
-         <AbilityVideo
-            selectedAbility={selectedAbility}
-            videoSpells={props.videoSpells}
-         />
+         <AbilityVideo selectedAbility={selectedAbility} posts={posts} />
 
          <div className={classAbaddonPage.pageContent}>
             <AbilityButtons
                onSelectAbility={selectAbility}
-               spellsImg={props.spellsImg}
+               posts={posts}
                activeButton={buttonActive}
             />
             <div className={classAbaddonPage.abilitiesInfo}>
                {selectedAbility === 'ability1' && (
-                  <AbilityFirstSpell
-                     spellsImg={props.spellsImg}
-                     firstSpellsDetails={props.firstSpellsDetails}
-                  />
+                  <AbilityFirstSpell posts={posts} />
                )}
                {selectedAbility === 'ability2' && (
-                  <AbilitySecondSpell
-                     spellsImg={props.spellsImg}
-                     secondSpellsDetails={props.secondSpellsDetails}
-                  />
+                  <AbilitySecondSpell posts={posts} />
                )}
                {selectedAbility === 'ability3' && (
-                  <AbilityTherdSpell
-                     spellsImg={props.spellsImg}
-                     thirdSpellsDetails={props.thirdSpellsDetails}
-                  />
+                  <AbilityTherdSpell posts={posts} />
                )}
                {selectedAbility === 'ability4' && (
-                  <AbilityFourthSpell
-                     spellsImg={props.spellsImg}
-                     fourthSpellsDetails={props.fourthSpellsDetails}
-                  />
+                  <AbilityFourthSpell posts={posts} />
                )}
             </div>
          </div>

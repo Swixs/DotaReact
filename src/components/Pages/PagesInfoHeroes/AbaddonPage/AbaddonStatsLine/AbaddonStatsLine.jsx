@@ -1,27 +1,27 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbaddoneStatsLine = props => {
+const AbaddoneStatsLine = ({ posts }) => {
    return (
       <div>
          <div className={classAbaddonPage.lineDisplay}>
             <div className={classAbaddonPage.displayColumn}>
                <img
                   className={classAbaddonPage.pictureHero}
-                  src={props.stats[0].imgHero}
+                  src={posts[0].stats[0].imgHero}
                   alt="heroPict"
                />
                <div className={classAbaddonPage.healthBox}>
-                  {props.stats[0].health}
+                  {posts[0].stats[0].health}
                   <span className={classAbaddonPage.healthBoxSpan}>
                      {' '}
-                     {props.stats[0].healthRegeneration}
+                     {posts[0].stats[0].healthRegeneration}
                   </span>
                </div>
                <div className={classAbaddonPage.manaBox}>
-                  {props.stats[0].mana}
+                  {posts[0].stats[0].mana}
                   <span className={classAbaddonPage.manaBoxSpan}>
                      {' '}
-                     {props.stats[0].manaRegeneration}{' '}
+                     {posts[0].stats[0].manaRegeneration}{' '}
                   </span>
                </div>
 
@@ -32,40 +32,40 @@ const AbaddoneStatsLine = props => {
                   <div className={classAbaddonPage.displayColumnAtr}>
                      <div className={classAbaddonPage.textAtrStats}>
                         <img
-                           src={props.stats[0].strengthAtr}
+                           src={posts[0].stats[0].strengthAtr}
                            alt="atribute"
                            className={classAbaddonPage.statsLineAtr}
                         />
-                        {props.stats[0].strengthAtrNumber}{' '}
+                        {posts[0].stats[0].strengthAtrNumber}{' '}
                         <span className={classAbaddonPage.textAtrStatsSpan}>
                            {' '}
-                           {props.stats[0].strengthAtrNumberPlus}{' '}
+                           {posts[0].stats[0].strengthAtrNumberPlus}{' '}
                         </span>
                      </div>
 
                      <div className={classAbaddonPage.textAtrStats}>
                         <img
-                           src={props.stats[0].agilityAtr}
+                           src={posts[0].stats[0].agilityAtr}
                            alt="atribute"
                            className={classAbaddonPage.statsLineAtr}
                         />
-                        {props.stats[0].agilityAtrNumber}{' '}
+                        {posts[0].stats[0].agilityAtrNumber}{' '}
                         <span className={classAbaddonPage.textAtrStatsSpan}>
                            {' '}
-                           {props.stats[0].agilityAtrNumberPlus}
+                           {posts[0].stats[0].agilityAtrNumberPlus}
                         </span>
                      </div>
 
                      <div className={classAbaddonPage.textAtrStats}>
                         <img
-                           src={props.stats[0].intelligenciAtr}
+                           src={posts[0].stats[0].intelligenciAtr}
                            alt="atribute"
                            className={classAbaddonPage.statsLineAtr}
                         />
-                        {props.stats[0].intelligenciAtrNumber}{' '}
+                        {posts[0].stats[0].intelligenciAtrNumber}{' '}
                         <span className={classAbaddonPage.textAtrStatsSpan}>
                            {' '}
-                           {props.stats[0].intelligenciAtrNumberPlus}
+                           {posts[0].stats[0].intelligenciAtrNumberPlus}
                         </span>
                      </div>
                   </div>
@@ -78,7 +78,9 @@ const AbaddoneStatsLine = props => {
                   <div className={classAbaddonPage.textRoles}>
                      Carry
                      <div className={classAbaddonPage.barBackground}>
-                        <div className={props.stats[0].carryBarConteiner}></div>
+                        <div
+                           className={posts[0].stats[0].carryBarConteiner}
+                        ></div>
                      </div>
                   </div>
                   <div className={classAbaddonPage.textRoles}>
@@ -96,7 +98,7 @@ const AbaddoneStatsLine = props => {
                      Support
                      <div className={classAbaddonPage.barBackground}>
                         <div
-                           className={props.stats[0].supportBarConteiner}
+                           className={posts[0].stats[0].supportBarConteiner}
                         ></div>
                      </div>
                   </div>
@@ -119,7 +121,7 @@ const AbaddoneStatsLine = props => {
                      Durable
                      <div className={classAbaddonPage.barBackground}>
                         <div
-                           className={props.stats[0].durableBarConteiner}
+                           className={posts[0].stats[0].durableBarConteiner}
                         ></div>
                      </div>
                   </div>
@@ -136,37 +138,37 @@ const AbaddoneStatsLine = props => {
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].attackLogo}
+                        src={posts[0].stats[0].attackLogo}
                         alt="PowerImg"
                      />
-                     {props.stats[0].attackNumber}
+                     {posts[0].stats[0].attackNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].attackTimeLogo}
+                        src={posts[0].stats[0].attackTimeLogo}
                         alt="IntervalPower"
                      />
-                     {props.stats[0].attackTimeNumber}
+                     {posts[0].stats[0].attackTimeNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].attackDistanceLogo}
+                        src={posts[0].stats[0].attackDistanceLogo}
                         alt="RangeImg"
                      />
-                     {props.stats[0].attackDistanceNumber}
+                     {posts[0].stats[0].attackDistanceNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].attackSpeedLogo}
+                        src={posts[0].stats[0].attackSpeedLogo}
                         alt="speed"
                      />
-                     {props.stats[0].attackSpeedNumber}
+                     {posts[0].stats[0].attackSpeedNumber}
                   </div>
                </div>
 
@@ -175,19 +177,19 @@ const AbaddoneStatsLine = props => {
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].defenseLogo}
+                        src={posts[0].stats[0].defenseLogo}
                         alt="DefenseImg"
                      />
-                     {props.stats[0].defenseNumber}
+                     {posts[0].stats[0].defenseNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].magicResistLogo}
+                        src={posts[0].stats[0].magicResistLogo}
                         alt="MagicResiste"
                      />
-                     {props.stats[0].magicResistNumber}
+                     {posts[0].stats[0].magicResistNumber}
                   </div>
                </div>
 
@@ -196,28 +198,28 @@ const AbaddoneStatsLine = props => {
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].speedMobilityLogo}
+                        src={posts[0].stats[0].speedMobilityLogo}
                         alt="Speed"
                      />
-                     {props.stats[0].speedMobilityNumber}
+                     {posts[0].stats[0].speedMobilityNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].speedRateLogo}
+                        src={posts[0].stats[0].speedRateLogo}
                         alt="RateImg"
                      />
-                     {props.stats[0].speedMobilityNumber}
+                     {posts[0].stats[0].speedMobilityNumber}
                   </div>
 
                   <div className={classAbaddonPage.statsPoint}>
                      <img
                         className={classAbaddonPage.statsPict}
-                        src={props.stats[0].visionLogo}
+                        src={posts[0].stats[0].visionLogo}
                         alt="VisionImg"
                      />
-                     {props.stats[0].visionNumber}
+                     {posts[0].stats[0].visionNumber}
                   </div>
                </div>
             </div>

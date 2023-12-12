@@ -1,6 +1,6 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
-const AbilityFourthStats = props => {
+const AbilityFourthStats = ({ posts }) => {
    return (
       <div>
          <div className={classAbaddonPage.abilityStats}>
@@ -8,7 +8,7 @@ const AbilityFourthStats = props => {
                <div className={classAbaddonPage.textAbility}>
                   ABILITY:
                   <span className={classAbaddonPage.spanAbility}>
-                     {props.fourthSpellsDetails[0].abilitySpell}
+                     {posts[0].fourthSpellsDetails[0].abilitySpell}
                   </span>
                </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const AbilityButtons = ({ onSelectAbility, spellsImg, activeButton }) => {
+const AbilityButtons = ({ onSelectAbility, activeButton, posts }) => {
    const abilityBtn = ability => {
       onSelectAbility(ability);
    };
@@ -16,7 +16,7 @@ const AbilityButtons = ({ onSelectAbility, spellsImg, activeButton }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src={spellsImg[0].firstSpell}
+               src={posts[0].spellsImg[0].firstSpell}
                alt="firstSpell"
             />
          </button>
@@ -28,7 +28,7 @@ const AbilityButtons = ({ onSelectAbility, spellsImg, activeButton }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src={spellsImg[0].secondSpell}
+               src={posts[0].spellsImg[0].secondSpell}
                alt="secondSpell"
             />
          </button>
@@ -41,7 +41,7 @@ const AbilityButtons = ({ onSelectAbility, spellsImg, activeButton }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src={spellsImg[0].thirdSpell}
+               src={posts[0].spellsImg[0].thirdSpell}
                alt="thirdSpell"
             />
          </button>
@@ -54,7 +54,7 @@ const AbilityButtons = ({ onSelectAbility, spellsImg, activeButton }) => {
          >
             <img
                className={classAbaddonPage.spell}
-               src={spellsImg[0].fourthSpell}
+               src={posts[0].spellsImg[0].fourthSpell}
                alt="fourthSpell"
             />
          </button>
