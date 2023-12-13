@@ -3,7 +3,9 @@ import classAbaddonPage from '../../AbaddonPage.module.css';
 const AbilityFourthStatsRight = ({ posts }) => {
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
-         <div className={classAbaddonPage.textSecondAbilityRight}>DISABLE:</div>
+         <div className={classAbaddonPage.textSecondAbilityRight}>
+            {posts[0].fourthSpellsDetails[0].preDissableSpell}
+         </div>
 
          <div className={classAbaddonPage.spanFourthAbilityRight}>
             {posts[0].fourthSpellsDetails[0].dissableSpell}
@@ -12,33 +14,33 @@ const AbilityFourthStatsRight = ({ posts }) => {
          <div>
             <div className={classAbaddonPage.statsAbilityBottom}>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  HEALTH THRESHOLD:
+                  {posts[0].fourthSpellsDetails[0].preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].healthSpell}
+                     {posts[0].fourthSpellsDetails[0].statsSpellFirst}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DURATION:
+                  {posts[0].fourthSpellsDetails[0].preStatsSpellSecond}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].durationSpell}
+                     {posts[0].fourthSpellsDetails[0].statsSpellSecond}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DURATION:
+                  {posts[0].fourthSpellsDetails[0].preStatsSpellThird}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].secondDurationSpell}
+                     {posts[0].fourthSpellsDetails[0].statsSpellThird}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DAMAGE THRESHOLD:
+                  {posts[0].fourthSpellsDetails[0].preStatsSpellFourth}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].damageSpell}
+                     {posts[0].fourthSpellsDetails[0].statsSpellFourth}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  RANGE:
+                  {posts[0].fourthSpellsDetails[0].preStatsSpellFifth}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].rangeSpell}
+                     {posts[0].fourthSpellsDetails[0].statsSpellFifth}
                   </span>
                </div>
 

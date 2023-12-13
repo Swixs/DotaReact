@@ -4,7 +4,8 @@ const AbilitySecondStatsRight = ({ posts }) => {
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
          <div className={classAbaddonPage.textSecondAbilityRight}>
-            PIERCES SPELL IMMUNITY: DISABLE:
+            PIERCES SPELL IMMUNITY:{' '}
+            {posts[0].secondSpellsDetails[0].preDisableSpell}
          </div>
 
          <div className={classAbaddonPage.spanFirstAbilityRight}>
@@ -17,21 +18,21 @@ const AbilitySecondStatsRight = ({ posts }) => {
          <div>
             <div className={classAbaddonPage.statsAbilityBottom}>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DURATION:
+                  {posts[0].secondSpellsDetails[0].preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].secondSpellsDetails[0].durationSpell}
+                     {posts[0].secondSpellsDetails[0].statsSpellFirst}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  BURST RADIUS:
+                  {posts[0].secondSpellsDetails[0].preStatsSpellSecond}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].secondSpellsDetails[0].burstRadiusSpell}
+                     {posts[0].secondSpellsDetails[0].statsSpellSecond}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DAMAGE BARRIER:
+                  {posts[0].secondSpellsDetails[0].preStatsSpellThird}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].secondSpellsDetails[0].barrierSpell}
+                     {posts[0].secondSpellsDetails[0].statsSpellThird}
                   </span>
                </div>
 

@@ -1,6 +1,17 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
 const AbilityStatsRight = ({ posts }) => {
+   if (
+      !posts ||
+      !posts[0] ||
+      !posts[0].firstSpellsDetails ||
+      !posts[0].firstSpellsDetails[0]
+   ) {
+      return null;
+   }
+
+   const firstSpellDetails = posts[0].firstSpellsDetails[0];
+
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
          <div className={classAbaddonPage.textAbilityRight}>
@@ -14,24 +25,31 @@ const AbilityStatsRight = ({ posts }) => {
          <div>
             <div className={classAbaddonPage.statsAbilityBottom}>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  SELF DAMAGE:
+                  {posts[0].firstSpellsDetails[0].preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].firstSpellsDetails[0].selfDamageSpell}
+                     {posts[0].firstSpellsDetails[0].statsSpellFirst}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  DAMAGE/HEAL:
+                  {posts[0].firstSpellsDetails[0].preStatsSpellSecond}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].firstSpellsDetails[0].DamageOrHealSpell}
+                     {posts[0].firstSpellsDetails[0].statsSpellSecond}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  CAST RANGE:
+                  {posts[0].firstSpellsDetails[0].preStatsSpellThird}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].firstSpellsDetails[0].rangeSpell}
+                     {posts[0].firstSpellsDetails[0].statsSpellThird}
                   </span>
                </div>
-
+               {firstSpellDetails.preStatsSpellFourth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {firstSpellDetails.preStatsSpellFourth}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {firstSpellDetails.statsSpellFourth}
+                     </span>
+                  </div>
+               )}
                <div className={classAbaddonPage.linetimeSpell}>
                   <img
                      src={posts[0].firstSpellsDetails[0].timeLogoSpell}

@@ -6,25 +6,27 @@ const AbilitySecondStats = ({ posts }) => {
          <div className={classAbaddonPage.abilityStats}>
             <div>
                <div className={classAbaddonPage.textAbility}>
-                  ABILITY:
+                  {posts[0].secondSpellsDetails[0].firstInfoSpell}
                   <span className={classAbaddonPage.spanAbility}>
-                     {posts[0].secondSpellsDetails[0].targetSpell}
+                     {posts[0].secondSpellsDetails[0].firstStatsInfoSpell}
                   </span>
                </div>
             </div>
             <div>
                <div className={classAbaddonPage.textAbility}>
-                  AFFECTS:
+                  {posts[0].secondSpellsDetails[0].secondInfoSpell}
                   <span className={classAbaddonPage.spanAbility}>
-                     {posts[0].secondSpellsDetails[0].affectsSpell}
+                     {posts[0].secondSpellsDetails[0].secondStatsInfoSpell}
                   </span>
                </div>
             </div>
             <div>
                <div className={classAbaddonPage.textAbility}>
-                  DAMAGE TYPE:
-                  <span className={classAbaddonPage.spanAbilityMagical}>
-                     {posts[0].secondSpellsDetails[0].damageTypeSpell}
+                  {posts[0].secondSpellsDetails[0].thirdInfoSpell}
+                  <span
+                     className={posts[0].secondSpellsDetails[0].colorTextSpell}
+                  >
+                     {posts[0].secondSpellsDetails[0].thirdStatsInfoSpell}
                   </span>
                </div>
             </div>

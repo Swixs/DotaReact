@@ -6,7 +6,7 @@ const AbilityFourthStats = ({ posts }) => {
          <div className={classAbaddonPage.abilityStats}>
             <div>
                <div className={classAbaddonPage.textAbility}>
-                  ABILITY:
+                  {posts[0].fourthSpellsDetails[0].preAbilitySpell}
                   <span className={classAbaddonPage.spanAbility}>
                      {posts[0].fourthSpellsDetails[0].abilitySpell}
                   </span>

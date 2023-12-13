@@ -17,33 +17,33 @@ const AbilityTherdStatsRight = ({ posts }) => {
          <div>
             <div className={classAbaddonPage.statsAbilityBottom}>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  BASIC DURATION:
+                  {posts[0].thirdSpellsDetails[0].preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].thirdSpellsDetails[0].durationSpell}
+                     {posts[0].thirdSpellsDetails[0].statsSpellFirst}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  BASIC SLOW:
+                  {posts[0].thirdSpellsDetails[0].preStatsSpellSecond}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].thirdSpellsDetails[0].basicSlowSpell}
+                     {posts[0].thirdSpellsDetails[0].statsSpellSecond}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  CURSE DURATION:
+                  {posts[0].thirdSpellsDetails[0].preStatsSpellThird}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].thirdSpellsDetails[0].curseDurationSpell}
+                     {posts[0].thirdSpellsDetails[0].statsSpellThird}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  CURSE SLOW:
+                  {posts[0].thirdSpellsDetails[0].preStatsSpellFourth}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].thirdSpellsDetails[0].curseSlowSpell}
+                     {posts[0].thirdSpellsDetails[0].statsSpellFourth}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  CURSE ATTACK SPEED:
+                  {posts[0].thirdSpellsDetails[0].preStatsSpellFifth}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].thirdSpellsDetails[0].curseAttackSpeedSpell}
+                     {posts[0].thirdSpellsDetails[0].statsSpellFifth}
                   </span>
                </div>
 
