@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const FooterButtonsLeft = ({ posts }) => {
@@ -6,29 +7,31 @@ const FooterButtonsLeft = ({ posts }) => {
    };
    return (
       <div>
-         <button className={classAbaddonPage.buttonLeft} onClick={leftBtn}>
-            <div className={classAbaddonPage.buttonTextLeft}>
-               <div>PREVIOUS HERO</div>
-               <div className={classAbaddonPage.titleButton}>
-                  {posts[0].leftButton[0].namePreviousHero}
+         <Link to={posts[0].leftButton[0].linkPreviousHero}>
+            <button className={classAbaddonPage.buttonLeft} onClick={leftBtn}>
+               <div className={classAbaddonPage.buttonTextLeft}>
+                  <div>PREVIOUS HERO</div>
+                  <div className={classAbaddonPage.titleButton}>
+                     {posts[0].leftButton[0].namePreviousHero}
+                  </div>
+                  <div className={classAbaddonPage.subTitleButton}>
+                     <img
+                        className={classAbaddonPage.buttonTextAtr}
+                        src={posts[0].leftButton[0].atrPreviousHero}
+                        alt="hero Atr"
+                     />
+                     {posts[0].leftButton[0].typePreviousHero}
+                  </div>
                </div>
-               <div className={classAbaddonPage.subTitleButton}>
-                  <img
-                     className={classAbaddonPage.buttonTextAtr}
-                     src={posts[0].leftButton[0].atrPreviousHero}
-                     alt="hero Atr"
-                  />
-                  {posts[0].leftButton[0].typePreviousHero}
-               </div>
-            </div>
 
-            <div className={classAbaddonPage.buttonPictureLeft}>
-               <img
-                  src={posts[0].leftButton[0].imgPreviousHero}
-                  alt="previous hero"
-               />
-            </div>
-         </button>
+               <div className={classAbaddonPage.buttonPictureLeft}>
+                  <img
+                     src={posts[0].leftButton[0].imgPreviousHero}
+                     alt="previous hero"
+                  />
+               </div>
+            </button>
+         </Link>
       </div>
    );
 };

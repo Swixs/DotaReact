@@ -7,18 +7,32 @@ import { Link } from 'react-router-dom';
 const AbaddonRightPage = ({ posts }) => {
    return (
       <div>
-         <button className={classAbaddonPage.btnArrow}>
-            <FontAwesomeIcon
-               icon={faCaretLeft}
-               className={classAbaddonPage.arrowColor}
-               style={{
-                  '--fa-primary-color': '#787878',
-                  '--fa-secondary-color': '#787878',
-               }}
-            />
-         </button>
+         <Link to={posts[0].btnArrow[0].linkLeftArrowBtn}>
+            <button
+               className={
+                  posts[0].btnArrow && posts[0].btnArrow[0].leftArrowBtn
+                     ? posts[0].btnArrow[0].leftArrowBtn
+                     : classAbaddonPage.btnArrow
+               }
+            >
+               <FontAwesomeIcon
+                  icon={faCaretLeft}
+                  className={classAbaddonPage.arrowColor}
+                  style={{
+                     '--fa-primary-color': '#787878',
+                     '--fa-secondary-color': '#787878',
+                  }}
+               />
+            </button>
+         </Link>
 
-         <button className={classAbaddonPage.buttonCube}>
+         <button
+            className={
+               posts[0].btnArrow && posts[0].btnArrow[0].centerBtn
+                  ? posts[0].btnArrow[0].centerBtn
+                  : classAbaddonPage.buttonCube
+            }
+         >
             <Link to="/heroes" className={classAbaddonPage.LinkStyle}>
                <div className={classAbaddonPage.buttonCubeTop}>
                   <div className={classAbaddonPage.box}></div>
@@ -33,16 +47,24 @@ const AbaddonRightPage = ({ posts }) => {
             </Link>
          </button>
 
-         <button className={classAbaddonPage.btnArrowRight}>
-            <FontAwesomeIcon
-               icon={faCaretRight}
-               className={classAbaddonPage.arrowColor}
-               style={{
-                  '--fa-primary-color': '#757575',
-                  '--fa-secondary-color': '#757575',
-               }}
-            />
-         </button>
+         <Link to={posts[0].btnArrow[0].linkRightArrowBtn}>
+            <button
+               className={
+                  posts[0].btnArrow && posts[0].btnArrow[0].rightArrowBtn
+                     ? posts[0].btnArrow[0].rightArrowBtn
+                     : classAbaddonPage.btnArrowRight
+               }
+            >
+               <FontAwesomeIcon
+                  icon={faCaretRight}
+                  className={classAbaddonPage.arrowColor}
+                  style={{
+                     '--fa-primary-color': '#757575',
+                     '--fa-secondary-color': '#757575',
+                  }}
+               />
+            </button>
+         </Link>
 
          <div className={classAbaddonPage.background}></div>
 

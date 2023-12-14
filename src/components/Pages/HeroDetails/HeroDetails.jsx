@@ -40,7 +40,10 @@ const HeroDetails = props => {
                {posts && <TextReverse posts={posts} />}
                <div className={classAbaddonPage.pageFlex}>
                   {posts && <Text posts={posts} />}
-                  {posts && <AbaddonRightPage posts={posts} />}
+                  <AbaddonRightPage
+                     key={posts[0].video[0].videoHero}
+                     posts={posts}
+                  />
                </div>
                <div className={classAbaddonPage.statsLine}>
                   <AbaddoneStatsLine posts={posts} />

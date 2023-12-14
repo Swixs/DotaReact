@@ -234,6 +234,34 @@ video {
    z-index: 10;
 }
 
+.btnArrowFix {
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   width: 35px;
+   height: 70px;
+   position: relative;
+   top: -7px;
+   left: 800px;
+   font-size: 25px;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.btnArrowRightFix {
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   width: 35px;
+   height: 70px;
+   position: relative;
+   left: 810px;
+   top: -7px;
+   font-size: 25px;
+   cursor: pointer;
+   z-index: 10;
+}
+
 .btnArrowRight {
    background: none;
    color: rgb(161, 160, 160);
@@ -250,16 +278,22 @@ video {
 
 .btnArrowRight:hover,
 .btnArrow:hover,
-.buttonCube:hover {
+.buttonCube:hover,
+.buttonCubeFix:hover,
+.btnArrowRightFix:hover,
+.btnArrowFix:hover {
    border: 2px solid #fff;
 }
 
-.buttonCube:hover .box {
+.buttonCube:hover .box,
+.buttonCubeFix:hover .box {
    background-color: #fff;
 }
 
 .btnArrow:hover .arrowColor,
-.btnArrowRight:hover .arrowColor {
+.btnArrowRight:hover .arrowColor,
+.btnArrowFix:hover .arrowColor,
+.btnArrowRightFix:hover .arrowColor {
    color: #fff;
 }
 
@@ -268,6 +302,19 @@ video {
    position: relative;
    top: -20px;
    left: 930px;
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   height: 70px;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.buttonCubeFix {
+   width: 95px;
+   position: relative;
+   top: -20px;
+   left: 805px;
    background: none;
    color: rgb(161, 160, 160);
    border: 2px solid rgb(161, 160, 160);
@@ -888,7 +935,7 @@ video {
 
 .backgroundButtons {
    background-color: #000000;
-   height: 208px;
+   height: 227px;
    width: 1908px;
    position: relative;
    top: 0px;
@@ -1056,4 +1103,8 @@ video {
 .btn:not(.activeButton) img {
    filter: brightness(50%) grayscale(100%);
    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.smallSpace {
+   margin-bottom: -0.4em;
 }

@@ -259,6 +259,13 @@ const state = {
                      atrNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png`,
                      typeNextHero: `MELEE`,
                      imgNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/alchemist.png`,
+                     linkNextHero: `/heroes/Alchemist`,
+                  },
+               ],
+               btnArrow: [
+                  {
+                     linkLeftArrowBtn: `/heroes/Zeus`,
+                     linkRightArrowBtn: `/heroes/Alchemist`,
                   },
                ],
             },
@@ -514,6 +521,34 @@ const state = {
                      preStatsSpellFourth: `BONUS MOVE SPEED:`,
                      preStatsSpellFifth: `BONUS DAMAGE PER SCEPTER:`,
                      preStatsSpellSixth: `SPELL AMP PER SCEPTER:`,
+                  },
+               ],
+               leftButton: [
+                  {
+                     namePreviousHero: `Abaddon`,
+                     atrPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png`,
+                     typePreviousHero: `MELEE`,
+                     imgPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/abaddon.png`,
+                     linkPreviousHero: `/heroes/Abaddon`,
+                  },
+               ],
+               rightButton: [
+                  {
+                     nameNextHero: `ANCIENT`,
+                     secondNameNextHero: `APPARITION`,
+                     atrNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png`,
+                     typeNextHero: `RANGED`,
+                     imgNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/ancient_apparition.png`,
+                     linkNextHero: `/heroes/Ancientapparition`,
+                  },
+               ],
+               btnArrow: [
+                  {
+                     leftArrowBtn: classAbaddonPage.btnArrowFix,
+                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
+                     centerBtn: classAbaddonPage.buttonCubeFix,
+                     linkLeftArrowBtn: `/heroes/Abaddon`,
+                     linkRightArrowBtn: `/heroes/Ancientapparition`,
                   },
                ],
             },

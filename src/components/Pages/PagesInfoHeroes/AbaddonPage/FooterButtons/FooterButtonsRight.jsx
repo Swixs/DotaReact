@@ -2,15 +2,22 @@ import classAbaddonPage from '../AbaddonPage.module.css';
 import { Link } from 'react-router-dom';
 
 const FooterButtonsRight = ({ posts }) => {
-   console.log(posts[0]);
+   const hasSecondName = posts[0].rightButton[0].secondNameNextHero;
+
    return (
       <div>
-         <Link to="/heroes/Alchemist">
+         <Link to={posts[0].rightButton[0].linkNextHero}>
             <button className={classAbaddonPage.buttonRight}>
                <div className={classAbaddonPage.buttonText}>
                   <div>NEXT HERO</div>
                   <div className={classAbaddonPage.titleButton}>
-                     {posts[0].rightButton[0].nameNextHero}
+                     <div>{posts[0].rightButton[0].nameNextHero}</div>
+                     {hasSecondName && (
+                        <div className={classAbaddonPage.smallSpace}></div>
+                     )}
+                     {hasSecondName && (
+                        <div>{posts[0].rightButton[0].secondNameNextHero}</div>
+                     )}
                   </div>
                   <div className={classAbaddonPage.subTitleButton}>
                      <img
@@ -21,7 +28,12 @@ const FooterButtonsRight = ({ posts }) => {
                      {posts[0].rightButton[0].typeNextHero}
                   </div>
                </div>
-               <div className={classAbaddonPage.buttonPictureRight}>
+               <div
+                  className={
+                     posts[0].rightButton[0].classImgNextHero ||
+                     classAbaddonPage.buttonPictureRight
+                  }
+               >
                   <img
                      src={posts[0].rightButton[0].imgNextHero}
                      alt="nextHero"
