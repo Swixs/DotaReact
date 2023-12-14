@@ -5,6 +5,7 @@ import TextReverse from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/TextRe
 import Text from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/Text';
 import AbaddonRightPage from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/AbaddoneRight/AbaddoneRight';
 import AbaddoneStatsLine from '../PagesInfoHeroes/AbaddonPage/AbaddonStatsLine/AbaddonStatsLine';
+import FooterButtons from '../PagesInfoHeroes/AbaddonPage/FooterButtons/FooterButtons';
 
 import classAbaddonPage from './../PagesInfoHeroes/AbaddonPage/AbaddonPage.module.css';
 import AbaddoneAbility from '../PagesInfoHeroes/AbaddonPage/AbaddonAbility/AbaddonAbility';
@@ -46,6 +47,9 @@ const HeroDetails = props => {
                </div>
                <div>
                   <AbaddoneAbility posts={posts} />
+               </div>
+               <div className={classAbaddonPage.footerButtons}>
+                  <FooterButtons posts={posts} />
                </div>
             </div>
          </div>

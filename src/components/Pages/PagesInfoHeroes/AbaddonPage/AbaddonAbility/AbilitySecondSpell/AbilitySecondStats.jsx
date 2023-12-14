@@ -1,35 +1,50 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
 const AbilitySecondStats = ({ posts }) => {
+   if (
+      !posts ||
+      !posts[0] ||
+      !posts[0].secondSpellsDetails ||
+      !posts[0].secondSpellsDetails[0]
+   ) {
+      return null;
+   }
+
+   const secondSpellDetails = posts[0].secondSpellsDetails[0];
+
    return (
       <div>
          <div className={classAbaddonPage.abilityStats}>
-            <div>
-               <div className={classAbaddonPage.textAbility}>
-                  {posts[0].secondSpellsDetails[0].firstInfoSpell}
-                  <span className={classAbaddonPage.spanAbility}>
-                     {posts[0].secondSpellsDetails[0].firstStatsInfoSpell}
-                  </span>
+            {secondSpellDetails.firstInfoSpell && (
+               <div>
+                  <div className={classAbaddonPage.textAbility}>
+                     {secondSpellDetails.firstInfoSpell}
+                     <span className={classAbaddonPage.spanAbility}>
+                        {secondSpellDetails.firstStatsInfoSpell}
+                     </span>
+                  </div>
                </div>
-            </div>
-            <div>
-               <div className={classAbaddonPage.textAbility}>
-                  {posts[0].secondSpellsDetails[0].secondInfoSpell}
-                  <span className={classAbaddonPage.spanAbility}>
-                     {posts[0].secondSpellsDetails[0].secondStatsInfoSpell}
-                  </span>
+            )}
+            {secondSpellDetails.secondInfoSpell && (
+               <div>
+                  <div className={classAbaddonPage.textAbility}>
+                     {secondSpellDetails.secondInfoSpell}
+                     <span className={classAbaddonPage.spanAbility}>
+                        {secondSpellDetails.secondStatsInfoSpell}
+                     </span>
+                  </div>
                </div>
-            </div>
-            <div>
-               <div className={classAbaddonPage.textAbility}>
-                  {posts[0].secondSpellsDetails[0].thirdInfoSpell}
-                  <span
-                     className={posts[0].secondSpellsDetails[0].colorTextSpell}
-                  >
-                     {posts[0].secondSpellsDetails[0].thirdStatsInfoSpell}
-                  </span>
+            )}
+            {secondSpellDetails.thirdInfoSpell && (
+               <div>
+                  <div className={classAbaddonPage.textAbility}>
+                     {secondSpellDetails.thirdInfoSpell}
+                     <span className={secondSpellDetails.colorTextSpell}>
+                        {secondSpellDetails.thirdStatsInfoSpell}
+                     </span>
+                  </div>
                </div>
-            </div>
+            )}
          </div>
       </div>
    );

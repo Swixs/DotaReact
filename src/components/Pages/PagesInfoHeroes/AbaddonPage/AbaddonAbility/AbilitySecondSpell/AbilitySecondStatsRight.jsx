@@ -1,10 +1,20 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
 const AbilitySecondStatsRight = ({ posts }) => {
+   if (
+      !posts ||
+      !posts[0] ||
+      !posts[0].secondSpellsDetails ||
+      !posts[0].secondSpellsDetails[0]
+   ) {
+      return null;
+   }
+
+   const secondSpellDetails = posts[0].secondSpellsDetails[0];
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
          <div className={classAbaddonPage.textSecondAbilityRight}>
-            PIERCES SPELL IMMUNITY:{' '}
+            {posts[0].secondSpellsDetails[0].preImunitySpell}{' '}
             {posts[0].secondSpellsDetails[0].preDisableSpell}
          </div>
 
@@ -34,6 +44,16 @@ const AbilitySecondStatsRight = ({ posts }) => {
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
                      {posts[0].secondSpellsDetails[0].statsSpellThird}
                   </span>
+               </div>
+               <div className={classAbaddonPage.textAbilityBottom}>
+                  {secondSpellDetails.preStatsSpellFourth && (
+                     <div className={classAbaddonPage.textAbilityBottom}>
+                        {secondSpellDetails.preStatsSpellFourth}
+                        <span className={classAbaddonPage.spanAbilityBottom}>
+                           {secondSpellDetails.statsSpellFourth}
+                        </span>
+                     </div>
+                  )}
                </div>
 
                <div className={classAbaddonPage.linetimeSpell}>

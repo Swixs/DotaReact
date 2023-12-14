@@ -592,7 +592,7 @@ video {
 .abilitiesInfo {
    background-color: #1c1c1c;
    position: relative;
-   top: -235px;
+   top: -203px;
    left: -200px;
    width: 650px;
    height: 516px;
@@ -646,7 +646,7 @@ video {
    margin-left: 5px;
 }
 
-.spanAbilityPhysical{
+.spanAbilityPhysical {
    color: rgb(252, 1, 1);
    font-weight: 200;
    margin-left: 5px;
@@ -675,6 +675,15 @@ video {
    left: 200px;
 }
 
+.spanSecondAbilityRightOneSpell {
+   color: #fff;
+   font-weight: 200;
+   font-size: 1rem;
+   position: relative;
+   top: -24px;
+   left: 200px;
+}
+
 .spanFourthAbilityRight {
    color: #fff;
    font-weight: 200;
@@ -691,6 +700,7 @@ video {
    position: relative;
    top: -24px;
    left: 70px;
+   width: 140px;
 }
 
 .textAbilityRight {
@@ -787,7 +797,7 @@ video {
 .historySpell {
    background-color: #1c1c1c;
    width: 580px;
-   height: 35px;
+   height: 55px;
    color: #909090;
    font-size: 0.9rem;
    padding: 5px 10px;

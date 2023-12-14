@@ -1,6 +1,6 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
-const FooterButtonsLeft = props => {
+const FooterButtonsLeft = ({ posts }) => {
    const leftBtn = () => {
       console.log(1);
    };
@@ -10,21 +10,21 @@ const FooterButtonsLeft = props => {
             <div className={classAbaddonPage.buttonTextLeft}>
                <div>PREVIOUS HERO</div>
                <div className={classAbaddonPage.titleButton}>
-                  {props.leftButton[0].namePreviousHero}
+                  {posts[0].leftButton[0].namePreviousHero}
                </div>
                <div className={classAbaddonPage.subTitleButton}>
                   <img
                      className={classAbaddonPage.buttonTextAtr}
-                     src={props.leftButton[0].atrPreviousHero}
+                     src={posts[0].leftButton[0].atrPreviousHero}
                      alt="hero Atr"
                   />
-                  {props.leftButton[0].typePreviousHero}
+                  {posts[0].leftButton[0].typePreviousHero}
                </div>
             </div>
 
             <div className={classAbaddonPage.buttonPictureLeft}>
                <img
-                  src={props.leftButton[0].imgPreviousHero}
+                  src={posts[0].leftButton[0].imgPreviousHero}
                   alt="previous hero"
                />
             </div>

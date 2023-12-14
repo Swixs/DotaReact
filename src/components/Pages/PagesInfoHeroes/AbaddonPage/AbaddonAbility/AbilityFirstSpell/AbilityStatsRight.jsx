@@ -15,7 +15,7 @@ const AbilityStatsRight = ({ posts }) => {
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
          <div className={classAbaddonPage.textAbilityRight}>
-            PIERCES SPELL IMMUNITY:
+            {posts[0].firstSpellsDetails[0].preImunitySpell}
          </div>
 
          <div className={classAbaddonPage.spanAbilityRight}>

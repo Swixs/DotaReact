@@ -7,7 +7,7 @@ const AbilityStats = ({ posts }) => {
       !posts[0].firstSpellsDetails ||
       !posts[0].firstSpellsDetails[0]
    ) {
-      return null;
+      return <div></div>;
    }
 
    const firstSpellDetails = posts[0].firstSpellsDetails[0];

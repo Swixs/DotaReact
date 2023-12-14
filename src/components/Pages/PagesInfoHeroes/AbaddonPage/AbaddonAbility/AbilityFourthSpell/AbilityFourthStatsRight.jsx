@@ -43,6 +43,12 @@ const AbilityFourthStatsRight = ({ posts }) => {
                      {posts[0].fourthSpellsDetails[0].statsSpellFifth}
                   </span>
                </div>
+               <div className={classAbaddonPage.textAbilityBottom}>
+                  {posts[0].fourthSpellsDetails[0].preStatsSpellSixth}
+                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                     {posts[0].fourthSpellsDetails[0].statsSpellSixth}
+                  </span>
+               </div>
 
                <div className={classAbaddonPage.linetimeSpell}>
                   <img
