@@ -13,7 +13,7 @@ const AbilitySecondStats = ({ posts }) => {
    const secondSpellDetails = posts[0].secondSpellsDetails[0];
 
    return (
-      <div>
+      <div className={classAbaddonPage.height}>
          <div className={classAbaddonPage.abilityStats}>
             {secondSpellDetails.firstInfoSpell && (
                <div>

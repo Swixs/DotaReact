@@ -58,7 +58,7 @@ const state = {
                      nameSpellThird: `double-edged`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexity,
+                     firstLevel: classAbaddonPage.cubeComplexityFirst,
                      secondLevel: classAbaddonPage.cube,
                      thirdLevel: classAbaddonPage.cube,
                   },
@@ -334,7 +334,7 @@ const state = {
                      nameSpellThird: `unstable chemicals`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexity,
+                     firstLevel: classAbaddonPage.cubeComplexityFirst,
                      secondLevel: classAbaddonPage.cube,
                      thirdLevel: classAbaddonPage.cube,
                   },
@@ -562,18 +562,251 @@ const state = {
                id: 1,
                imageUrl:
                   'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
-               name: 'ANCIENT APPARITION',
+               name: 'ANCIENT',
+               nameSecond: 'APPARITION',
                textAtr: 'INTELLIGENCE',
                number: 43,
                subtitle:
                   'LAUNCHES A POWERFUL ICY BLAST FROM ANYWHERE ON THE MAP',
-            },
-         ],
-         type: [
-            {
-               imgType:
-                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
-               nameType: 'MELEE',
+               type: [
+                  {
+                     imgType:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/ranged.svg',
+                     nameType: 'RANGED',
+                  },
+               ],
+               history: [
+                  {
+                     firstChapterHistory: `Kaldr, the Ancient Apparition, is an image projected from outside time. He springs from the cold, 
+                     infinite void that both predates the universe and awaits its end. Kaldr is, Kaldr was, Kaldr shall be...and what we perceive, 
+                     powerful as it appears to us, is but the faintest faded echo of the true, eternal Kaldr. Some believe that as the cosmos ages 
+                     and approaches its final moments, the brightness and power of Kaldr will also intensify--that the Ancient Apparition will grow younger 
+                     and stronger as eternity's end draws nigh. His grip of ice will bring all matter to a stop, his image will cast
+                      a light too terrible to behold. An Apparition no longer!`,
+                  },
+                  {
+                     summaryTextFirst: `Able to launch a powerful blast of `,
+                     summaryTextSecond: `across the battlefield, Ancient Apparition threatens to shatter weakened enemies 
+                     wherever they are. Slowing enemies as he enhances his allies'
+                      effectiveness in battle, he is a constant threat to his foes.`,
+                  },
+                  {
+                     nameSpellFirst: `damaging ice`,
+                  },
+                  {
+                     firstLevel: classAbaddonPage.cubeComplexityFirst,
+                     secondLevel: classAbaddonPage.cubeComplexity,
+                     thirdLevel: classAbaddonPage.cube,
+                  },
+               ],
+               video: [
+                  {
+                     videoHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ancient_apparition.webm`,
+                  },
+               ],
+               stats: [
+                  {
+                     imgHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png`,
+                     health: 560,
+                     mana: 351,
+                     healthRegeneration: '+2.3',
+                     manaRegeneration: '+1.1',
+                     strengthAtr: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png`,
+                     strengthAtrNumber: '20',
+                     strengthAtrNumberPlus: '+1.9',
+                     agilityAtr:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
+                     agilityAtrNumber: '20',
+                     agilityAtrNumberPlus: '+2.2',
+                     intelligenciAtr:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
+                     intelligenciAtrNumber: '23',
+                     intelligenciAtrNumberPlus: '+3.1',
+                     carryBarConteiner: classAbaddonPage.barConteiner,
+                     supportBarConteiner: classAbaddonPage.barConteiner70,
+                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     attackLogo:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
+                     attackNumber: `44-54`,
+                     attackTimeLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_time.png`,
+                     attackTimeNumber: `1.7`,
+                     attackDistanceLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png`,
+                     attackDistanceNumber: `675`,
+                     attackSpeedLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_projectile_speed.png`,
+                     attackSpeedNumber: `1250`,
+                     defenseLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png`,
+                     defenseNumber: `2.3`,
+                     magicResistLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_magic_resist.png`,
+                     magicResistNumber: `25%`,
+                     speedMobilityLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+                     speedMobilityNumber: `285`,
+                     speedRateLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+                     speedRateNumber: `0.6`,
+                     visionLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_vision.png`,
+                     visionNumber: `1800/800`,
+                  },
+               ],
+               videoSpells: [
+                  {
+                     videoSpellFirst:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/ancient_apparition/ancient_apparition_cold_feet.webm',
+                     videoSpellSecond:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/ancient_apparition/ancient_apparition_ice_vortex.mp4',
+                     videoSpellThird:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/ancient_apparition/ancient_apparition_chilling_touch.mp4',
+                     videoSpellFoutrh:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/ancient_apparition/ancient_apparition_ice_blast.mp4',
+                  },
+               ],
+               spellsImg: [
+                  {
+                     firstSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ancient_apparition_cold_feet.png',
+                     secondSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ancient_apparition_ice_vortex.png',
+                     thirdSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ancient_apparition_chilling_touch.png',
+                     fourthSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/ancient_apparition_ice_blast.png',
+                  },
+               ],
+               firstSpellsDetails: [
+                  {
+                     nameSpell: `COLD FEET`,
+                     textSpell: `Places a frozen hex on an enemy unit that deals damage over time, but can be dispelled by moving away from the initial cast point.  
+                     If the enemy unit doesn't move outside of the given range, it will be stunned and frozen in place after 4 seconds.`,
+                     firstInfoSpell: `ABILITY:`,
+                     secondInfoSpell: `AFFECTS:`,
+                     thirdInfoSpell: `DAMAGE TYPE:`,
+                     firstStatsInfoSpell: `Unit Target`,
+                     secondStatsInfoSpell: `Enemy Units`,
+                     thirdStatsInfoSpell: `Magical`,
+                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     preImunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     immunitySpell: 'No',
+                     preStatsSpellFirst: `DAMAGE PER SECOND:`,
+                     preStatsSpellSecond: `BREAK DISTANCE:`,
+                     preStatsSpellThird: `STUN DURATION:`,
+                     preStatsSpellFourth: `CAST RANGE:`,
+                     statsSpellFirst: '30 / 50 / 70 / 90',
+                     statsSpellSecond: `715`,
+                     statsSpellThird: `1,6 / 2 / 2,4 / 2,8`,
+                     statsSpellFourth: `700 / 800 / 900 / 1000`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `15 / 13 / 11 / 9`,
+                     manaSpell: `125`,
+                     historySpell: `Kaldr's presence draws those around him into a frozen void, threatening to lock them in an icy prison for eternity.`,
+                  },
+               ],
+               secondSpellsDetails: [
+                  {
+                     nameSpell: `ICE VORTEX`,
+                     textSpell: `Creates a vortex of icy energy that deals damage, slows and increases magic damage done to enemies in its range.`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `Point Target`,
+                     statsSpellFirst: `300`,
+                     statsSpellSecond: `-16% / -19% / -22% / -25%`,
+                     statsSpellThird: `-16% / -19% / -22% / -25%`,
+                     statsSpellFourth: `12 / 18 / 24 / 30`,
+                     statsSpellFifth: `6 / 8 / 10 / 12`,
+                     preImunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     immunitySpell: 'No',
+                     preDisableSpell: `DISABLE:`,
+                     dissableSpell: `No`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `10 / 8 / 6 / 4`,
+                     manaSpell: `40 / 50 / 60 / 70`,
+                     historySpell: `A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.`,
+                     preStatsSpellFirst: `RADIUS:`,
+                     preStatsSpellSecond: `MAX DAMAGE:`,
+                     preStatsSpellThird: `EXPLOSION RADIUS:`,
+                     preStatsSpellFourth: `MOVE SPEED BONUS:`,
+                     preStatsSpellFifth: `DURATION:`,
+                  },
+               ],
+               thirdSpellsDetails: [
+                  {
+                     nameSpell: `CORROSIVE WEAPONRY`,
+                     textSpell: `Alchemist coats his weapons with an acid that applies a
+                      stacking slow and status resistance reduction to enemies hit. Slow 
+                      and Status resistance increases when Alchemist is under the effect of 
+                      Chemical Rage.`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `Passive`,
+                     statsSpellFirst: `4.0 / 6.0 / 8.0 / 10.0`,
+                     statsSpellSecond: `3.5`,
+                     statsSpellThird: `3.0% / 4.0% / 5.0% / 6.0%`,
+                     statsSpellFourth: `3.0% / 4.0% / 5.0% / 6.0%`,
+                     statsSpellFifth: `1.5%`,
+                     preImmunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     immunitySpell: 'No',
+                     classImunitySpell:
+                        classAbaddonPage.spanSecondAbilityRightOneSpell,
+                     historySpell: ``,
+                     preStatsSpellFirst: `MAX STACKS:`,
+                     preStatsSpellSecond: `DEBUFF DURATION:`,
+                     preStatsSpellThird: `MOVEMENT SLOW PER STACK:`,
+                     preStatsSpellFourth: `STATUS RESISTANCE REDUCTION PER STACK:`,
+                     preStatsSpellFifth: `CHEMICAL RAGE BONUS:`,
+                  },
+               ],
+               fourthSpellsDetails: [
+                  {
+                     nameSpell: `CHEMICAL RAGE`,
+                     textSpell: `Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing 
+                     movement speed and health regeneration.`,
+                     subtextSpell: `DISPEL TYPE: Basic Dispel`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `No Target`,
+                     statsSpellFirst: `30.0`,
+                     statsSpellSecond: `1.2 / 1.1 / 1.0`,
+                     statsSpellThird: `50.0 / 80.0 / 110.0`,
+                     statsSpellFourth: `30.0 / 45.0 / 60.0`,
+                     statsSpellFifth: `25.0`,
+                     statsSpellSixth: `5.0%`,
+                     preDissableSpell: `DISABLE:`,
+                     dissableSpell: `No`,
+                     historySpell: `The brew Razzil gave to the Ogre during their prison bust has 
+                     become a useful potion in the midst of combat.`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `60.0`,
+                     manaSpell: `50 / 75 / 100`,
+                     preStatsSpellFirst: `DURATION:`,
+                     preStatsSpellSecond: `BASE ATTACK TIME:`,
+                     preStatsSpellThird: `BONUS HEALTH REGEN:`,
+                     preStatsSpellFourth: `BONUS MOVE SPEED:`,
+                     preStatsSpellFifth: `BONUS DAMAGE PER SCEPTER:`,
+                     preStatsSpellSixth: `SPELL AMP PER SCEPTER:`,
+                  },
+               ],
+               leftButton: [
+                  {
+                     namePreviousHero: `Abaddon`,
+                     atrPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png`,
+                     typePreviousHero: `MELEE`,
+                     imgPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/abaddon.png`,
+                     linkPreviousHero: `/heroes/Abaddon`,
+                  },
+               ],
+               rightButton: [
+                  {
+                     nameNextHero: `ANCIENT`,
+                     secondNameNextHero: `APPARITION`,
+                     atrNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png`,
+                     typeNextHero: `RANGED`,
+                     imgNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/ancient_apparition.png`,
+                     linkNextHero: `/heroes/Ancientapparition`,
+                  },
+               ],
+               btnArrow: [
+                  {
+                     leftArrowBtn: classAbaddonPage.btnArrowFix,
+                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
+                     centerBtn: classAbaddonPage.buttonCubeFix,
+                     linkLeftArrowBtn: `/heroes/Abaddon`,
+                     linkRightArrowBtn: `/heroes/Ancientapparition`,
+                  },
+               ],
             },
          ],
       },

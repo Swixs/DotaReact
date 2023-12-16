@@ -55,6 +55,14 @@ const AbilitySecondStatsRight = ({ posts }) => {
                      </div>
                   )}
                </div>
+               {secondSpellDetails.preStatsSpellFifth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {secondSpellDetails.preStatsSpellFifth}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {secondSpellDetails.statsSpellFifth}
+                     </span>
+                  </div>
+               )}
 
                <div className={classAbaddonPage.linetimeSpell}>
                   <img

@@ -5,6 +5,7 @@ const Text = ({ posts }) => {
    if (!posts) {
       return null;
    }
+
    return (
       <div>
          {posts.map(post => (
@@ -20,6 +21,12 @@ const Text = ({ posts }) => {
                </div>
 
                <div className={classAbaddonPage.title}>{post.name}</div>
+
+               {post.nameSecond && (
+                  <div className={classAbaddonPage.titleForTwoName}>
+                     {post.nameSecond}
+                  </div>
+               )}
 
                <div className={classAbaddonPage.subtitle}>{post.subtitle}</div>
 

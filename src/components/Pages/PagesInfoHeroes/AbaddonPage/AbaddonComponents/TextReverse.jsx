@@ -18,7 +18,7 @@ const TextReverse = ({ posts }) => {
                   height={35}
                />
                <div className={classAbaddonPage.txtArt}>
-                  {post.name}{' '}
+                  {post.name} {post.nameSecond}
                   <span className={classAbaddonPage.span}>{post.number}</span>
                </div>
             </div>
