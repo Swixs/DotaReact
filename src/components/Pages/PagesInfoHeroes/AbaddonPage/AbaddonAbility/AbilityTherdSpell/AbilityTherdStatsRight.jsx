@@ -72,6 +72,28 @@ const AbilityTherdStatsRight = ({ posts }) => {
                   </div>
                )}
 
+               {thirdSpellDetails.timeSpell && thirdSpellDetails.manaSpell && (
+                  <div>
+                     <div className={classAbaddonPage.linetimeSpell}>
+                        <img
+                           src={thirdSpellDetails.timeLogoSpell}
+                           alt="timeSpell"
+                           className={classAbaddonPage.timeSpellPict}
+                        />
+                        <div className={classAbaddonPage.timeSpellStats}>
+                           {thirdSpellDetails.timeSpell}
+                        </div>
+                     </div>
+
+                     <div className={classAbaddonPage.lineDisplay}>
+                        <div className={classAbaddonPage.manaBlock}></div>
+                        <div className={classAbaddonPage.manaText}>
+                           {thirdSpellDetails.manaSpell}
+                        </div>
+                     </div>
+                  </div>
+               )}
+
                {thirdSpellDetails.historySpell ? (
                   <div className={classAbaddonPage.historyFirstSpell}>
                      {thirdSpellDetails.historySpell}

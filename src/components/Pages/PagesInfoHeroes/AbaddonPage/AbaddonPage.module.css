@@ -710,7 +710,7 @@ video {
    margin-left: 30px;
 }
 
-.height{
+.height {
    height: 379px;
 }
 
@@ -734,7 +734,14 @@ video {
 
 .abilityStatsRight {
    position: relative;
-   top: -350px;
+   top: -383px;
+   left: 310px;
+   width: 110px;
+}
+
+.abilityStatsRightSecond {
+   position: relative;
+   top: -354px;
    left: 310px;
    width: 110px;
 }
@@ -773,6 +780,16 @@ video {
    left: 80px;
 }
 
+.spanFourthAbilityRightFix {
+   color: #fff;
+   font-weight: 200;
+   font-size: 1rem;
+   position: relative;
+   top: -24px;
+   left: 200px;
+}
+
+
 .spanFirstAbilityRight {
    color: #fff;
    font-weight: 200;
@@ -793,6 +810,14 @@ video {
 .textSecondAbilityRight {
    width: 200px;
    margin-top: -3px;
+   font-size: 1rem;
+   font-weight: 400;
+   color: #717171;
+}
+
+.textSecondAbilityRightFix {
+   width: 200px;
+   margin-top: -20px;
    font-size: 1rem;
    font-weight: 400;
    color: #717171;

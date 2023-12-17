@@ -1,76 +1,117 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
 const AbilityFourthStatsRight = ({ posts }) => {
+   if (
+      !posts ||
+      !posts[0] ||
+      !posts[0].fourthSpellsDetails ||
+      !posts[0].fourthSpellsDetails[0]
+   ) {
+      return null;
+   }
+
+   const fourthSpellDetails = posts[0].fourthSpellsDetails[0];
+
    return (
       <div className={classAbaddonPage.abilityStatsRight}>
-         <div className={classAbaddonPage.textSecondAbilityRight}>
-            {posts[0].fourthSpellsDetails[0].preDissableSpell}
-         </div>
+         {fourthSpellDetails.preImmunitySpell && (
+            <div className={classAbaddonPage.textSecondAbilityRight}>
+               {fourthSpellDetails.preImmunitySpell}
+            </div>
+         )}
 
-         <div className={classAbaddonPage.spanFourthAbilityRight}>
-            {posts[0].fourthSpellsDetails[0].dissableSpell}
-         </div>
+         {fourthSpellDetails.immunitySpell && (
+            <div
+               className={
+                  fourthSpellDetails.classFromSubTextSpell ||
+                  classAbaddonPage.spanFourthAbilityRight
+               }
+            >
+               {fourthSpellDetails.immunitySpell}
+            </div>
+         )}
+
+         {fourthSpellDetails.preDissableSpell && (
+            <div
+               className={
+                  fourthSpellDetails.classFromTextSpell ||
+                  classAbaddonPage.textSecondAbilityRight
+               }
+            >
+               {fourthSpellDetails.preDissableSpell}
+            </div>
+         )}
+
+         {fourthSpellDetails.dissableSpell && (
+            <div className={classAbaddonPage.spanFourthAbilityRight}>
+               {fourthSpellDetails.dissableSpell}
+            </div>
+         )}
 
          <div>
             <div className={classAbaddonPage.statsAbilityBottom}>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].fourthSpellsDetails[0].preStatsSpellFirst}
+                  {fourthSpellDetails.preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].statsSpellFirst}
+                     {fourthSpellDetails.statsSpellFirst}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].fourthSpellsDetails[0].preStatsSpellSecond}
+                  {fourthSpellDetails.preStatsSpellSecond}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].statsSpellSecond}
+                     {fourthSpellDetails.statsSpellSecond}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].fourthSpellsDetails[0].preStatsSpellThird}
+                  {fourthSpellDetails.preStatsSpellThird}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].statsSpellThird}
+                     {fourthSpellDetails.statsSpellThird}
                   </span>
                </div>
                <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].fourthSpellsDetails[0].preStatsSpellFourth}
+                  {fourthSpellDetails.preStatsSpellFourth}
                   <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].statsSpellFourth}
+                     {fourthSpellDetails.statsSpellFourth}
                   </span>
                </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].fourthSpellsDetails[0].preStatsSpellFifth}
-                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].statsSpellFifth}
-                  </span>
-               </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].fourthSpellsDetails[0].preStatsSpellSixth}
-                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].fourthSpellsDetails[0].statsSpellSixth}
-                  </span>
-               </div>
+               {fourthSpellDetails.preStatsSpellFifth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {fourthSpellDetails.preStatsSpellFifth}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {fourthSpellDetails.statsSpellFifth}
+                     </span>
+                  </div>
+               )}
+               {fourthSpellDetails.preStatsSpellSixth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {fourthSpellDetails.preStatsSpellSixth}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {fourthSpellDetails.statsSpellSixth}
+                     </span>
+                  </div>
+               )}
 
                <div className={classAbaddonPage.linetimeSpell}>
                   <img
-                     src={posts[0].fourthSpellsDetails[0].timeLogoSpell}
+                     src={fourthSpellDetails.timeLogoSpell}
                      alt="timeSpell"
                      className={classAbaddonPage.timeSpellPict}
                   />
 
                   <div className={classAbaddonPage.timeSpellStats}>
-                     {posts[0].fourthSpellsDetails[0].timeSpell}
+                     {fourthSpellDetails.timeSpell}
                   </div>
                </div>
 
                <div className={classAbaddonPage.lineDisplay}>
                   <div className={classAbaddonPage.manaBlock}></div>
                   <div className={classAbaddonPage.manaText}>
-                     {posts[0].fourthSpellsDetails[0].manaSpell}
+                     {fourthSpellDetails.manaSpell}
                   </div>
                </div>
 
                <div className={classAbaddonPage.historyFourthSpell}>
-                  {posts[0].fourthSpellsDetails[0].historySpell}
+                  {fourthSpellDetails.historySpell}
                </div>
             </div>
          </div>

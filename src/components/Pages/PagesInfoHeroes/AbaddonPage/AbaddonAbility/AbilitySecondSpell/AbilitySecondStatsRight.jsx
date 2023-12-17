@@ -12,7 +12,12 @@ const AbilitySecondStatsRight = ({ posts }) => {
 
    const secondSpellDetails = posts[0].secondSpellsDetails[0];
    return (
-      <div className={classAbaddonPage.abilityStatsRight}>
+      <div
+         className={
+            secondSpellDetails.classTextAbilityRightSecond ||
+            classAbaddonPage.abilityStatsRight
+         }
+      >
          <div className={classAbaddonPage.textSecondAbilityRight}>
             {posts[0].secondSpellsDetails[0].preImunitySpell}{' '}
             {posts[0].secondSpellsDetails[0].preDisableSpell}

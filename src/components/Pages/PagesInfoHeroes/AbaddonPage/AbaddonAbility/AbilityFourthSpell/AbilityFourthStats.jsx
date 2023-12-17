@@ -11,6 +11,17 @@ const AbilityFourthStats = ({ posts }) => {
                      {posts[0].fourthSpellsDetails[0].firstStatsInfoSpell}
                   </span>
                </div>
+               <div className={classAbaddonPage.textAbility}>
+                  {posts[0].fourthSpellsDetails[0].secondInfoSpell}
+                  <span
+                     className={
+                        posts[0].fourthSpellsDetails[0].colorTextSpell ||
+                        classAbaddonPage.spanAbility
+                     }
+                  >
+                     {posts[0].fourthSpellsDetails[0].secondStatsInfoSpell}
+                  </span>
+               </div>
             </div>
          </div>
       </div>
