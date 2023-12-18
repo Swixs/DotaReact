@@ -1,6 +1,11 @@
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const AbaddoneStatsLine = ({ posts }) => {
+   if (!posts || !posts[0] || !posts[0].stats || !posts[0].stats[0]) {
+      return null;
+   }
+
+   const stats = posts[0].stats[0];
    return (
       <div>
          <div className={classAbaddonPage.lineDisplay}>
@@ -162,14 +167,16 @@ const AbaddoneStatsLine = ({ posts }) => {
                      {posts[0].stats[0].attackDistanceNumber}
                   </div>
 
-                  <div className={classAbaddonPage.statsPoint}>
-                     <img
-                        className={classAbaddonPage.statsPict}
-                        src={posts[0].stats[0].attackSpeedLogo}
-                        alt="speed"
-                     />
-                     {posts[0].stats[0].attackSpeedNumber}
-                  </div>
+                  {stats.attackSpeedLogo && stats.attackSpeedNumber && (
+                     <div className={classAbaddonPage.statsPoint}>
+                        <img
+                           className={classAbaddonPage.statsPict}
+                           src={stats.attackSpeedLogo}
+                           alt="speed"
+                        />
+                        {stats.attackSpeedNumber}
+                     </div>
+                  )}
                </div>
 
                <div className={classAbaddonPage.statsDisplay}>

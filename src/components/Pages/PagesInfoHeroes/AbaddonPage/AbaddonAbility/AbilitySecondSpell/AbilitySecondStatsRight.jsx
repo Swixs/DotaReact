@@ -11,6 +11,7 @@ const AbilitySecondStatsRight = ({ posts }) => {
    }
 
    const secondSpellDetails = posts[0].secondSpellsDetails[0];
+
    return (
       <div
          className={
@@ -19,47 +20,63 @@ const AbilitySecondStatsRight = ({ posts }) => {
          }
       >
          <div className={classAbaddonPage.textSecondAbilityRight}>
-            {posts[0].secondSpellsDetails[0].preImunitySpell}{' '}
-            {posts[0].secondSpellsDetails[0].preDisableSpell}
+            {secondSpellDetails.preImunitySpell}{' '}
+            {secondSpellDetails.preDisableSpell}
          </div>
 
-         <div className={classAbaddonPage.spanFirstAbilityRight}>
-            {posts[0].secondSpellsDetails[0].dissableSpell}
-         </div>
-         <div className={classAbaddonPage.spanSecondAbilityRight}>
-            {posts[0].secondSpellsDetails[0].immunitySpell}
-         </div>
+         {secondSpellDetails.dissableSpell && (
+            <div className={classAbaddonPage.spanFirstAbilityRight}>
+               {secondSpellDetails.dissableSpell}
+            </div>
+         )}
+
+         {secondSpellDetails.immunitySpell && (
+            <div className={classAbaddonPage.spanSecondAbilityRight}>
+               {secondSpellDetails.immunitySpell}
+            </div>
+         )}
 
          <div>
-            <div className={classAbaddonPage.statsAbilityBottom}>
+            <div
+               className={
+                  secondSpellDetails.classStatsRight ||
+                  classAbaddonPage.statsAbilityBottom
+               }
+            >
                <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].secondSpellsDetails[0].preStatsSpellFirst}
+                  {secondSpellDetails.preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].secondSpellsDetails[0].statsSpellFirst}
+                     {secondSpellDetails.statsSpellFirst}
                   </span>
                </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].secondSpellsDetails[0].preStatsSpellSecond}
-                  <span className={classAbaddonPage.spanAbilityBottom}>
-                     {posts[0].secondSpellsDetails[0].statsSpellSecond}
-                  </span>
-               </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {posts[0].secondSpellsDetails[0].preStatsSpellThird}
-                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {posts[0].secondSpellsDetails[0].statsSpellThird}
-                  </span>
-               </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {secondSpellDetails.preStatsSpellFourth && (
-                     <div className={classAbaddonPage.textAbilityBottom}>
-                        {secondSpellDetails.preStatsSpellFourth}
-                        <span className={classAbaddonPage.spanAbilityBottom}>
-                           {secondSpellDetails.statsSpellFourth}
-                        </span>
-                     </div>
-                  )}
-               </div>
+
+               {secondSpellDetails.preStatsSpellSecond && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {secondSpellDetails.preStatsSpellSecond}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {secondSpellDetails.statsSpellSecond}
+                     </span>
+                  </div>
+               )}
+
+               {secondSpellDetails.preStatsSpellThird && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {secondSpellDetails.preStatsSpellThird}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {secondSpellDetails.statsSpellThird}
+                     </span>
+                  </div>
+               )}
+
+               {secondSpellDetails.preStatsSpellFourth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {secondSpellDetails.preStatsSpellFourth}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {secondSpellDetails.statsSpellFourth}
+                     </span>
+                  </div>
+               )}
+
                {secondSpellDetails.preStatsSpellFifth && (
                   <div className={classAbaddonPage.textAbilityBottom}>
                      {secondSpellDetails.preStatsSpellFifth}
@@ -71,25 +88,24 @@ const AbilitySecondStatsRight = ({ posts }) => {
 
                <div className={classAbaddonPage.linetimeSpell}>
                   <img
-                     src={posts[0].secondSpellsDetails[0].timeLogoSpell}
+                     src={secondSpellDetails.timeLogoSpell}
                      alt="timeSpell"
                      className={classAbaddonPage.timeSpellPict}
                   />
-
                   <div className={classAbaddonPage.timeSpellStats}>
-                     {posts[0].secondSpellsDetails[0].timeSpell}
+                     {secondSpellDetails.timeSpell}
                   </div>
                </div>
 
                <div className={classAbaddonPage.lineDisplay}>
                   <div className={classAbaddonPage.manaBlock}></div>
                   <div className={classAbaddonPage.manaText}>
-                     {posts[0].secondSpellsDetails[0].manaSpell}
+                     {secondSpellDetails.manaSpell}
                   </div>
                </div>
 
                <div className={classAbaddonPage.historySpell}>
-                  {posts[0].secondSpellsDetails[0].historySpell}
+                  {secondSpellDetails.historySpell}
                </div>
             </div>
          </div>

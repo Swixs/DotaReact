@@ -50,26 +50,63 @@ const AbilityStatsRight = ({ posts }) => {
                      </span>
                   </div>
                )}
-               <div className={classAbaddonPage.linetimeSpell}>
-                  <img
-                     src={posts[0].firstSpellsDetails[0].timeLogoSpell}
-                     alt="timeSpell"
-                     className={classAbaddonPage.timeSpellPict}
-                  />
 
-                  <div className={classAbaddonPage.timeSpellStats}>
-                     {posts[0].firstSpellsDetails[0].timeSpell}
+               {firstSpellDetails.preStatsSpellFifth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {firstSpellDetails.preStatsSpellFifth}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {firstSpellDetails.statsSpellFifth}
+                     </span>
                   </div>
-               </div>
+               )}
 
-               <div className={classAbaddonPage.lineDisplay}>
-                  <div className={classAbaddonPage.manaBlock}></div>
-                  <div className={classAbaddonPage.manaText}>
-                     {posts[0].firstSpellsDetails[0].manaSpell}
+               {firstSpellDetails.preStatsSpellSixth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {firstSpellDetails.preStatsSpellSixth}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {firstSpellDetails.statsSpellSixth}
+                     </span>
                   </div>
-               </div>
+               )}
 
-               <div className={classAbaddonPage.historyFirstSpell}>
+               {firstSpellDetails.preStatsSpellSeventh && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {firstSpellDetails.preStatsSpellSeventh}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {firstSpellDetails.statsSpellSeventh}
+                     </span>
+                  </div>
+               )}
+
+               {firstSpellDetails.timeLogoSpell &&
+                  firstSpellDetails.timeSpell && (
+                     <div className={classAbaddonPage.linetimeSpell}>
+                        <img
+                           src={firstSpellDetails.timeLogoSpell}
+                           alt="timeSpell"
+                           className={classAbaddonPage.timeSpellPict}
+                        />
+                        <div className={classAbaddonPage.timeSpellStats}>
+                           {firstSpellDetails.timeSpell}
+                        </div>
+                     </div>
+                  )}
+
+               {firstSpellDetails.manaSpell && (
+                  <div className={classAbaddonPage.lineDisplay}>
+                     <div className={classAbaddonPage.manaBlock}></div>
+                     <div className={classAbaddonPage.manaText}>
+                        {firstSpellDetails.manaSpell}
+                     </div>
+                  </div>
+               )}
+
+               <div
+                  className={
+                     posts[0].firstSpellsDetails[0].historyStyle ||
+                     classAbaddonPage.historyFirstSpell
+                  }
+               >
                   {posts[0].firstSpellsDetails[0].historySpell}
                </div>
             </div>

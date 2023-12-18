@@ -814,11 +814,11 @@ const state = {
                ],
                btnArrow: [
                   {
-                     leftArrowBtn: classAbaddonPage.btnArrowFix,
-                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
-                     centerBtn: classAbaddonPage.buttonCubeFix,
-                     linkLeftArrowBtn: `/heroes/Abaddon`,
-                     linkRightArrowBtn: `/heroes/Ancientapparition`,
+                     leftArrowBtn: classAbaddonPage.btnArrowFixAparat,
+                     rightArrowBtn: classAbaddonPage.btnArrowRightFixAparat,
+                     centerBtn: classAbaddonPage.buttonCubeFixAparat,
+                     linkLeftArrowBtn: `/heroes/Alchemist`,
+                     linkRightArrowBtn: `/heroes/Anti-mage`,
                   },
                ],
             },
@@ -832,17 +832,251 @@ const state = {
                id: 1,
                imageUrl:
                   'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
-               name: 'Anti-Mage',
+               name: 'ANTI-MAGE',
                textAtr: 'AGILITY',
                number: 1,
                subtitle: 'SLASHES HIS FOES WITH MANA-DRAINING ATTACKS',
-            },
-         ],
-         type: [
-            {
-               imgType:
-                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
-               nameType: 'MELEE',
+               type: [
+                  {
+                     imgType:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
+                     nameType: 'MELEE',
+                  },
+               ],
+               history: [
+                  {
+                     firstChapterHistory: `The monks of Turstarkuri watched the 
+                     rugged valleys below their mountain monastery as wave after
+                      wave of invaders swept through the lower kingdoms. Ascetic 
+                      and pragmatic, in their remote monastic eyrie they remained
+                     aloof from mundane strife, wrapped in meditation that knew
+                      no gods or elements of magic. Then came the Legion of the
+                      Dead God, crusaders with a sinister mandate to replace all
+                      local worship with their Unliving Lord's poisonous nihilosophy.
+                      From a landscape that had known nothing but blood and battle
+                      for a thousand years, they tore the souls and bones of countless
+                      fallen legions and pitched them against Turstarkuri. The monastery
+                      stood scarcely a fortnight against the assault, and the few
+                      monks who bothered to surface from their meditations believed
+                      the invaders were but demonic visions sent to distract
+                      them from meditation. They died where they sat on their 
+                      silken cushions. Only one youth survived--a pilgrim who
+                      had come as an acolyte, seeking wisdom, but had yet to
+                      be admitted to the monastery. He watched in horror as
+                      the monks to whom he had served tea and nettles were first 
+                      slaughtered, then raised to join the ranks of the Dead God's
+                      priesthood. With nothing but a few of Turstarkuri's prized
+                     dogmatic scrolls, he crept away to the comparative safety 
+                     of other lands, swearing to obliterate not only the Dead God's 
+                     magic users--but to put an end to magic altogether.`,
+                  },
+                  {
+                     summaryTextFirst: `Should Anti-Mage have the opportunity to gather his full strength, few can stop his assaults.`,
+                     summaryTextSecond: `from enemies with every strike or `,
+                     summaryTextThird: `to escape an ambush, cornering him is a challenge for any foe.`,
+                  },
+                  {
+                     nameSpellFirst: `Draining mana`,
+                     nameSpellSecond: ` teleporting short distances`,
+                  },
+                  {
+                     firstLevel: classAbaddonPage.cubeComplexityFirst,
+                     secondLevel: classAbaddonPage.cube,
+                     thirdLevel: classAbaddonPage.cube,
+                  },
+               ],
+               video: [
+                  {
+                     videoHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.webm`,
+                  },
+               ],
+               stats: [
+                  {
+                     imgHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png`,
+                     health: 538,
+                     mana: 219,
+                     healthRegeneration: '+2.6',
+                     manaRegeneration: '+0.6',
+                     strengthAtr: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png`,
+                     strengthAtrNumber: '19',
+                     strengthAtrNumberPlus: '+1.6',
+                     agilityAtr:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
+                     agilityAtrNumber: '24',
+                     agilityAtrNumberPlus: '+2.8',
+                     intelligenciAtr:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
+                     intelligenciAtrNumber: '12',
+                     intelligenciAtrNumberPlus: '+1.8',
+                     carryBarConteiner: classAbaddonPage.barConteiner,
+                     supportBarConteiner: classAbaddonPage.barConteiner70,
+                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     attackLogo:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
+                     attackNumber: `53-57`,
+                     attackTimeLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_time.png`,
+                     attackTimeNumber: `1.4`,
+                     attackDistanceLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png`,
+                     attackDistanceNumber: `150`,
+                     defenseLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png`,
+                     defenseNumber: `5.0`,
+                     magicResistLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_magic_resist.png`,
+                     magicResistNumber: `25%`,
+                     speedMobilityLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+                     speedMobilityNumber: `310`,
+                     speedRateLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+                     speedRateNumber: `0.6`,
+                     visionLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_vision.png`,
+                     visionNumber: `1800/800`,
+                  },
+               ],
+               videoSpells: [
+                  {
+                     videoSpellFirst:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/antimage/antimage_mana_break.webm',
+                     videoSpellSecond:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/antimage/antimage_blink.mp4',
+                     videoSpellThird:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/antimage/antimage_counterspell.mp4',
+                     videoSpellFoutrh:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/antimage/antimage_mana_void.mp4',
+                  },
+               ],
+               spellsImg: [
+                  {
+                     firstSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_mana_break.png',
+                     secondSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_blink.png',
+                     thirdSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_counterspell.png',
+                     fourthSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/antimage_mana_void.png',
+                  },
+               ],
+               firstSpellsDetails: [
+                  {
+                     nameSpell: `MANA BREAK`,
+                     textSpell: `Burns an opponent's mana on each attack and deals damage equal to a percentage of the mana burnt.
+                      Enemies with no mana left are temporarily slowed.`,
+                     firstInfoSpell: `ABILITY:`,
+                     thirdInfoSpell: `DAMAGE TYPE:`,
+                     firstStatsInfoSpell: `Passive`,
+                     thirdStatsInfoSpell: `Physical`,
+                     preImunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     colorTextSpell: classAbaddonPage.spanAbilityPhysical,
+                     immunitySpell: 'No',
+                     preStatsSpellFirst: `MANA BURNED AS DAMAGE:`,
+                     preStatsSpellSecond: `MANA BURNED PER HIT:`,
+                     preStatsSpellThird: `MAX MANA BURNED PER HIT:`,
+                     preStatsSpellFourth: `MOVE SPEED SLOW ON FULL DRAIN:`,
+                     preStatsSpellFifth: `SLOW DURATION:`,
+                     statsSpellFirst: '50%',
+                     statsSpellSecond: `25 / 30 / 35 / 40`,
+                     statsSpellThird: `1,6% / 2,4% / 3,2% / 4%`,
+                     statsSpellFourth: `25% / 30% / 35% / 40%`,
+                     statsSpellFifth: `0,75`,
+                     historySpell: `A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner.`,
+                  },
+               ],
+               secondSpellsDetails: [
+                  {
+                     nameSpell: `BLINK`,
+                     textSpell: `Short distance teleportation that allows Anti-Mage to move in and out of combat.`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `Point Target`,
+                     statsSpellFirst: `750 / 900 / 1050 / 1200`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `13,5 / 11 / 8,5 / 6`,
+                     manaSpell: `45`,
+                     historySpell: `In his encounter with the Dead Gods, Anti-Mage learned the value of being elusive.`,
+                     preStatsSpellFirst: `RANGE:`,
+                     classStatsRight: classAbaddonPage.statsAbilityBottomEmpty,
+                  },
+               ],
+               thirdSpellsDetails: [
+                  {
+                     nameSpell: `CORROSIVE WEAPONRY`,
+                     textSpell: `Alchemist coats his weapons with an acid that applies a
+                      stacking slow and status resistance reduction to enemies hit. Slow 
+                      and Status resistance increases when Alchemist is under the effect of 
+                      Chemical Rage.`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `Passive`,
+                     statsSpellFirst: `4.0 / 6.0 / 8.0 / 10.0`,
+                     statsSpellSecond: `3.5`,
+                     statsSpellThird: `3.0% / 4.0% / 5.0% / 6.0%`,
+                     statsSpellFourth: `3.0% / 4.0% / 5.0% / 6.0%`,
+                     statsSpellFifth: `1.5%`,
+                     preImmunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     immunitySpell: 'No',
+                     classImunitySpell:
+                        classAbaddonPage.spanSecondAbilityRightOneSpell,
+                     historySpell: ``,
+                     preStatsSpellFirst: `MAX STACKS:`,
+                     preStatsSpellSecond: `DEBUFF DURATION:`,
+                     preStatsSpellThird: `MOVEMENT SLOW PER STACK:`,
+                     preStatsSpellFourth: `STATUS RESISTANCE REDUCTION PER STACK:`,
+                     preStatsSpellFifth: `CHEMICAL RAGE BONUS:`,
+                  },
+               ],
+               fourthSpellsDetails: [
+                  {
+                     nameSpell: `CHEMICAL RAGE`,
+                     textSpell: `Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing 
+                     movement speed and health regeneration.`,
+                     subtextSpell: `DISPEL TYPE: Basic Dispel`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `No Target`,
+                     statsSpellFirst: `30.0`,
+                     statsSpellSecond: `1.2 / 1.1 / 1.0`,
+                     statsSpellThird: `50.0 / 80.0 / 110.0`,
+                     statsSpellFourth: `30.0 / 45.0 / 60.0`,
+                     statsSpellFifth: `25.0`,
+                     statsSpellSixth: `5.0%`,
+                     preDissableSpell: `DISABLE:`,
+                     dissableSpell: `No`,
+                     historySpell: `The brew Razzil gave to the Ogre during their prison bust has 
+                     become a useful potion in the midst of combat.`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `60.0`,
+                     manaSpell: `50 / 75 / 100`,
+                     preStatsSpellFirst: `DURATION:`,
+                     preStatsSpellSecond: `BASE ATTACK TIME:`,
+                     preStatsSpellThird: `BONUS HEALTH REGEN:`,
+                     preStatsSpellFourth: `BONUS MOVE SPEED:`,
+                     preStatsSpellFifth: `BONUS DAMAGE PER SCEPTER:`,
+                     preStatsSpellSixth: `SPELL AMP PER SCEPTER:`,
+                  },
+               ],
+               leftButton: [
+                  {
+                     namePreviousHero: `Abaddon`,
+                     atrPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png`,
+                     typePreviousHero: `MELEE`,
+                     imgPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/abaddon.png`,
+                     linkPreviousHero: `/heroes/Abaddon`,
+                  },
+               ],
+               rightButton: [
+                  {
+                     nameNextHero: `ANCIENT`,
+                     secondNameNextHero: `APPARITION`,
+                     atrNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png`,
+                     typeNextHero: `RANGED`,
+                     imgNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/ancient_apparition.png`,
+                     linkNextHero: `/heroes/Ancientapparition`,
+                  },
+               ],
+               btnArrow: [
+                  {
+                     leftArrowBtn: classAbaddonPage.btnArrowFix,
+                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
+                     centerBtn: classAbaddonPage.buttonCubeFix,
+                     linkLeftArrowBtn: `/heroes/Abaddon`,
+                     linkRightArrowBtn: `/heroes/Ancientapparition`,
+                  },
+               ],
             },
          ],
       },
@@ -854,17 +1088,291 @@ const state = {
                id: 1,
                imageUrl:
                   'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
-               name: 'Arc Warden',
+               name: 'ARC',
+               nameSecond: 'WARDEN',
                textAtr: 'AGILITY',
                number: 111,
                subtitle: 'CREATES A COPY OF HIMSELF TO SPLIT PUSH',
-            },
-         ],
-         type: [
-            {
-               imgType:
-                  'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/melee.svg',
-               nameType: 'MELEE',
+               type: [
+                  {
+                     imgType:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/ranged.svg',
+                     nameType: 'RANGED',
+                  },
+               ],
+               history: [
+                  {
+                     firstChapterHistory: `Before the beginning of all, there existed
+                      a presence: a primordial mind, infinite, awesome, and set to 
+                      inscrutable purpose. As the universe thundered into being, this
+                      mind was fragmented and scattered. Two among its greater 
+                      fragments--who would come to be named Radiant and Dire--found 
+                      themselves locked in vicious opposition,
+                      and began twisting all of creation to serve their conflict.`,
+                     secondChapterHistory: `As war and cataclysm threatened the nascent cosmos,
+                     the will of a third fragment made itself known. Naming itself Zet, this intellect sought
+                     to resolve the disharmony and return all to perfect unity. Appalled by its kin's conflicting
+                     nature, Zet gathered the sum of its power. In a sudden flash, it overwhelmed its siblings, 
+                     and fused the warring aspects into a stellar sphere before hurling them into the darkness 
+                     to orbit a nondescript world. Harmony was restored, though only the barest fraction of Zet's
+                     strength remained. Setting its gaze on the prison, Zet chose to use its weakened power
+                     to serve as watchful warden until time's end. For uncounted aeons, this vigil stood.`,
+                     thirdChapterHistory: `
+                     Life flourished upon the world below, oblivious to the dangers imprisoned within the softly
+                      glowing moon, or of Zet's struggles to contain them. As the captives' eternal clash reverberated
+                     within, the surface of the prison shuddered, over time beginning to crack. Ultimately, Zet's
+                      depleted power proved insufficient to contain the breach, and at last the moon was shattered.
+                      The prison's ancient inhabitants had escaped to sow their conflict anew.Flung to the farthest
+                      reaches by the prison's explosion, Zet was transformed by the dissonant energies of its former
+                     captives. No longer of single form and thought, its presence had become split among many--some
+                     lesser, some greater--each connected by a fleeting arc of consciousness. Struggling to suppress
+                     its own disunity, Zet sped toward the burgeoning conflict of its siblings, bending its 
+                     fractured wills toward a singular conclusion: the aspects of the primordial mind must 
+                     be made to reunite, or all must be destroyed lest the conflict spread further...`,
+                  },
+                  {
+                     summaryTextFirst: `A splintered fragment of the same primordial power as the Ancients themselves, Zet 
+                     the Arc Warden has pledged to see the clash between Radiant and Dire finally end.`,
+                     summaryTextSecond: `with fluxing energy, or distort space to generate a`,
+                     summaryTextThird: `around allies.`,
+                     summaryTextFourth: `to patrol an area for enemies to infuse with harmful magic, then 
+                     create a double of Zet, items and all, to overwhelm your foes.`,
+                  },
+                  {
+                     nameSpellFirst: `Assault lone enemies`,
+                     nameSpellSecond: ` protective field`,
+                     nameSpellThird: ` Summon a Spark Wraith`,
+                  },
+                  {
+                     firstLevel: classAbaddonPage.cubeComplexityFirst,
+                     secondLevel: classAbaddonPage.cubeComplexity,
+                     thirdLevel: classAbaddonPage.cubeComplexity,
+                  },
+               ],
+               video: [
+                  {
+                     videoHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/arc_warden.webm`,
+                  },
+               ],
+               stats: [
+                  {
+                     imgHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/arc_warden.png`,
+                     health: 604,
+                     mana: 363,
+                     healthRegeneration: '+2.5',
+                     manaRegeneration: '+1.2',
+                     strengthAtr: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png`,
+                     strengthAtrNumber: '22',
+                     strengthAtrNumberPlus: '+2.6',
+                     agilityAtr:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png',
+                     agilityAtrNumber: '20',
+                     agilityAtrNumberPlus: '+3.0',
+                     intelligenciAtr:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
+                     intelligenciAtrNumber: '24',
+                     intelligenciAtrNumberPlus: '+2.6',
+                     carryBarConteiner: classAbaddonPage.barConteiner,
+                     supportBarConteiner: classAbaddonPage.barConteiner70,
+                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     attackLogo:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
+                     attackNumber: `51-57`,
+                     attackTimeLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_time.png`,
+                     attackTimeNumber: `1.7`,
+                     attackDistanceLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png`,
+                     attackDistanceNumber: `625`,
+                     attackSpeedLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_projectile_speed.png`,
+                     attackSpeedNumber: `900`,
+                     defenseLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png`,
+                     defenseNumber: `3.3`,
+                     magicResistLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_magic_resist.png`,
+                     magicResistNumber: `25%`,
+                     speedMobilityLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+                     speedMobilityNumber: `285`,
+                     speedRateLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png`,
+                     speedRateNumber: `0.7`,
+                     visionLogo: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_vision.png`,
+                     visionNumber: `1800/800`,
+                  },
+               ],
+               videoSpells: [
+                  {
+                     videoSpellFirst:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/arc_warden/arc_warden_flux.mp4',
+                     videoSpellSecond:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/arc_warden/arc_warden_magnetic_field.mp4',
+                     videoSpellThird:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/arc_warden/arc_warden_spark_wraith.mp4',
+                     videoSpellFoutrh:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/abilities/arc_warden/arc_warden_tempest_double.mp4',
+                  },
+               ],
+               spellsImg: [
+                  {
+                     firstSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_flux.png',
+                     secondSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_magnetic_field.png',
+                     thirdSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_spark_wraith.png',
+                     fourthSpell:
+                        'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/arc_warden_tempest_double.png',
+                  },
+               ],
+               firstSpellsDetails: [
+                  {
+                     nameSpell: `FLUX`,
+                     textSpell: `Infuses a lone enemy unit with swirling, volatile energy, dealing damage over time. 
+                     The damage is not applied if another enemy unit is near the target.`,
+                     subtextSpell: `Arc Warden: Slows the target's movement speed.`,
+                     secondSubtextSpell: `Tempest Double: Movement speed slow is decreased, but damage is increased.`,
+                     firstInfoSpell: `ABILITY:`,
+                     secondInfoSpell: `AFFECTS:`,
+                     thirdInfoSpell: `DAMAGE TYPE:`,
+                     firstStatsInfoSpell: `Unit Target`,
+                     secondStatsInfoSpell: `Enemy Units`,
+                     thirdStatsInfoSpell: `Magical`,
+                     preImunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     immunitySpell: 'No',
+                     preStatsSpellFirst: `DURATION:`,
+                     preStatsSpellSecond: `DAMAGE PER SECOND:`,
+                     preStatsSpellThird: `TEMPEST DAMAGE PER SECOND:`,
+                     preStatsSpellFourth: `ALLY SEARCH RADIUS:`,
+                     preStatsSpellFifth: `MOVEMENT SPEED SLOW:`,
+                     preStatsSpellSixth: `TEMPEST MOVEMENT SPEED SLOW:`,
+                     preStatsSpellSeventh: `CAST RANGE:`,
+                     statsSpellFirst: '6',
+                     statsSpellSecond: `15 / 30 / 45 / 60`,
+                     statsSpellThird: `20 / 45 / 70 / 95`,
+                     statsSpellFourth: `225`,
+                     statsSpellFifth: `14% / 21% / 28% / 35%`,
+                     statsSpellSixth: `6% / 10% / 14% / 18%`,
+                     statsSpellSeventh: `500 / 600 / 700 / 800`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: ` 22.0 / 21.0 / 20.0 / 19.0`,
+                     manaSpell: `120`,
+                     historySpell: `Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves 
+                     even the toughest metals.`,
+                     historyStyle: classAbaddonPage.historyFirstSpellBig,
+                  },
+               ],
+               secondSpellsDetails: [
+                  {
+                     nameSpell: `UNSTABLE CONCOCTION`,
+                     textSpell: `Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal 
+                     damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. 
+                     Alchemist is faster while charging the concoction. After 5.0 seconds, the brew reaches its maximum damage and stun time. 
+                     However, after 5.5 seconds, the concoction will explode on Alchemist himself if not thrown.`,
+                     firstInfoSpell: `ABILITY:`,
+                     thirdInfoSpell: `DAMAGE TYPE:`,
+                     firstStatsInfoSpell: `Unit Target`,
+                     thirdStatsInfoSpell: `Physical`,
+                     statsSpellFirst: `1.7 / 2.2 / 2.7 / 3.2`,
+                     statsSpellSecond: `150.0 / 220.0 / 290.0 / 360.0`,
+                     statsSpellThird: `250.0`,
+                     statsSpellFourth: `4.0% / 8.0% / 12.0% / 16.0%`,
+                     preImunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     classTextAbilityRightSecond:
+                        classAbaddonPage.abilityStatsRightSecond,
+                     immunitySpell: 'No',
+                     preDisableSpell: `DISABLE:`,
+                     dissableSpell: `Only Strong Dispels`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `15.0`,
+                     manaSpell: `100`,
+                     historySpell: `A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.`,
+                     colorTextSpell: classAbaddonPage.spanAbilityPhysical,
+                     preStatsSpellFirst: `MAX STUN:`,
+                     preStatsSpellSecond: `MAX DAMAGE:`,
+                     preStatsSpellThird: `EXPLOSION RADIUS:`,
+                     preStatsSpellFourth: `MOVE SPEED BONUS:`,
+                  },
+               ],
+               thirdSpellsDetails: [
+                  {
+                     nameSpell: `CORROSIVE WEAPONRY`,
+                     textSpell: `Alchemist coats his weapons with an acid that applies a
+                      stacking slow and status resistance reduction to enemies hit. Slow 
+                      and Status resistance increases when Alchemist is under the effect of 
+                      Chemical Rage.`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `Passive`,
+                     statsSpellFirst: `4.0 / 6.0 / 8.0 / 10.0`,
+                     statsSpellSecond: `3.5`,
+                     statsSpellThird: `3.0% / 4.0% / 5.0% / 6.0%`,
+                     statsSpellFourth: `3.0% / 4.0% / 5.0% / 6.0%`,
+                     statsSpellFifth: `1.5%`,
+                     preImmunitySpell: `PIERCES SPELL IMMUNITY:`,
+                     immunitySpell: 'No',
+                     classImunitySpell:
+                        classAbaddonPage.spanSecondAbilityRightOneSpell,
+                     historySpell: ``,
+                     preStatsSpellFirst: `MAX STACKS:`,
+                     preStatsSpellSecond: `DEBUFF DURATION:`,
+                     preStatsSpellThird: `MOVEMENT SLOW PER STACK:`,
+                     preStatsSpellFourth: `STATUS RESISTANCE REDUCTION PER STACK:`,
+                     preStatsSpellFifth: `CHEMICAL RAGE BONUS:`,
+                  },
+               ],
+               fourthSpellsDetails: [
+                  {
+                     nameSpell: `CHEMICAL RAGE`,
+                     textSpell: `Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing 
+                     movement speed and health regeneration.`,
+                     subtextSpell: `DISPEL TYPE: Basic Dispel`,
+                     firstInfoSpell: `ABILITY:`,
+                     firstStatsInfoSpell: `No Target`,
+                     statsSpellFirst: `30.0`,
+                     statsSpellSecond: `1.2 / 1.1 / 1.0`,
+                     statsSpellThird: `50.0 / 80.0 / 110.0`,
+                     statsSpellFourth: `30.0 / 45.0 / 60.0`,
+                     statsSpellFifth: `25.0`,
+                     statsSpellSixth: `5.0%`,
+                     preDissableSpell: `DISABLE:`,
+                     dissableSpell: `No`,
+                     historySpell: `The brew Razzil gave to the Ogre during their prison bust has 
+                     become a useful potion in the midst of combat.`,
+                     timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
+                     timeSpell: `60.0`,
+                     manaSpell: `50 / 75 / 100`,
+                     preStatsSpellFirst: `DURATION:`,
+                     preStatsSpellSecond: `BASE ATTACK TIME:`,
+                     preStatsSpellThird: `BONUS HEALTH REGEN:`,
+                     preStatsSpellFourth: `BONUS MOVE SPEED:`,
+                     preStatsSpellFifth: `BONUS DAMAGE PER SCEPTER:`,
+                     preStatsSpellSixth: `SPELL AMP PER SCEPTER:`,
+                  },
+               ],
+               leftButton: [
+                  {
+                     namePreviousHero: `Abaddon`,
+                     atrPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png`,
+                     typePreviousHero: `MELEE`,
+                     imgPreviousHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/abaddon.png`,
+                     linkPreviousHero: `/heroes/Abaddon`,
+                  },
+               ],
+               rightButton: [
+                  {
+                     nameNextHero: `ANCIENT`,
+                     secondNameNextHero: `APPARITION`,
+                     atrNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png`,
+                     typeNextHero: `RANGED`,
+                     imgNextHero: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crops/ancient_apparition.png`,
+                     linkNextHero: `/heroes/Ancientapparition`,
+                  },
+               ],
+               btnArrow: [
+                  {
+                     leftArrowBtn: classAbaddonPage.btnArrowFix,
+                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
+                     centerBtn: classAbaddonPage.buttonCubeFix,
+                     linkLeftArrowBtn: `/heroes/Abaddon`,
+                     linkRightArrowBtn: `/heroes/Ancientapparition`,
+                  },
+               ],
             },
          ],
       },

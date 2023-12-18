@@ -276,6 +276,20 @@ video {
    z-index: 10;
 }
 
+.btnArrowFixAparat {
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   width: 35px;
+   height: 70px;
+   position: relative;
+   top: -7px;
+   left: 740px;
+   font-size: 25px;
+   cursor: pointer;
+   z-index: 10;
+}
+
 .btnArrowRightFix {
    background: none;
    color: rgb(161, 160, 160);
@@ -284,6 +298,20 @@ video {
    height: 70px;
    position: relative;
    left: 810px;
+   top: -7px;
+   font-size: 25px;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.btnArrowRightFixAparat {
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   width: 35px;
+   height: 70px;
+   position: relative;
+   left: 750px;
    top: -7px;
    font-size: 25px;
    cursor: pointer;
@@ -309,6 +337,9 @@ video {
 .buttonCube:hover,
 .buttonCubeFix:hover,
 .btnArrowRightFix:hover,
+.buttonCubeFixAparat:hover,
+.buttonCubeFixAparat:hover,
+.btnArrowRightFixAparat:hover,
 .btnArrowFix:hover {
    border: 2px solid #fff;
 }
@@ -343,6 +374,19 @@ video {
    position: relative;
    top: -20px;
    left: 805px;
+   background: none;
+   color: rgb(161, 160, 160);
+   border: 2px solid rgb(161, 160, 160);
+   height: 70px;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.buttonCubeFixAparat {
+   width: 95px;
+   position: relative;
+   top: -20px;
+   left: 745px;
    background: none;
    color: rgb(161, 160, 160);
    border: 2px solid rgb(161, 160, 160);
@@ -839,6 +883,13 @@ video {
    width: 325px;
 }
 
+.statsAbilityBottomEmpty {
+   position: relative;
+   top: 90px;
+   left: -280px;
+   width: 325px;
+}
+
 .spanAbilityBottom {
    margin-left: 10px;
    color: #fff;
@@ -928,6 +979,17 @@ video {
    padding: 5px 10px;
    font-weight: 200;
    margin-top: 25px;
+}
+
+.historyFirstSpellBig {
+   background-color: #1c1c1c;
+   width: 580px;
+   height: 50px;
+   color: #909090;
+   font-size: 0.9rem;
+   padding: 5px 10px;
+   font-weight: 200;
+   margin-top: -5px;
 }
 
 .historyTherdSpell {
