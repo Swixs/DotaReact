@@ -14,7 +14,11 @@ const AbilityTherdStats = ({ posts }) => {
 
    return (
       <div>
-         <div className={classAbaddonPage.abilityStats}>
+         <div
+            className={
+               thirdSpellDetails.abilityStats || classAbaddonPage.abilityStats
+            }
+         >
             <div>
                <div className={classAbaddonPage.textAbility}>
                   {thirdSpellDetails.firstInfoSpell}
@@ -27,7 +31,12 @@ const AbilityTherdStats = ({ posts }) => {
                   thirdSpellDetails.secondStatsInfoSpell && (
                      <div className={classAbaddonPage.textAbility}>
                         {thirdSpellDetails.secondInfoSpell}
-                        <span className={classAbaddonPage.spanAbility}>
+                        <span
+                           className={
+                              thirdSpellDetails.colorTextSpell ||
+                              classAbaddonPage.spanAbility
+                           }
+                        >
                            {thirdSpellDetails.secondStatsInfoSpell}
                         </span>
                      </div>

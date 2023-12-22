@@ -13,7 +13,12 @@ const AbilityTherdStatsRight = ({ posts }) => {
    const thirdSpellDetails = posts[0].thirdSpellsDetails[0];
 
    return (
-      <div className={classAbaddonPage.abilityStatsRight}>
+      <div
+         className={
+            thirdSpellDetails.abilityStatsRight ||
+            classAbaddonPage.abilityStatsRight
+         }
+      >
          <div className={classAbaddonPage.textSecondAbilityRight}>
             {thirdSpellDetails.preImmunitySpell} {thirdSpellDetails.preDisable}
          </div>
@@ -43,18 +48,22 @@ const AbilityTherdStatsRight = ({ posts }) => {
                      {thirdSpellDetails.statsSpellFirst}
                   </span>
                </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {thirdSpellDetails.preStatsSpellSecond}
-                  <span className={classAbaddonPage.spanAbilityBottom}>
-                     {thirdSpellDetails.statsSpellSecond}
-                  </span>
-               </div>
-               <div className={classAbaddonPage.textAbilityBottom}>
-                  {thirdSpellDetails.preStatsSpellThird}
-                  <span className={classAbaddonPage.spanSecondAbilityBottom}>
-                     {thirdSpellDetails.statsSpellThird}
-                  </span>
-               </div>
+               {thirdSpellDetails.preStatsSpellSecond && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellSecond}
+                     <span className={classAbaddonPage.spanAbilityBottom}>
+                        {thirdSpellDetails.statsSpellSecond}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellFourth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellThird}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellThird}
+                     </span>
+                  </div>
+               )}
                {thirdSpellDetails.preStatsSpellFourth && (
                   <div className={classAbaddonPage.textAbilityBottom}>
                      {thirdSpellDetails.preStatsSpellFourth}
@@ -68,6 +77,54 @@ const AbilityTherdStatsRight = ({ posts }) => {
                      {thirdSpellDetails.preStatsSpellFifth}
                      <span className={classAbaddonPage.spanSecondAbilityBottom}>
                         {thirdSpellDetails.statsSpellFifth}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellSixth && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellSixth}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellSixth}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellSeventh && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellSeventh}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellSeventh}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellEights && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellEights}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellEights}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellNines && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellNines}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellNines}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellTens && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellTens}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellTens}
+                     </span>
+                  </div>
+               )}
+               {thirdSpellDetails.preStatsSpellElevens && (
+                  <div className={classAbaddonPage.textAbilityBottom}>
+                     {thirdSpellDetails.preStatsSpellElevens}
+                     <span className={classAbaddonPage.spanSecondAbilityBottom}>
+                        {thirdSpellDetails.statsSpellElevens}
                      </span>
                   </div>
                )}

@@ -18,6 +18,17 @@ const AbilityTherdLineInfo = ({ posts }) => {
                <div className={classAbaddonPage.textSpellSecond}>
                   {posts[0].thirdSpellsDetails[0].textSpell}
                </div>
+
+               {posts[0].thirdSpellsDetails[0].subtextSpell && (
+                  <div className={classAbaddonPage.brDiv}>
+                     <br />
+                     {posts[0].thirdSpellsDetails[0].subtextSpell}
+                  </div>
+               )}
+
+               {!posts[0].thirdSpellsDetails[0].subtextSpell && (
+                  <div className={classAbaddonPage.brDiv}>{null}</div>
+               )}
             </div>
          </div>
       </div>

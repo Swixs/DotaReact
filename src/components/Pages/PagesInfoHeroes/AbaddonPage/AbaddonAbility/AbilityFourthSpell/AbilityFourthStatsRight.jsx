@@ -43,13 +43,23 @@ const AbilityFourthStatsRight = ({ posts }) => {
          )}
 
          {fourthSpellDetails.dissableSpell && (
-            <div className={classAbaddonPage.spanFourthAbilityRight}>
+            <div
+               className={
+                  fourthSpellDetails.statsAbilityRight ||
+                  classAbaddonPage.spanFourthAbilityRight
+               }
+            >
                {fourthSpellDetails.dissableSpell}
             </div>
          )}
 
          <div>
-            <div className={classAbaddonPage.statsAbilityBottom}>
+            <div
+               className={
+                  fourthSpellDetails.statsAbility ||
+                  classAbaddonPage.statsAbilityBottom
+               }
+            >
                <div className={classAbaddonPage.textAbilityBottom}>
                   {fourthSpellDetails.preStatsSpellFirst}
                   <span className={classAbaddonPage.spanAbilityBottom}>

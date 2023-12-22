@@ -747,6 +747,14 @@ video {
    overflow: hidden;
 }
 
+.abilityStatsBig {
+   background-color: #000000;
+   height: 440px;
+   padding-top: 20px;
+   overflow: hidden;
+}
+
+
 .textAbility {
    font-size: 1rem;
    font-weight: 400;
@@ -779,6 +787,13 @@ video {
 .abilityStatsRight {
    position: relative;
    top: -383px;
+   left: 310px;
+   width: 110px;
+}
+
+.abilityStatsRightBig {
+   position: relative;
+   top: -410px;
    left: 310px;
    width: 110px;
 }
@@ -879,6 +894,13 @@ video {
 .statsAbilityBottom {
    position: relative;
    top: 10px;
+   left: -280px;
+   width: 325px;
+}
+
+.statsAbilityBottomSmall {
+   position: relative;
+   top: 40px;
    left: -280px;
    width: 325px;
 }
