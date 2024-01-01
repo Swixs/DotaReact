@@ -1,4 +1,4 @@
-import classAbaddonPage from '../components/Pages/PagesInfoHeroes/AbaddonPage/AbaddonPage.module.css';
+import classPage from '../components/Pages/PagesInfoHeroes/heroPage/HeroPage.module.css';
 
 const state = {
    AbaddonePage: [
@@ -58,9 +58,9 @@ const state = {
                      nameSpellThird: `double-edged`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexityFirst,
-                     secondLevel: classAbaddonPage.cube,
-                     thirdLevel: classAbaddonPage.cube,
+                     firstLevel: classPage.cubeComplexityFirst,
+                     secondLevel: classPage.cube,
+                     thirdLevel: classPage.cube,
                   },
                ],
                video: [
@@ -86,9 +86,9 @@ const state = {
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
                      intelligenciAtrNumber: '19',
                      intelligenciAtrNumberPlus: '+1.6',
-                     carryBarConteiner: classAbaddonPage.barConteiner,
-                     supportBarConteiner: classAbaddonPage.barConteiner70,
-                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     carryBarConteiner: classPage.barConteiner,
+                     supportBarConteiner: classPage.barConteiner70,
+                     durableBarConteiner: classPage.barConteiner70,
                      attackLogo:
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
                      attackNumber: `46-56`,
@@ -146,7 +146,7 @@ const state = {
                      firstStatsInfoSpell: `Unit Target`,
                      secondStatsInfoSpell: `Heroes`,
                      thirdStatsInfoSpell: `Magical`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
                      immunitySpell: 'Allies Yes Enemies No',
                      statsSpellFirst: '40.0%',
@@ -165,7 +165,7 @@ const state = {
                secondSpellsDetails: [
                   {
                      classTextAbilityRightSecond:
-                        classAbaddonPage.abilityStatsRightSecond,
+                        classPage.abilityStatsRightSecond,
                      nameSpell: `APHOTIC SHIELD`,
                      textSpell: `Summons dark energies around an ally unit, creating an all
                damage barrier that absorbs a set amount of damage before
@@ -190,7 +190,7 @@ const state = {
                      timeSpell: `12.0 / 10.0 / 8.0 / 6.0`,
                      manaSpell: `95 / 110 / 125 / 140`,
                      historySpell: `The powers of the black mist rise to absorb attacks like the black mist absorbs light.`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      preStatsSpellFirst: `DURATION:`,
                      preStatsSpellSecond: `BURST RADIUS:`,
                      preStatsSpellThird: `DAMAGE BARRIER:`,
@@ -336,9 +336,9 @@ const state = {
                      nameSpellThird: `unstable chemicals`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexityFirst,
-                     secondLevel: classAbaddonPage.cube,
-                     thirdLevel: classAbaddonPage.cube,
+                     firstLevel: classPage.cubeComplexityFirst,
+                     secondLevel: classPage.cube,
+                     thirdLevel: classPage.cube,
                   },
                ],
                video: [
@@ -364,9 +364,9 @@ const state = {
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
                      intelligenciAtrNumber: '25',
                      intelligenciAtrNumberPlus: '+1.8',
-                     carryBarConteiner: classAbaddonPage.barConteiner,
-                     supportBarConteiner: classAbaddonPage.barConteiner70,
-                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     carryBarConteiner: classPage.barConteiner,
+                     supportBarConteiner: classPage.barConteiner70,
+                     durableBarConteiner: classPage.barConteiner70,
                      attackLogo:
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
                      attackNumber: `50-56`,
@@ -423,7 +423,7 @@ const state = {
                      firstStatsInfoSpell: `Point Target`,
                      thirdStatsInfoSpell: `Physical`,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
-                     colorTextSpell: classAbaddonPage.spanAbilityPhysical,
+                     colorTextSpell: classPage.spanAbilityPhysical,
                      immunitySpell: 'No',
                      preStatsSpellFirst: `RADIUS:`,
                      preStatsSpellSecond: `DURATION:`,
@@ -457,7 +457,7 @@ const state = {
                      statsSpellFourth: `4.0% / 8.0% / 12.0% / 16.0%`,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
                      classTextAbilityRightSecond:
-                        classAbaddonPage.abilityStatsRightSecond,
+                        classPage.abilityStatsRightSecond,
                      immunitySpell: 'No',
                      preDisableSpell: `DISABLE:`,
                      dissableSpell: `Only Strong Dispels`,
@@ -465,7 +465,7 @@ const state = {
                      timeSpell: `15.0`,
                      manaSpell: `100`,
                      historySpell: `A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.`,
-                     colorTextSpell: classAbaddonPage.spanAbilityPhysical,
+                     colorTextSpell: classPage.spanAbilityPhysical,
                      preStatsSpellFirst: `MAX STUN:`,
                      preStatsSpellSecond: `MAX DAMAGE:`,
                      preStatsSpellThird: `EXPLOSION RADIUS:`,
@@ -489,7 +489,7 @@ const state = {
                      preImmunitySpell: `PIERCES SPELL IMMUNITY:`,
                      immunitySpell: 'No',
                      classImunitySpell:
-                        classAbaddonPage.spanSecondAbilityRightOneSpell,
+                        classPage.spanSecondAbilityRightOneSpell,
                      historySpell: ``,
                      preStatsSpellFirst: `MAX STACKS:`,
                      preStatsSpellSecond: `DEBUFF DURATION:`,
@@ -548,9 +548,9 @@ const state = {
                ],
                btnArrow: [
                   {
-                     leftArrowBtn: classAbaddonPage.btnArrowFix,
-                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
-                     centerBtn: classAbaddonPage.buttonCubeFix,
+                     leftArrowBtn: classPage.btnArrowFix,
+                     rightArrowBtn: classPage.btnArrowRightFix,
+                     centerBtn: classPage.buttonCubeFix,
                      linkLeftArrowBtn: `/heroes/Abaddon`,
                      linkRightArrowBtn: `/heroes/Ancientapparition`,
                   },
@@ -598,9 +598,9 @@ const state = {
                      nameSpellFirst: `damaging ice`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexityFirst,
-                     secondLevel: classAbaddonPage.cubeComplexity,
-                     thirdLevel: classAbaddonPage.cube,
+                     firstLevel: classPage.cubeComplexityFirst,
+                     secondLevel: classPage.cubeComplexity,
+                     thirdLevel: classPage.cube,
                   },
                ],
                video: [
@@ -626,9 +626,9 @@ const state = {
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
                      intelligenciAtrNumber: '23',
                      intelligenciAtrNumberPlus: '+3.1',
-                     carryBarConteiner: classAbaddonPage.barConteiner,
-                     supportBarConteiner: classAbaddonPage.barConteiner70,
-                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     carryBarConteiner: classPage.barConteiner,
+                     supportBarConteiner: classPage.barConteiner70,
+                     durableBarConteiner: classPage.barConteiner70,
                      attackLogo:
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
                      attackNumber: `44-54`,
@@ -685,7 +685,7 @@ const state = {
                      firstStatsInfoSpell: `Unit Target`,
                      secondStatsInfoSpell: `Enemy Units`,
                      thirdStatsInfoSpell: `Magical`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
                      immunitySpell: 'No',
                      preStatsSpellFirst: `DAMAGE PER SECOND:`,
@@ -715,7 +715,7 @@ const state = {
                      statsSpellFifth: `6 / 8 / 10 / 12`,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
                      classTextAbilityRightSecond:
-                        classAbaddonPage.abilityStatsRightSecond,
+                        classPage.abilityStatsRightSecond,
                      immunitySpell: 'No',
                      preDisableSpell: `DISABLE:`,
                      dissableSpell: `No`,
@@ -740,7 +740,7 @@ const state = {
                      firstStatsInfoSpell: `Passive`,
                      secondStatsInfoSpell: `Enemy Units`,
                      thirdStatsInfoSpell: `Magical`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      statsSpellFirst: `40 / 80 / 120 / 160`,
                      statsSpellSecond: `100%`,
                      statsSpellThird: `0,7 / 0,8 / 0,9 / 1`,
@@ -770,7 +770,7 @@ const state = {
                      firstStatsInfoSpell: `Point Target`,
                      secondInfoSpell: `DAMAGE TYPE:`,
                      secondStatsInfoSpell: `Magical`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      statsSpellFirst: `250 / 325 / 400`,
                      statsSpellSecond: `10`,
                      statsSpellThird: `12,5 / 20 / 32`,
@@ -788,10 +788,8 @@ const state = {
                      preStatsSpellSecond: `FROSTBITTEN DURATION:`,
                      preStatsSpellThird: `FROSTBITTEN DAMAGE PER SECOND:`,
                      preStatsSpellFourth: `SHATTER HEALTH THRESHOLD:`,
-                     classFromTextSpell:
-                        classAbaddonPage.textSecondAbilityRightFix,
-                     classFromSubTextSpell:
-                        classAbaddonPage.spanFourthAbilityRightFix,
+                     classFromTextSpell: classPage.textSecondAbilityRightFix,
+                     classFromSubTextSpell: classPage.spanFourthAbilityRightFix,
                   },
                ],
                leftButton: [
@@ -814,9 +812,9 @@ const state = {
                ],
                btnArrow: [
                   {
-                     leftArrowBtn: classAbaddonPage.btnArrowFixAparat,
-                     rightArrowBtn: classAbaddonPage.btnArrowRightFixAparat,
-                     centerBtn: classAbaddonPage.buttonCubeFixAparat,
+                     leftArrowBtn: classPage.btnArrowFixAparat,
+                     rightArrowBtn: classPage.btnArrowRightFixAparat,
+                     centerBtn: classPage.buttonCubeFixAparat,
                      linkLeftArrowBtn: `/heroes/Alchemist`,
                      linkRightArrowBtn: `/heroes/Anti-mage`,
                   },
@@ -880,9 +878,9 @@ const state = {
                      nameSpellSecond: ` teleporting short distances`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexityFirst,
-                     secondLevel: classAbaddonPage.cube,
-                     thirdLevel: classAbaddonPage.cube,
+                     firstLevel: classPage.cubeComplexityFirst,
+                     secondLevel: classPage.cube,
+                     thirdLevel: classPage.cube,
                   },
                ],
                video: [
@@ -908,9 +906,9 @@ const state = {
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
                      intelligenciAtrNumber: '12',
                      intelligenciAtrNumberPlus: '+1.8',
-                     carryBarConteiner: classAbaddonPage.barConteiner,
-                     supportBarConteiner: classAbaddonPage.barConteiner70,
-                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     carryBarConteiner: classPage.barConteiner,
+                     supportBarConteiner: classPage.barConteiner70,
+                     durableBarConteiner: classPage.barConteiner70,
                      attackLogo:
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
                      attackNumber: `53-57`,
@@ -964,7 +962,7 @@ const state = {
                      firstStatsInfoSpell: `Passive`,
                      thirdStatsInfoSpell: `Physical`,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
-                     colorTextSpell: classAbaddonPage.spanAbilityPhysical,
+                     colorTextSpell: classPage.spanAbilityPhysical,
                      immunitySpell: 'No',
                      preStatsSpellFirst: `MANA BURNED AS DAMAGE:`,
                      preStatsSpellSecond: `MANA BURNED PER HIT:`,
@@ -991,7 +989,7 @@ const state = {
                      manaSpell: `45`,
                      historySpell: `In his encounter with the Dead Gods, Anti-Mage learned the value of being elusive.`,
                      preStatsSpellFirst: `RANGE:`,
-                     classStatsRight: classAbaddonPage.statsAbilityBottomEmpty,
+                     classStatsRight: classPage.statsAbilityBottomEmpty,
                   },
                ],
                thirdSpellsDetails: [
@@ -1006,7 +1004,7 @@ const state = {
                      preImmunitySpell: `DISPELLABLE:`,
                      immunitySpell: 'Yes',
                      classImunitySpell:
-                        classAbaddonPage.spanSecondAbilityRightOneSpell,
+                        classPage.spanSecondAbilityRightOneSpell,
                      preStatsSpellFirst: `MAGIC RESISTANCE:`,
                      preStatsSpellSecond: `DURATION:`,
                      timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
@@ -1026,7 +1024,7 @@ const state = {
                      secondStatsInfoSpell: `Enemy Units`,
                      thirdInfoSpell: `DAMAGE TYPE:`,
                      thirdStatsInfoSpell: `Magical`,
-                     colorTextSpellSecond: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpellSecond: classPage.spanAbilityMagical,
                      statsSpellFirst: `0,8 / 0,95 / 1,1`,
                      statsSpellSecond: `0,3`,
                      statsSpellThird: `500`,
@@ -1039,9 +1037,8 @@ const state = {
                      preStatsSpellFirst: `DAMAGE:`,
                      preStatsSpellSecond: `STUN DURATION:`,
                      preStatsSpellThird: `RADIUS:`,
-                     statsAbility: classAbaddonPage.statsAbilityBottomSmall,
-                     statsAbilityRight:
-                        classAbaddonPage.spanFourthAbilityRightFix,
+                     statsAbility: classPage.statsAbilityBottomSmall,
+                     statsAbilityRight: classPage.spanFourthAbilityRightFix,
                   },
                ],
                leftButton: [
@@ -1065,9 +1062,9 @@ const state = {
                ],
                btnArrow: [
                   {
-                     leftArrowBtn: classAbaddonPage.btnArrowFix,
-                     rightArrowBtn: classAbaddonPage.btnArrowRightFix,
-                     centerBtn: classAbaddonPage.buttonCubeFix,
+                     leftArrowBtn: classPage.btnArrowFix,
+                     rightArrowBtn: classPage.btnArrowRightFix,
+                     centerBtn: classPage.buttonCubeFix,
                      linkLeftArrowBtn: `/heroes/Ancientapparition`,
                      linkRightArrowBtn: `/heroes/Arcwarden`,
                   },
@@ -1139,9 +1136,9 @@ const state = {
                      nameSpellThird: ` Summon a Spark Wraith`,
                   },
                   {
-                     firstLevel: classAbaddonPage.cubeComplexityFirst,
-                     secondLevel: classAbaddonPage.cubeComplexity,
-                     thirdLevel: classAbaddonPage.cubeComplexity,
+                     firstLevel: classPage.cubeComplexityFirst,
+                     secondLevel: classPage.cubeComplexity,
+                     thirdLevel: classPage.cubeComplexity,
                   },
                ],
                video: [
@@ -1167,9 +1164,9 @@ const state = {
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png',
                      intelligenciAtrNumber: '24',
                      intelligenciAtrNumberPlus: '+2.6',
-                     carryBarConteiner: classAbaddonPage.barConteiner,
-                     supportBarConteiner: classAbaddonPage.barConteiner70,
-                     durableBarConteiner: classAbaddonPage.barConteiner70,
+                     carryBarConteiner: classPage.barConteiner,
+                     supportBarConteiner: classPage.barConteiner70,
+                     durableBarConteiner: classPage.barConteiner70,
                      attackLogo:
                         'https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png',
                      attackNumber: `51-57`,
@@ -1229,7 +1226,7 @@ const state = {
                      secondStatsInfoSpell: `Enemy Units`,
                      thirdStatsInfoSpell: `Magical`,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      immunitySpell: 'No',
                      preStatsSpellFirst: `DURATION:`,
                      preStatsSpellSecond: `DAMAGE PER SECOND:`,
@@ -1250,7 +1247,7 @@ const state = {
                      manaSpell: `120`,
                      historySpell: `Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves 
                      even the toughest metals.`,
-                     historyStyle: classAbaddonPage.historyFirstSpellBig,
+                     historyStyle: classPage.historyFirstSpellBig,
                   },
                ],
                secondSpellsDetails: [
@@ -1270,7 +1267,7 @@ const state = {
                      statsSpellFourth: `4.0% / 8.0% / 12.0% / 16.0%`,
                      preImunitySpell: `PIERCES SPELL IMMUNITY:`,
                      classTextAbilityRightSecond:
-                        classAbaddonPage.abilityStatsRightSecond,
+                        classPage.abilityStatsRightSecond,
                      immunitySpell: 'No',
                      preDisableSpell: `DISABLE:`,
                      dissableSpell: `Only Strong Dispels`,
@@ -1278,7 +1275,7 @@ const state = {
                      timeSpell: `15.0`,
                      manaSpell: `100`,
                      historySpell: `A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.`,
-                     colorTextSpell: classAbaddonPage.spanAbilityPhysical,
+                     colorTextSpell: classPage.spanAbilityPhysical,
                      preStatsSpellFirst: `MAX STUN:`,
                      preStatsSpellSecond: `MAX DAMAGE:`,
                      preStatsSpellThird: `EXPLOSION RADIUS:`,
@@ -1296,7 +1293,7 @@ const state = {
                      secondInfoSpell: `DAMAGE TYPE:`,
                      firstStatsInfoSpell: `Passive`,
                      secondStatsInfoSpell: `Magical`,
-                     colorTextSpell: classAbaddonPage.spanAbilityMagical,
+                     colorTextSpell: classPage.spanAbilityMagical,
                      statsSpellFirst: `375`,
                      statsSpellSecond: `100 / 180 / 260 / 340`,
                      statsSpellThird: `2`,
@@ -1311,7 +1308,7 @@ const state = {
                      preImmunitySpell: `PIERCES SPELL IMMUNITY:`,
                      immunitySpell: 'No',
                      classImunitySpell:
-                        classAbaddonPage.spanSecondAbilityRightOneSpell,
+                        classPage.spanSecondAbilityRightOneSpell,
                      historySpell: `Lesser fragments of Zet's original self.`,
                      preStatsSpellFirst: `SEARCH RADIUS:`,
                      preStatsSpellSecond: `DAMAGE:`,
@@ -1324,8 +1321,8 @@ const state = {
                      preStatsSpellNines: `SLOW DURATION:`,
                      preStatsSpellTens: `TEMPEST SLOW DURATION:`,
                      preStatsSpellElevens: `MOVEMENT SLOW:`,
-                     abilityStats: classAbaddonPage.abilityStatsBig,
-                     abilityStatsRight: classAbaddonPage.abilityStatsRightBig,
+                     abilityStats: classPage.abilityStatsBig,
+                     abilityStatsRight: classPage.abilityStatsRightBig,
                   },
                ],
                fourthSpellsDetails: [
@@ -1341,7 +1338,7 @@ const state = {
                      statsSpellThird: `2000`,
                      statsSpellFourth: `50%`,
                      classTextAbilityRightSecond:
-                        classAbaddonPage.abilityStatsRightSecond,
+                        classPage.abilityStatsRightSecond,
                      historySpell: `Warped by the power of its peers, Arc Warden becomes what it despises most: disharmony.`,
                      timeLogoSpell: `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/cooldown.png`,
                      timeSpell: `70 / 60 / 50`,

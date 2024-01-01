@@ -1,14 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import TextReverse from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/TextReverse';
-import Text from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/Text';
-import AbaddonRightPage from '../PagesInfoHeroes/AbaddonPage/AbaddonComponents/AbaddoneRight/AbaddoneRight';
-import AbaddoneStatsLine from '../PagesInfoHeroes/AbaddonPage/AbaddonStatsLine/AbaddonStatsLine';
-import FooterButtons from '../PagesInfoHeroes/AbaddonPage/FooterButtons/FooterButtons';
+import TextReverse from '../PagesInfoHeroes/heroPage/HeroComponents/TextReverse';
+import Text from '../PagesInfoHeroes/heroPage/HeroComponents/Text';
+import HeroRightPage from '../PagesInfoHeroes/heroPage/HeroComponents/HeroRight/HeroRight';
+import HeroStatsLine from '../PagesInfoHeroes/heroPage/HeroStatsLine/HeroStatsLine';
+import FooterButtons from '../PagesInfoHeroes/heroPage/FooterButtons/FooterButtons';
 
-import classAbaddonPage from './../PagesInfoHeroes/AbaddonPage/AbaddonPage.module.css';
-import AbaddoneAbility from '../PagesInfoHeroes/AbaddonPage/AbaddonAbility/AbaddonAbility';
+import classPage from './../PagesInfoHeroes/heroPage/HeroPage.module.css';
+import HeroAbility from '../PagesInfoHeroes/heroPage/HeroAbility/HeroAbility';
 
 const HeroDetails = props => {
    const location = useLocation();
@@ -34,24 +34,24 @@ const HeroDetails = props => {
    }
 
    return (
-      <div className={classAbaddonPage.page}>
-         <div className={classAbaddonPage.pageContent}>
-            <div className={classAbaddonPage.textWrapper}>
+      <div className={classPage.page}>
+         <div className={classPage.pageContent}>
+            <div className={classPage.textWrapper}>
                {posts && <TextReverse posts={posts} />}
-               <div className={classAbaddonPage.pageFlex}>
+               <div className={classPage.pageFlex}>
                   {posts && <Text posts={posts} />}
-                  <AbaddonRightPage
+                  <HeroRightPage
                      key={posts[0].video[0].videoHero}
                      posts={posts}
                   />
                </div>
-               <div className={classAbaddonPage.statsLine}>
-                  <AbaddoneStatsLine posts={posts} />
+               <div className={classPage.statsLine}>
+                  <HeroStatsLine posts={posts} />
                </div>
                <div>
-                  <AbaddoneAbility posts={posts} />
+                  <HeroAbility posts={posts} />
                </div>
-               <div className={classAbaddonPage.footerButtons}>
+               <div className={classPage.footerButtons}>
                   <FooterButtons posts={posts} />
                </div>
             </div>
