@@ -1,10 +1,13 @@
 import React from 'react';
-import Video from '../../components/Header/Video/video';
+import classMain from './Main.module.css';
+import Video from './topMain/Video/video';
+import TopMain from './topMain/topMain';
 
 const Main = () => {
    return (
-      <div>
+      <div className={classMain.mainContent}>
          <Video />
+         <TopMain />
       </div>
    );
 };
