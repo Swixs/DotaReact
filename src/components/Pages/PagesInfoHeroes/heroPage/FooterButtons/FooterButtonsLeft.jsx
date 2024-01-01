@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import classPage from '../HeroPage.module.css';
+import classPage from '../../../../style/HeroPage.module.css';
 
 const FooterButtonsLeft = ({ posts }) => {
    const hasSecondName = posts[0].leftButton[0].secondNamePreviousHero;

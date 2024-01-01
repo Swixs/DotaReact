@@ -8,7 +8,7 @@ import News from './components/Pages/News/News';
 import Esports from './../src/components/Pages/Esports/Esports';
 import Main from './components/Pages/Main/Main';
 import HeroDetails from './components/Pages/HeroDetails/HeroDetails';
-import state from './redux/state';
+import state from './components/redux/state';
 
 const App = () => {
    return (

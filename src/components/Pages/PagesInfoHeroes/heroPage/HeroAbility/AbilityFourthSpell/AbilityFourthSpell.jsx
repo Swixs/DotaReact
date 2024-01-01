@@ -3,7 +3,7 @@ import AbilityFourthLineInfo from './AbilityFourthLineInfo';
 import AbilityFourthStats from './AbilityFourthStats';
 import AbilityFourthStatsRight from './AbilityFourthStatsRight';
 
-import classPage from './../../HeroPage.module.css';
+import classPage from './../../../../../style/HeroPage.module.css';
 
 const AbilityFourthSpell = ({ posts }) => {
    return (

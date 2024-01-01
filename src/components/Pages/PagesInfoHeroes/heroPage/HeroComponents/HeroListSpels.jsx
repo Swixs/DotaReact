@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import HeroHistory from './HeroHistory';
-import classPage from '../HeroPage.module.css';
+import classPage from '../../../../style/HeroPage.module.css';
 import HeroType from './HeroType';
 const HeroListSpels = ({ posts }) => {
    if (!posts || !posts.length) {

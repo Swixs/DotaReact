@@ -6,7 +6,7 @@ import AbilitySecondSpell from './AbilitySecondSpell/AbilitySecondContent';
 import AbilityTherdSpell from './AbilityTherdSpell/AbilityTherdSpell';
 import AbilityFourthSpell from './AbilityFourthSpell/AbilityFourthSpell';
 
-import classPage from '../HeroPage.module.css';
+import classPage from '../../../../style/HeroPage.module.css';
 
 const AbaddoneAbilityLeft = ({ posts }) => {
    const [selectedAbility, setSelectedAbility] = useState('ability1');

@@ -1,5 +1,6 @@
-import classPage from '../HeroPage.module.css';
 import { Link } from 'react-router-dom';
+
+import classPage from '../../../../style/HeroPage.module.css';
 
 const FooterButtonsCenter = () => {
    return (

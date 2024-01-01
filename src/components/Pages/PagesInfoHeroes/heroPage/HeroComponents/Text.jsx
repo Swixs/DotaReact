@@ -1,4 +1,4 @@
-import classPage from '../HeroPage.module.css';
+import classPage from '../../../../style/HeroPage.module.css';
 import HeroListSpels from './HeroListSpels';
 
 const Text = ({ posts }) => {

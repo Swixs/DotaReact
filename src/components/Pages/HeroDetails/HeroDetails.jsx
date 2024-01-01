@@ -7,7 +7,7 @@ import HeroRightPage from '../PagesInfoHeroes/heroPage/HeroComponents/HeroRight/
 import HeroStatsLine from '../PagesInfoHeroes/heroPage/HeroStatsLine/HeroStatsLine';
 import FooterButtons from '../PagesInfoHeroes/heroPage/FooterButtons/FooterButtons';
 
-import classPage from './../PagesInfoHeroes/heroPage/HeroPage.module.css';
+import classPage from '../../style/HeroPage.module.css';
 import HeroAbility from '../PagesInfoHeroes/heroPage/HeroAbility/HeroAbility';
 
 const HeroDetails = props => {

@@ -3,7 +3,7 @@ import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import HeroSkils from './HeroSkills';
 import { Link } from 'react-router-dom';
 
-import classPage from '../../HeroPage.module.css';
+import classPage from '../../../../../style/HeroPage.module.css';
 
 const HeroRightPage = ({ posts }) => {
    return (

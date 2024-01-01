@@ -1,5 +1,5 @@
 import React from 'react';
-import classPage from '../HeroPage.module.css';
+import classPage from '../../../../style/HeroPage.module.css';
 
 const AbilityVideo = ({ selectedAbility, posts }) => {
    const videoUrl =

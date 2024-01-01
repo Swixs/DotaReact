@@ -1,7 +1,8 @@
 import FooterButtonsLeft from './FooterButtonsLeft';
-import classPage from '../HeroPage.module.css';
 import FooterButtonsCenter from './FooterButtonsCenter';
 import FooterButtonsRight from './FooterButtonsRight';
+
+import classPage from '../../../../style/HeroPage.module.css';
 
 const FooterButtons = ({ posts }) => {
    return (

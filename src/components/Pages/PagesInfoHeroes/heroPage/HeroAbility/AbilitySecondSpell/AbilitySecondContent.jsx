@@ -3,7 +3,7 @@ import AbilitySecondLineInfo from './SecondAbilityLineInfo';
 import AbilitySecondStats from './AbilitySecondStats';
 import AbilitySecondStatsRight from './AbilitySecondStatsRight';
 
-import classPage from './../../HeroPage.module.css';
+import classPage from './../../../../../style/HeroPage.module.css';
 
 const AbilitySecond = ({ posts }) => {
    return (

@@ -2,7 +2,7 @@ import React from 'react';
 import AbilityTherdLineInfo from './TherdAbilityLineInfo';
 import AbilityTherdStatsRight from './AbilityTherdStatsRight';
 import AbilityTherdStats from './AbilityTherdStats';
-import classPage from './../../HeroPage.module.css';
+import classPage from './../../../../../style/HeroPage.module.css';
 
 const AbilityTherdSpell = ({ posts }) => {
    return (

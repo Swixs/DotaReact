@@ -1,4 +1,4 @@
-import classPage from '../components/Pages/PagesInfoHeroes/heroPage/HeroPage.module.css';
+import classPage from '../style/HeroPage.module.css';
 
 const state = {
    AbaddonePage: [

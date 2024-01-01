@@ -1,4 +1,4 @@
-import classPage from '../HeroPage.module.css';
+import classPage from '../../../../style/HeroPage.module.css';
 
 const HeroStatsLine = ({ posts }) => {
    if (!posts || !posts[0] || !posts[0].stats || !posts[0].stats[0]) {
