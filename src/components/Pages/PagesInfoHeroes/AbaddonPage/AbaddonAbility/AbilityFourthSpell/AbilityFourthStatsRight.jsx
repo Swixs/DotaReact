@@ -13,7 +13,12 @@ const AbilityFourthStatsRight = ({ posts }) => {
    const fourthSpellDetails = posts[0].fourthSpellsDetails[0];
 
    return (
-      <div className={classAbaddonPage.abilityStatsRight}>
+      <div
+         className={
+            fourthSpellDetails.classTextAbilityRightSecond ||
+            classAbaddonPage.abilityStatsRight
+         }
+      >
          {fourthSpellDetails.preImmunitySpell && (
             <div className={classAbaddonPage.textSecondAbilityRight}>
                {fourthSpellDetails.preImmunitySpell}

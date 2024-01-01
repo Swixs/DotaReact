@@ -2,17 +2,24 @@ import { Link } from 'react-router-dom';
 import classAbaddonPage from '../AbaddonPage.module.css';
 
 const FooterButtonsLeft = ({ posts }) => {
-   const leftBtn = () => {
-      console.log(1);
-   };
+   const hasSecondName = posts[0].leftButton[0].secondNamePreviousHero;
+
    return (
       <div>
          <Link to={posts[0].leftButton[0].linkPreviousHero}>
-            <button className={classAbaddonPage.buttonLeft} onClick={leftBtn}>
+            <button className={classAbaddonPage.buttonLeft}>
                <div className={classAbaddonPage.buttonTextLeft}>
                   <div>PREVIOUS HERO</div>
                   <div className={classAbaddonPage.titleButton}>
-                     {posts[0].leftButton[0].namePreviousHero}
+                     <div>{posts[0].leftButton[0].namePreviousHero}</div>
+                     {hasSecondName && (
+                        <div className={classAbaddonPage.smallSpace}></div>
+                     )}
+                     {hasSecondName && (
+                        <div>
+                           {posts[0].leftButton[0].secondNamePreviousHero}
+                        </div>
+                     )}
                   </div>
                   <div className={classAbaddonPage.subTitleButton}>
                      <img
@@ -24,7 +31,12 @@ const FooterButtonsLeft = ({ posts }) => {
                   </div>
                </div>
 
-               <div className={classAbaddonPage.buttonPictureLeft}>
+               <div
+                  className={
+                     posts[0].leftButton[0].classImgPreviousHero ||
+                     classAbaddonPage.buttonPictureLeft
+                  }
+               >
                   <img
                      src={posts[0].leftButton[0].imgPreviousHero}
                      alt="previous hero"

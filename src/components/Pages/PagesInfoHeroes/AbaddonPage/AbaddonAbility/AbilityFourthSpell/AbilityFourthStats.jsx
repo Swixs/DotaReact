@@ -1,6 +1,15 @@
 import classAbaddonPage from '../../AbaddonPage.module.css';
 
 const AbilityFourthStats = ({ posts }) => {
+   if (
+      !posts ||
+      !posts[0] ||
+      !posts[0].fourthSpellsDetails ||
+      !posts[0].fourthSpellsDetails[0]
+   ) {
+      return null;
+   }
+
    return (
       <div>
          <div className={classAbaddonPage.abilityStats}>
