@@ -2,13 +2,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Heroes from './components/Pages/Herous/Heroes';
-import News from './components/Pages/News/News';
-import Esports from './../src/components/Pages/Esports/Esports';
-import Main from './components/Pages/Main/Main';
-import HeroDetails from './components/Pages/HeroDetails/HeroDetails';
-import state from './components/redux/state';
+import Layout from './Layout';
+import Heroes from './Pages/Herous/Heroes';
+import News from './Pages/News/News';
+import Esports from './Pages/Esports/Esports';
+import Main from './Pages/Main/Main';
+import HeroDetails from './components/HeroDetails/HeroDetails';
+import state from './redux/state';
 
 const App = () => {
    return (

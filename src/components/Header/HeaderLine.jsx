@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import ButtonPlay from './ButtonPlay';
 import { Routes, Route } from 'react-router-dom';
-import Heroes from '../Pages/Herous/Heroes';
-import Esports from '../Pages/Esports/Esports';
-import News from '../Pages/News/News';
+import Heroes from '../../Pages/Herous/Heroes';
+import Esports from '../../Pages/Esports/Esports';
+import News from '../../Pages/News/News';
 
 const HeaderLine = () => {
    const navigate = useNavigate();

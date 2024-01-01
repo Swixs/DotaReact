@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from '../../Header/Video/video';
+import Video from '../../components/Header/Video/video';
 
 const Main = () => {
    return (

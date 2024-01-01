@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderLine from './Header/HeaderLine';
+import HeaderLine from './components/Header/HeaderLine';
 
 const Layout = ({ children }) => {
    return (

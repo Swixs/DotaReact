@@ -1,14 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import TextReverse from '../PagesInfoHeroes/heroPage/HeroComponents/TextReverse';
-import Text from '../PagesInfoHeroes/heroPage/HeroComponents/Text';
-import HeroRightPage from '../PagesInfoHeroes/heroPage/HeroComponents/HeroRight/HeroRight';
-import HeroStatsLine from '../PagesInfoHeroes/heroPage/HeroStatsLine/HeroStatsLine';
-import FooterButtons from '../PagesInfoHeroes/heroPage/FooterButtons/FooterButtons';
+import TextReverse from '../../Pages/PagesInfoHeroes/heroPage/HeroComponents/TextReverse';
+import Text from '../../Pages/PagesInfoHeroes/heroPage/HeroComponents/Text';
+import HeroRightPage from '../../Pages/PagesInfoHeroes/heroPage/HeroComponents/HeroRight/HeroRight';
+import HeroStatsLine from '../../Pages/PagesInfoHeroes/heroPage/HeroStatsLine/HeroStatsLine';
+import FooterButtons from '../../Pages/PagesInfoHeroes/heroPage/FooterButtons/FooterButtons';
+import HeroAbility from '../../Pages/PagesInfoHeroes/heroPage/HeroAbility/HeroAbility';
 
 import classPage from '../../style/HeroPage.module.css';
-import HeroAbility from '../PagesInfoHeroes/heroPage/HeroAbility/HeroAbility';
 
 const HeroDetails = props => {
    const location = useLocation();
