@@ -159,7 +159,9 @@
 }
 
 .backgroundNews::before,
-.backgroundNews::after {
+.backgroundNews::after,
+.gapInvite::before,
+.gapInvite::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -178,12 +180,14 @@
     border-bottom: 3px solid grey;
     background-size: cover;
     overflow: hidden;
+    z-index: 20;
     transition: background-color 0.4s ease-in-out;
     background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/22be4ece0013e6a79ccc4e4203a2f5f643378010.png");
 }
 
 .secondBtnNews {
     position: absolute;
+    z-index: 20;
     top: -40px;
     left: 800px;
     width: 370px;
@@ -198,6 +202,7 @@
 
 .thirdBtnNews {
     position: absolute;
+    z-index: 20;
     top: -40px;
     left: 1200px;
     width: 370px;
@@ -292,4 +297,101 @@
     transition: transform 0.4s ease-in-out;
     padding-top: 10px;
     padding-bottom: 15px;
+}
+
+.backgroundInviteMainTop {
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/radiant_dire5.jpg");
+    height: 100vh;
+    width: 1908px;
+    position: relative;
+    top: -103px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.backgroundInviteMainTop .overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.titleInvite {
+    color: #fff;
+    position: absolute;
+    font-family: 'Libre Baskerville', serif;
+    left: 800px;
+    top: 370px;
+    font: 800;
+    font-size: 4.5rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateY(50px);
+}
+
+.titleInvite:hover,
+.bigTitleInvite:hover {
+    transform: scale(1.1);
+}
+
+.titleInvite.active {
+    opacity: 0.7;
+    transform: translateY(0);
+}
+
+.bigTitleInvite.active {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+.bigTitleInvite {
+    color: #fff;
+    position: absolute;
+    top: 500px;
+    left: 360px;
+    font-family: 'Libre Baskerville', serif;
+    font: 800;
+    font-size: 5rem;
+    z-index: 10;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateY(50px);
+}
+
+.borderInvite {
+    border-bottom: 3px solid rgb(237, 103, 54);
+    width: 80px;
+    position: relative;
+    z-index: 10;
+    top: 600px;
+    left: 950px;
+}
+
+.textInvite {
+    color: #fff;
+    width: 800px;
+    z-index: 10;
+    position: relative;
+    top: 650px;
+    left: 570px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.gapInvite {
+    height: 190px;
+    width: 1908px;
+    position: absolute;
+    top: 895px;
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.4);
 }
