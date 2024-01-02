@@ -5,6 +5,7 @@ import TopMain from './topMain/topMain';
 import NewsMain from './newsMain/newsMain';
 import InviteMainTop from './inviteMain/inviteMainTop';
 import InviteMainBottom from './inviteMain/inviteMainBottom';
+import TwisterMain from './twisterMain/twisterMain';
 
 const Main = () => {
    return (
@@ -14,6 +15,7 @@ const Main = () => {
          <NewsMain />
          <InviteMainTop />
          <InviteMainBottom />
+         <TwisterMain />
       </div>
    );
 };
