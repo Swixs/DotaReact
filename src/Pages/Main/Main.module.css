@@ -124,7 +124,7 @@
 .txt {
     position: relative;
     color: aliceblue;
-    top: -300px;
+    top: -320px;
     left: 400px;
     letter-spacing: 3px;
     font-size: 16px;
@@ -136,15 +136,160 @@
     color: rgb(162, 163, 164);
     background: none;
     position: relative;
-    top: -325px;
+    top: -346px;
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: 600;
     left: 550px;
     z-index: 20;
-    transition: letter-spacing 0.2s ease; 
+    transition: letter-spacing 0.2s ease;
 }
 
-.btnNewsTop:hover{
+.btnNewsTop:hover {
     letter-spacing: 4px;
+}
+
+.backgroundNews {
+    height: 190px;
+    width: 1908px;
+    position: absolute;
+    top: 679px;
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.backgroundNews::before,
+.backgroundNews::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.firstBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/22be4ece0013e6a79ccc4e4203a2f5f643378010.png");
+}
+
+.secondBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 800px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/3de4244cdbd1c7dfed426be198ee088b15ff5550.png");
+}
+
+.thirdBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 1200px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/61f41c8b3ccb608a9ea87735685707a88a5ee08c.png");
+}
+
+.firstBtnNews::before,
+.secondBtnNews::before,
+.thirdBtnNews::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.firstBtnNews:hover,
+.secondBtnNews:hover,
+.thirdBtnNews:hover {
+    transition: 0.4s;
+    border-bottom: 3px solid rgb(255, 121, 31);
+}
+
+.firstBtnNews:hover::before,
+.secondBtnNews:hover::before,
+.thirdBtnNews:hover::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.firstBtnNews .textBtnNews,
+.secondBtnNews .textBtnNews,
+.thirdBtnNews .textBtnNews {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s, transform 0.4s ease-in-out;
+    padding: 10px;
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #989797;
+}
+
+.firstBtnNews:hover .textBtnNews,
+.secondBtnNews:hover .textBtnNews,
+.thirdBtnNews:hover .textBtnNews {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.firstBtnNews:hover .timeBtnNews,
+.firstBtnNews:hover .titleBtnNews,
+.secondBtnNews:hover .timeBtnNews,
+.secondBtnNews:hover .titleBtnNews,
+.thirdBtnNews:hover .timeBtnNews,
+.thirdBtnNews:hover .titleBtnNews {
+    transform: translateY(-100px);
+}
+
+.timeBtnNews {
+    color: #989797;
+    position: relative;
+    top: 75px;
+    left: -75px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: transform 0.4s ease-in-out;
+}
+
+.titleBtnNews {
+    width: 350px;
+    position: relative;
+    top: 70px;
+    left: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    color: #fff;
+    transition: transform 0.4s ease-in-out;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
