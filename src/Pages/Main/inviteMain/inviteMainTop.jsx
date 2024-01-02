@@ -30,7 +30,11 @@ const InviteMainTop = () => {
             strategy or tactic to discover. It's completely free to play and
             always will be – start defending your ancient now.
          </div>
-         <div className={classMain.gapInvite}></div>
+         <div className={classMain.gapInvite}>
+            <button className={classMain.gapInviteBtn}>
+               <div className={classMain.btnInviteText}>SEE WHAT'S NEW</div>
+            </button>
+         </div>
       </div>
    );
 };

@@ -4,6 +4,7 @@ import Video from './topMain/Video/video';
 import TopMain from './topMain/topMain';
 import NewsMain from './newsMain/newsMain';
 import InviteMainTop from './inviteMain/inviteMainTop';
+import InviteMainBottom from './inviteMain/inviteMainBottom';
 
 const Main = () => {
    return (
@@ -12,6 +13,7 @@ const Main = () => {
          <TopMain />
          <NewsMain />
          <InviteMainTop />
+         <InviteMainBottom />
       </div>
    );
 };
