@@ -1,0 +1,108 @@
+.headerNews {
+    background-color: black;
+    width: 1908px;
+    height: 80vh;
+}
+
+.dataNews {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 3px;
+    top: 450px;
+    left: 350px;
+    width: 1000px;
+}
+
+.headerNewsInfo {
+    cursor: pointer;
+    width: 1908px;
+    position: relative;
+    height: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.headerNewsInfo:hover {
+    transform: translateY(-20px);
+}
+
+.title {
+    color: #fff;
+    font-size: 3.5rem;
+    position: relative;
+    top: 450px;
+    left: 350px;
+    font-weight: 800;
+    font-family: 'Libre Baskerville', serif;
+    width: 1040px;
+}
+
+.mark {
+    text-transform: uppercase;
+    background-color: #494949;
+    width: max-content;
+    padding: 2px 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+    left: 1500px;
+    top: 330px;
+}
+
+.btnNewsHeader {
+    position: relative;
+    background: none;
+    border: none;
+    color: #9b9b9b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    left: 350px;
+    top: 430px;
+    transition: letter-spacing 0.1s ease-in-out;
+}
+
+
+.btnNewsHeader:hover {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.btnNews,
+.btnUpdates {
+    position: relative;
+    padding: 10px 20px;
+    width: 200px;
+    height: 61px;
+    border: none;
+    background-color: #262626;
+    color: #9b9b9b;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    top: 75px;
+}
+.btnNews{
+    margin-left: 350px;
+}
+
+.btnUpdates {
+    left: 30px;
+}
+
+.backgroundNewsMain {
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//blog/bg_repeater.jpg");
+    height: 200vh;
+    width: 1908px;
+    border-top: 4px solid grey;
+    position: relative;
+    z-index: 2;
+}
+
+.active {
+    background-color: #494949 !important;
+    color: #fff !important;
+    border-top: 2px solid rgb(151, 151, 151);
+}

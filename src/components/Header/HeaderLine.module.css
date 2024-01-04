@@ -17,6 +17,7 @@
 
 .logo {
    display: flex;
+   margin-top: 10px;
    flex-direction: row;
 }
 

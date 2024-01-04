@@ -24,12 +24,11 @@ const HeaderLine = () => {
          <Link to="/" className={classLine.logoItem}>
             <div className={classLine.logo}>
                <img
-                  src={require('../../img/logoDota.png')}
+                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png"
                   height={40}
                   alt="Dota 2 Logo"
                   className={classLine.img}
                />
-               DOTA2
             </div>
          </Link>
 
