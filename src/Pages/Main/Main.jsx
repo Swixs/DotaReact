@@ -6,6 +6,7 @@ import NewsMain from './newsMain/newsMain';
 import InviteMainTop from './inviteMain/inviteMainTop';
 import InviteMainBottom from './inviteMain/inviteMainBottom';
 import TwisterMain from './twisterMain/twisterMain';
+import FooterMainInfo from './fotterMain/footerMainInfo';
 
 const Main = () => {
    return (
@@ -16,6 +17,7 @@ const Main = () => {
          <InviteMainTop />
          <InviteMainBottom />
          <TwisterMain />
+         <FooterMainInfo />
       </div>
    );
 };

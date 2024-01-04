@@ -631,3 +631,131 @@
     left: 1500px;
     z-index: 50;
 }
+
+.FooterMainInfoBackground {
+    background-position: center top;
+    height: 140vh;
+    width: 1908px;
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg");
+    background-size: cover;
+    position: relative;
+    top: -50px;
+}
+
+.logoFooterMainInfo {
+    position: relative;
+    top: 750px;
+    width: 250px;
+    left: 900px;
+}
+
+.firstTitle {
+    position: relative;
+    top: 750px;
+    left: 850px;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0.5;
+    width: 1000px;
+}
+
+.secondTitle {
+    position: relative;
+    top: 720px;
+    left: 380px;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    width: 1300px;
+}
+
+.borderTitle {
+    border-bottom: 3px solid rgb(237, 103, 54);
+    width: 80px;
+    position: relative;
+    top: 700px;
+    left: 910px;
+}
+
+.textTitle {
+    width: 1300px;
+    position: relative;
+    top: 700px;
+    text-align: center;
+    left: 360px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.block {
+    width: 1908px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    top: 700px;
+}
+
+.blockPlay {
+    background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/background4.png");
+    width: 1908px;
+    height: 400px;
+    position: relative;
+    top: 500px;
+    background-size: cover;
+    background-position: center top;
+}
+
+.titlePlayTop {
+    position: relative;
+    top: 80px;
+    left: 100px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 0.5;
+    width: 1000px;
+}
+
+.titlePlayBottom {
+    position: relative;
+    top: 50px;
+    left: 90px;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    width: 1300px;
+}
+
+.borderPlay {
+    border-bottom: 3px solid rgb(237, 103, 54);
+    width: 80px;
+    position: relative;
+    top: 50px;
+    left: 90px;
+}
+
+.btnFooterPlay {
+    background: none;
+    border: 3px solid rgb(108, 108, 108);
+    border-radius: 5px;
+    position: relative;
+    top: 70px;
+    left: 90px;
+    transition: 0.1s;
+    width: 250px;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btnFooterPlay:hover {
+    border: 3px solid rgb(237, 103, 54);
+    top: 68px;
+}
