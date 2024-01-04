@@ -753,9 +753,76 @@
     padding: 10px 30px;
     color: #fff;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .btnFooterPlay:hover {
     border: 3px solid rgb(237, 103, 54);
     top: 68px;
+}
+
+.footerLine {
+    position: relative;
+    top: 50px;
+    left: 788px;
+    z-index: 30;
+    width: 500px;
+}
+
+.footerLogoValve {
+    width: 100px;
+    height: 30px;
+}
+
+.footerLogoDota {
+    width: 200px;
+    height: 40px;
+    margin-left: 60px;
+}
+
+.footerLogoText {
+    position: relative;
+    top: 90px;
+    color: grey;
+    left: 750px;
+    z-index: 30;
+    width: 450px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.backgroundFooter {
+    background-color: black;
+    position: relative;
+    top: 500px;
+    width: 1908px;
+    height: 200px;
+}
+
+.imgChampionats {
+    position: absolute;
+    left: 150px;
+    max-width: 15%;
+    top: 100px;
+    height: 200px;
+    z-index: 50;
+}
+
+.imgSecondChampionats {
+    position: absolute;
+    left: 1450px;
+    top: 300px;
+    max-width: 25%;
+    height: 300px;
+    z-index: 50;
+}
+
+.imgTherdChampionats {
+    position: absolute;
+    max-width: 20%;
+    left: 0px;
+    top: 320px;
+    height: 250px;
+    z-index: 50;
 }

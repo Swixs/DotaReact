@@ -1,8 +1,8 @@
-import classPage from '../HeroPage.module.css';
+import classPage from './../../../src/style/HeroPage.module.css';
 
 const FooterLine = () => {
    return (
-      <div>
+      <div className={classPage.backgroundFooter}>
          <div className={classPage.footerLine}>
             <img
                className={classPage.footerLogoValve}

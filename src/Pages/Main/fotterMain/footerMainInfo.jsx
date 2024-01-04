@@ -1,6 +1,10 @@
 import classMain from './../Main.module.css';
 
 const FooterMainInfo = () => {
+   const handleButtonClick = () => {
+      // Здесь вы можете использовать программное перенаправление на другую страницу
+      window.location.href = 'https://store.steampowered.com/app/570/Dota_2/';
+   };
    return (
       <div className={classMain.FooterMainInfoBackground}>
          <div className={classMain.logoFooterMainInfo}>
@@ -10,6 +14,21 @@ const FooterMainInfo = () => {
             />
          </div>
          <div className={classMain.firstTitle}>THE</div>
+         <img
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc_ti9_1.jpg"
+            alt="fotoChampionate"
+            className={classMain.imgChampionats}
+         />
+         <img
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc_ti9_2.jpg"
+            alt="secondFoto"
+            className={classMain.imgSecondChampionats}
+         />
+         <img
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc_ti9_3.jpg"
+            alt="thirdFoto"
+            className={classMain.imgTherdChampionats}
+         />
          <div className={classMain.secondTitle}>DOTA PRO CIRCUIT</div>
          <div className={classMain.borderTitle}></div>
          <div className={classMain.textTitle}>
@@ -24,7 +43,32 @@ const FooterMainInfo = () => {
             <div className={classMain.titlePlayTop}>JOIN THE</div>
             <div className={classMain.titlePlayBottom}>BATTLE</div>
             <div className={classMain.borderPlay}></div>
-            <div className={classMain.btnFooterPlay}>PLAY FREE NOW</div>
+            <div
+               className={classMain.btnFooterPlay}
+               onClick={handleButtonClick}
+            >
+               PLAY FREE NOW
+            </div>
+         </div>
+         <div className={classMain.backgroundFooter}>
+            <div className={classMain.footerLine}>
+               <img
+                  className={classMain.footerLogoValve}
+                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/valve_logo.png"
+                  alt="LOGODOTA"
+               />
+               <img
+                  className={classMain.footerLogoDota}
+                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/dota_footer_logo.png"
+                  alt="LOGOVALVE"
+               />
+            </div>
+
+            <div className={classMain.footerLogoText}>
+               Dota and the Dota logo are trademarks and/or registered
+               trademarks of Valve Corporation. 2023 Valve Corporation, all
+               rights reserved.
+            </div>
          </div>
       </div>
    );

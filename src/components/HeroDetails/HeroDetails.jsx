@@ -7,6 +7,7 @@ import HeroRightPage from '../../Pages/PagesInfoHeroes/heroPage/HeroComponents/H
 import HeroStatsLine from '../../Pages/PagesInfoHeroes/heroPage/HeroStatsLine/HeroStatsLine';
 import FooterButtons from '../../Pages/PagesInfoHeroes/heroPage/FooterButtons/FooterButtons';
 import HeroAbility from '../../Pages/PagesInfoHeroes/heroPage/HeroAbility/HeroAbility';
+import Footer from './../../components/Footer/FooterLine';
 
 import classPage from '../../style/HeroPage.module.css';
 
@@ -53,6 +54,9 @@ const HeroDetails = props => {
                </div>
                <div className={classPage.footerButtons}>
                   <FooterButtons posts={posts} />
+               </div>
+               <div>
+                  <Footer />
                </div>
             </div>
          </div>
