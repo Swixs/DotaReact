@@ -84,7 +84,8 @@
     font-weight: 600;
     top: 75px;
 }
-.btnNews{
+
+.btnNews {
     margin-left: 350px;
 }
 
@@ -105,4 +106,438 @@
     background-color: #494949 !important;
     color: #fff !important;
     border-top: 2px solid rgb(151, 151, 151);
+}
+
+.firstBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 20;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/22be4ece0013e6a79ccc4e4203a2f5f643378010.png");
+}
+
+.secondBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 800px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/3de4244cdbd1c7dfed426be198ee088b15ff5550.png");
+}
+
+.thirdBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 1200px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/61f41c8b3ccb608a9ea87735685707a88a5ee08c.png");
+}
+
+.fourthBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 20;
+    background-position: center top;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/c46bb21992914989e08cd1db26447bcb7ec6e7a2.jpg");
+}
+
+.fifthBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 800px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/678dbe85cacbc5aebbbfde27e48e7633dce28e9f.png");
+}
+
+.SixthBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 1200px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/6e53e4d54f954b0ea2f724db8f3b2e8ec0fbc841.png");
+}
+
+.sevenBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 20;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/37e5f9a6e890c17bfce076d5f1e20ab338289c4e.png");
+}
+
+.eightBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 800px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/77cf31116236e0e05ebb0895e69f85e55827a952.png");
+}
+
+.nineBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 1200px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/ce1add04e0f07e95575b22101dcddfc04f61ff58.png");
+}
+
+.tenBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 20;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/10e287ee86593153efb62123989869bd386c23a9.jpg");
+}
+
+.elevenBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 800px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/f02b91fbac5c245039b252487d3a72eb10aba13e.png");
+}
+
+
+.twelveBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 1200px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/15c0a66aaaad0a515b73272e52f134c5629f5952.png");
+}
+
+.thirdteenBtnNews {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 20;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/c0bf0ec8450254a0a3f5ec602e0f92c6a8f3efb9.png");
+}
+
+.fourteenBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 800px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-position: center top;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/2e2dbc3f6772c0febc66b2c41e62d7e724d535c0.jpg");
+}
+
+.fifteenBtnNews {
+    position: absolute;
+    z-index: 20;
+    top: -40px;
+    left: 1200px;
+    width: 370px;
+    height: 240px;
+    border: none;
+    border-bottom: 3px solid grey;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+    background-image: url("https://clan.cloudflare.steamstatic.com/images/3703047/b6834e1f7615e4391acfa70a13c980f15e16d569.png");
+}
+
+.firstBtnNews::before,
+.secondBtnNews::before,
+.thirdBtnNews::before,
+.fourthBtnNews::before,
+.fifthBtnNews::before,
+.SixthBtnNews::before,
+.sevenBtnNews::before,
+.eightBtnNews::before,
+.nineBtnNews::before,
+.tenBtnNews::before,
+.elevenBtnNews::before,
+.twelveBtnNews::before,
+.thirdteenBtnNews::before,
+.fourteenBtnNews::before,
+.fifteenBtnNews::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.firstBtnNews:hover,
+.secondBtnNews:hover,
+.thirdBtnNews:hover,
+.fourthBtnNews:hover,
+.fifthBtnNews:hover,
+.SixthBtnNews:hover,
+.sevenBtnNews:hover,
+.eightBtnNews:hover,
+.nineBtnNews:hover,
+.tenBtnNews:hover,
+.elevenBtnNews:hover,
+.twelveBtnNews:hover,
+.thirdteenBtnNews:hover,
+.fourteenBtnNews:hover,
+.fifteenBtnNews:hover {
+    transition: 0.4s;
+    border-bottom: 3px solid rgb(255, 121, 31);
+}
+
+.firstBtnNews:hover::before,
+.secondBtnNews:hover::before,
+.thirdBtnNews:hover::before,
+.fourthBtnNews:hover::before,
+.fifthBtnNews:hover::before,
+.SixthBtnNews:hover::before,
+.sevenBtnNews:hover::before,
+.eightBtnNews:hover::before,
+.nineBtnNews:hover::before,
+.tenBtnNews:hover::before,
+.elevenBtnNews:hover::before,
+.twelveBtnNews:hover::before,
+.thirdteenBtnNews:hover::before,
+.fourteenBtnNews:hover::before,
+.fifteenBtnNews:hover::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.firstBtnNews .textBtnNews,
+.secondBtnNews .textBtnNews,
+.thirdBtnNews .textBtnNews,
+.fourthBtnNews .textBtnNews,
+.fifthBtnNews .textBtnNews,
+.SixthBtnNews .textBtnNews,
+.sevenBtnNews .textBtnNews,
+.eightBtnNews .textBtnNews,
+.nineBtnNews .textBtnNews,
+.tenBtnNews .textBtnNews,
+.elevenBtnNews .textBtnNews,
+.twelveBtnNews .textBtnNews,
+.thirdteenBtnNews .textBtnNews,
+.fourteenBtnNews .textBtnNews,
+.fifteenBtnNews .textBtnNews {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s, transform 0.4s ease-in-out;
+    padding: 10px;
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #989797;
+}
+
+.firstBtnNews:hover .textBtnNews,
+.secondBtnNews:hover .textBtnNews,
+.thirdBtnNews:hover .textBtnNews,
+.fourthBtnNews:hover .textBtnNews,
+.fifthBtnNews:hover .textBtnNews,
+.SixthBtnNews:hover .textBtnNews,
+.sevenBtnNews:hover .textBtnNews,
+.eightBtnNews:hover .textBtnNews,
+.nineBtnNews:hover .textBtnNews,
+.tenBtnNews:hover .textBtnNews,
+.elevenBtnNews:hover .textBtnNews,
+.twelveBtnNews:hover .textBtnNews,
+.thirdteenBtnNews:hover .textBtnNews,
+.fourteenBtnNews:hover .textBtnNews,
+.fifteenBtnNews:hover .textBtnNews {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.firstBtnNews:hover .timeBtnNews,
+.firstBtnNews:hover .titleBtnNews,
+.secondBtnNews:hover .timeBtnNews,
+.secondBtnNews:hover .titleBtnNews,
+.thirdBtnNews:hover .timeBtnNews,
+.thirdBtnNews:hover .titleBtnNews,
+.fourthBtnNews:hover .timeBtnNews,
+.fourthBtnNews:hover .titleBtnNews,
+.fifthBtnNews:hover .timeBtnNews,
+.fifthBtnNews:hover .titleBtnNews,
+.SixthBtnNews:hover .timeBtnNews,
+.SixthBtnNews:hover .titleBtnNews,
+.sevenBtnNews:hover .timeBtnNews,
+.sevenBtnNews:hover .titleBtnNews,
+.eightBtnNews:hover .timeBtnNews,
+.eightBtnNews:hover .titleBtnNews,
+.nineBtnNews:hover .timeBtnNews,
+.nineBtnNews:hover .titleBtnNews,
+.tenBtnNews:hover .timeBtnNews,
+.tenBtnNews:hover .titleBtnNews,
+.elevenBtnNews:hover .timeBtnNews,
+.elevenBtnNews:hover .titleBtnNews,
+.twelveBtnNews:hover .timeBtnNews,
+.twelveBtnNews:hover .titleBtnNews,
+.thirdteenBtnNews:hover .timeBtnNews,
+.thirdteenBtnNews:hover .titleBtnNews,
+.fourteenBtnNews:hover .timeBtnNews,
+.fourteenBtnNews:hover .titleBtnNews,
+.fifteenBtnNews:hover .timeBtnNews,
+.fifteenBtnNews:hover .titleBtnNews {
+    transform: translateY(-100px);
+}
+
+.timeBtnNews {
+    color: #989797;
+    position: relative;
+    top: 75px;
+    left: -75px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: transform 0.4s ease-in-out;
+}
+
+.titleBtnNews {
+    width: 350px;
+    position: relative;
+    top: 70px;
+    left: 10px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    color: #fff;
+    transition: transform 0.4s ease-in-out;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.linesBtns {
+    position: relative;
+    top: 100px;
+}
+
+.secondLineButtonsNews {
+    position: relative;
+    top: 260px;
+}
+
+.ThirdLineButtonsNews {
+    position: relative;
+    top: 520px;
+}
+
+.fourthLineButtonsNews {
+    position: relative;
+    top: 780px;
+}
+
+.fifthLineButtonsNews {
+    position: relative;
+    top: 1040px;
 }
