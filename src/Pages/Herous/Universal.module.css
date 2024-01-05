@@ -1,0 +1,93 @@
+.link {
+   text-decoration: none;
+}
+
+.btn {
+   position: relative;
+   z-index: 1;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+   transition: 0.4s ease-in-out;
+}
+
+.heroPict,
+.heroPict:hover {
+   transition: transform 0.2s ease-in-out;
+   width: 225px;
+   height: 127px;
+}
+
+.btn:hover {
+   transition: 0.5s ease-in-out;
+   transform: scale(1.3);
+   z-index: 10;
+}
+
+
+.hoverText,
+.hoverTextAncient {
+   font-size: 1rem;
+   color: aliceblue;
+   position: absolute;
+   top: 90px;
+   left: 22%;
+   transform: translateX(-50%) translateY(50%);
+   transition: 0.7s;
+   opacity: 0;
+   z-index: 0;
+   text-transform: uppercase;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   margin-left: 20px;
+   align-items: center;
+   width: 200px;
+}
+
+.heroPict:hover .btn::before {
+   opacity: 1;
+}
+
+.btn::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+   z-index: -1;
+   opacity: 0;
+   transform: translateX(-50%);
+}
+
+.btn:hover .hoverText,
+.btn:hover .hoverTextAncient {
+   transform: translate(-50%, -10px);
+   opacity: 1;
+   z-index: 10;
+}
+
+.pictAtribute {
+   margin-right: 10px;
+   width: 30px;
+   height: 30px;
+   margin-left: 40px;
+}
+
+.pictAtributeLong {
+   margin-right: 10px;
+   width: 30px;
+   height: 30px;
+   margin-left: 40px;
+}
+
+.pictAtributeShort {
+   margin-right: 10px;
+   width: 30px;
+   height: 30px;
+   margin-left: 40px;
+}
