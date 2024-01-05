@@ -1,26 +1,26 @@
 import React from 'react';
 import classUniversal from './../Universal.module.css';
 
-const Pangolier = () => {
+const LifeStealer = () => {
    return (
       <div className={classUniversal.link}>
          <div className={classUniversal.btn}>
             <img
-               src="	https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pangolier.png"
-               alt="Pangolier"
+               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/life_stealer.png"
+               alt="LifeStealer"
                className={classUniversal.heroPict}
             />
             <div className={classUniversal.hoverText}>
                <img
-                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png"
+                  src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png"
                   alt="atribute"
                   className={classUniversal.pictAtributeShort}
                />
-               Pangolier
+               LifeStealer
             </div>
          </div>
       </div>
    );
 };
 
-export default Pangolier;
+export default LifeStealer;

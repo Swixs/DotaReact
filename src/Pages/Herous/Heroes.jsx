@@ -33,8 +33,79 @@ import Doom from './HeroesButtonns/Doom';
 import DragonNight from './HeroesButtonns/DragonNight';
 import DrowRanger from './HeroesButtonns/DrowRanger';
 import EarthSpirit from './HeroesButtonns/EarthSpirit';
+import EarthShaker from './HeroesButtonns/EarthShaker';
+import ElderTitan from './HeroesButtonns/ElderTitan';
+import EmberSpirit from './HeroesButtonns/EmberSpirit';
+import Enchantress from './HeroesButtonns/Enchantress';
+import Enigma from './HeroesButtonns/Enigma';
+import FacelessVoid from './HeroesButtonns/FacelessVoid';
+import Grimstroke from './HeroesButtonns/Grimstroke';
+import Gyrocopter from './HeroesButtonns/Gyrocopter';
+import Hoodwink from './HeroesButtonns/Hoodwink';
+import Huskar from './HeroesButtonns/Huskar';
+import Invoker from './HeroesButtonns/Invoker';
+import Io from './HeroesButtonns/io';
+import Jakiro from './HeroesButtonns/Jakiro';
+import Juggernaut from './HeroesButtonns/Juggernaut';
+import KeeperOfTheLight from './HeroesButtonns/KeeperOfTheLight';
+import Kunkka from './HeroesButtonns/Kunkka';
+import LegionCommander from './HeroesButtonns/LegionCommander';
+import Leshrac from './HeroesButtonns/Leshrac';
+import Lich from './HeroesButtonns/Lich';
+import LifeStealer from './HeroesButtonns/Lifestealer';
+import Lina from './HeroesButtonns/Lina';
+import Lion from './HeroesButtonns/Lion';
+import LoneDruid from './HeroesButtonns/LoneDruid';
+import Luna from './HeroesButtonns/Luna';
+import Lycan from './HeroesButtonns/Lycan';
+import Magnus from './HeroesButtonns/Magnus';
+import Marci from './HeroesButtonns/Marci';
+import Mars from './HeroesButtonns/Mars';
+import Medusa from './HeroesButtonns/Medusa';
+import Meepo from './HeroesButtonns/Meepo';
+import Mirana from './HeroesButtonns/Mirana';
+import MonkeyKing from './HeroesButtonns/MonkeyKing';
+import Morphling from './HeroesButtonns/Morphling';
+import Muerta from './HeroesButtonns/Muerta';
+import NagaSiren from './HeroesButtonns/NagaSiren';
+import NaturesProphet from './HeroesButtonns/NaturesProphet';
+import Necrophos from './HeroesButtonns/Necrophos';
+import NightStalker from './HeroesButtonns/NightStalker';
+import NyxAssassin from './HeroesButtonns/NyxAssassin';
+import OgreMagi from './HeroesButtonns/OgreMagi';
+import Omniknight from './HeroesButtonns/Omniknight';
+import Oracle from './HeroesButtonns/Oracle';
+import OutworldDestroyer from './HeroesButtonns/OutworldDestroyer';
+import Pangolier from './HeroesButtonns/Pangolier';
+import PhantomAssassin from './HeroesButtonns/PhantomAssassin';
 
 import classHeroes from './Heroes.module.css';
+import PhantomLancer from './HeroesButtonns/PhantomLancer';
+import Phoenix from './HeroesButtonns/Phoenix';
+import PrimalBeast from './HeroesButtonns/PrimalBeast';
+import Puck from './HeroesButtonns/Puck';
+import Pudge from './HeroesButtonns/Pudge';
+import Pugna from './HeroesButtonns/Pugna';
+import QueenOfPain from './HeroesButtonns/QueenOfPain';
+import Razor from './HeroesButtonns/Razor';
+import Riki from './HeroesButtonns/Riki';
+import Rubick from './HeroesButtonns/Rubick';
+import SandKing from './HeroesButtonns/SandKing';
+import ShadowDemon from './HeroesButtonns/ShadowDemon';
+import ShadowFiend from './HeroesButtonns/ShadowFiend';
+import ShadowShaman from './HeroesButtonns/ShadowShaman';
+import Silencer from './HeroesButtonns/Silencer';
+import SkywrathMage from './HeroesButtonns/SkywrathMage';
+import Slardar from './HeroesButtonns/Slardar';
+import Slark from './HeroesButtonns/Slark';
+import Snapfire from './HeroesButtonns/Snapfire';
+import Sniper from './HeroesButtonns/Sniper';
+import Spectre from './HeroesButtonns/Spectre';
+import SpiritBreaker from './HeroesButtonns/SpiritBreaker';
+import StormSpirit from './HeroesButtonns/StormSpirit';
+import Sven from './HeroesButtonns/Sven';
+import Techies from './HeroesButtonns/Techies';
+import TemplarAssassin from './HeroesButtonns/TemplarAssassin';
 
 const Heroes = () => {
    return (
@@ -132,218 +203,219 @@ const Heroes = () => {
             <Link to="/heroes/EarthSprit">
                <EarthSpirit />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/EarthShaker">
+               <EarthShaker />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/ElderTitan">
+               <ElderTitan />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+
+            <Link to="/heroes/EmberSpirit">
+               <EmberSpirit />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Enchantress">
+               <Enchantress />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Enigma">
+               <Enigma />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/FacelessVoid">
+               <FacelessVoid />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Grimstroke">
+               <Grimstroke />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Gyrocopter">
+               <Gyrocopter />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Hoodwink">
+               <Hoodwink />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Huskar">
+               <Huskar />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Invoker">
+               <Invoker />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Io">
+               <Io />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Jakiro">
+               <Jakiro />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Juggernaut">
+               <Juggernaut />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/KeeperOfTheLight">
+               <KeeperOfTheLight />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Kunkka">
+               <Kunkka />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/LegionCommander">
+               <LegionCommander />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Leshrac">
+               <Leshrac />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Lich">
+               <Lich />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/LifeStealer">
+               <LifeStealer />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Lina">
+               <Lina />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Lion">
+               <Lion />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/LoneDruid">
+               <LoneDruid />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Luna">
+               <Luna />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Lycan">
+               <Lycan />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Magnus">
+               <Magnus />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Marci">
+               <Marci />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Mars">
+               <Mars />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Medusa">
+               <Medusa />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Meepo">
+               <Meepo />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Mirana">
+               <Mirana />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/MonkeyKing">
+               <MonkeyKing />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Morphling">
+               <Morphling />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Muerta">
+               <Muerta />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/NagaSiren">
+               <NagaSiren />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/NaturesProphet">
+               <NaturesProphet />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Necrophos">
+               <Necrophos />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/NightStalker">
+               <NightStalker />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/NyxAssassin">
+               <NyxAssassin />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/OgreMagi">
+               <OgreMagi />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Omniknight">
+               <Omniknight />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Oracle">
+               <Oracle />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/OutworldDestroyer">
+               <OutworldDestroyer />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Pangolier">
+               <Pangolier />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/PhantomAssassin">
+               <PhantomAssassin />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/PhantomLancer">
+               <PhantomLancer />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Phoenix">
+               <Phoenix />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/PrimalBeast">
+               <PrimalBeast />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Puck">
+               <Puck />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Pudge">
+               <Pudge />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Pugna">
+               <Pugna />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/QueenOfPain">
+               <QueenOfPain />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Razor">
+               <Razor />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Riki">
+               <Riki />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Rubick">
+               <Rubick />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/SandKing">
+               <SandKing />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/ShadowDemon">
+               <ShadowDemon />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/ShadowFiend">
+               <ShadowFiend />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/ShadowShaman">
+               <ShadowShaman />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Silencer">
+               <Silencer />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/SkywrathMage">
+               <SkywrathMage />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Slardar">
+               <Slardar />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Slark">
+               <Slark />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Snapfire">
+               <Snapfire />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Sniper">
+               <Sniper />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Spectre">
+               <Spectre />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/SpiritBreaker">
+               <SpiritBreaker />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/StormSpirit">
+               <StormSpirit />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Sven">
+               <Sven />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Techies">
+               <Techies />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/TemplarAssassin">
+               <TemplarAssassin />
             </Link>
             <Link to="/heroes/EarthSprit">
                <EarthSpirit />
