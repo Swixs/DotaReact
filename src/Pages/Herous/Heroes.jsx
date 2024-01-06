@@ -106,6 +106,29 @@ import StormSpirit from './HeroesButtonns/StormSpirit';
 import Sven from './HeroesButtonns/Sven';
 import Techies from './HeroesButtonns/Techies';
 import TemplarAssassin from './HeroesButtonns/TemplarAssassin';
+import Terrorblade from './HeroesButtonns/TerrorBlade';
+import Tidehunter from './HeroesButtonns/Tidehunter';
+import Timbersaw from './HeroesButtonns/TimberSaw';
+import Tinker from './HeroesButtonns/Tinker';
+import Tiny from './HeroesButtonns/Tiny';
+import TreantProtector from './HeroesButtonns/TreantProtector';
+import TrollWarlord from './HeroesButtonns/TrollWarlord';
+import Tusk from './HeroesButtonns/Tusk';
+import Underlord from './HeroesButtonns/Underlord';
+import Undying from './HeroesButtonns/Undying';
+import Ursa from './HeroesButtonns/Ursa';
+import VengerfulSpirit from './HeroesButtonns/VengerfulSpirit';
+import Venomancer from './HeroesButtonns/Venomancer';
+import Viper from './HeroesButtonns/Viper';
+import Visage from './HeroesButtonns/Visage';
+import VoidSpirit from './HeroesButtonns/VoidSpirit';
+import Warlock from './HeroesButtonns/Warlock';
+import Weaver from './HeroesButtonns/Weaver';
+import Windranger from './HeroesButtonns/Windranger';
+import WinterWyvern from './HeroesButtonns/WinterWyvern';
+import WitchDoctor from './HeroesButtonns/WitchDoctor';
+import WraithKing from './HeroesButtonns/WraithKing';
+import Zeus from './HeroesButtonns/Zeus';
 
 const Heroes = () => {
    return (
@@ -417,50 +440,75 @@ const Heroes = () => {
             <Link to="/heroes/TemplarAssassin">
                <TemplarAssassin />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Terrorblade">
+               <Terrorblade />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Tidehunter">
+               <Tidehunter />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Timbersaw">
+               <Timbersaw />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Tinker">
+               <Tinker />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Tiny">
+               <Tiny />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/TreantProtector">
+               <TreantProtector />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/TrollWarlord">
+               <TrollWarlord />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Tusk">
+               <Tusk />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Underlord">
+               <Underlord />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Undying">
+               <Undying />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Ursa">
+               <Ursa />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/VengerfulSpirit">
+               <VengerfulSpirit />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Venomancer">
+               <Venomancer />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+            <Link to="/heroes/Viper">
+               <Viper />
             </Link>
-            <Link to="/heroes/EarthSprit">
-               <EarthSpirit />
+
+            <Link to="/heroes/Visage">
+               <Visage />
+            </Link>
+            <Link to="/heroes/VoidSpirit">
+               <VoidSpirit />
+            </Link>
+            <Link to="/heroes/Warlock">
+               <Warlock />
+            </Link>
+            <Link to="/heroes/Weaver">
+               <Weaver />
+            </Link>
+            <Link to="/heroes/Winranger">
+               <Windranger />
+            </Link>
+            <Link to="/heroes/WinterWyvern">
+               <WinterWyvern />
+            </Link>
+            <Link to="/heroes/WitchDoctor">
+               <WitchDoctor />
+            </Link>
+            <Link to="/heroes/WraithKing">
+               <WraithKing />
+            </Link>
+            <Link to="/heroes/Zeus">
+               <Zeus />
             </Link>
          </div>
       </div>

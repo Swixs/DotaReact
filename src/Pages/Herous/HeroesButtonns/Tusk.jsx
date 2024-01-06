@@ -1,13 +1,13 @@
 import React from 'react';
 import classUniversal from './../Universal.module.css';
 
-const EarthSpirit = () => {
+const Tusk = () => {
    return (
       <div className={classUniversal.link}>
          <div className={classUniversal.btn}>
             <img
-               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earth_spirit.png"
-               alt="Earth Spirit"
+               src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tusk.png"
+               alt="Tusk"
                className={classUniversal.heroPict}
             />
             <div className={classUniversal.hoverText}>
@@ -16,11 +16,11 @@ const EarthSpirit = () => {
                   alt="atribute"
                   className={classUniversal.pictAtributeShort}
                />
-               Earth Spirit
+               Tusk
             </div>
          </div>
       </div>
    );
 };
 
-export default EarthSpirit;
+export default Tusk;

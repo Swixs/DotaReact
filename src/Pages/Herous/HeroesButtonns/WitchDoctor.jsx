@@ -1,12 +1,12 @@
 import React from 'react';
 import classUniversal from './../Universal.module.css';
 
-const DeathProphet = () => {
+const WitchDoctor = () => {
    return (
       <div className={classUniversal.btn}>
          <img
-            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/death_prophet.png"
-            alt="CrystalMaiden"
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/witch_doctor.png"
+            alt="WitchDoctor"
             className={classUniversal.heroPict}
          />
          <div className={classUniversal.hoverTextAncient}>
@@ -15,10 +15,10 @@ const DeathProphet = () => {
                alt="atribute"
                className={classUniversal.pictAtributeLong}
             />
-            Death Prophet
+            Witch Doctor
          </div>
       </div>
    );
 };
 
-export default DeathProphet;
+export default WitchDoctor;

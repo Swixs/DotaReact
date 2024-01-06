@@ -1,12 +1,12 @@
 import React from 'react';
 import classUniversal from './../Universal.module.css';
 
-const DrowRanger = () => {
+const Weaver = () => {
    return (
       <div className={classUniversal.btn}>
          <img
-            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png"
-            alt="AntiMage"
+            src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/weaver.png"
+            alt="Weaver"
             className={classUniversal.heroPict}
          />
          <div className={classUniversal.hoverText}>
@@ -15,10 +15,10 @@ const DrowRanger = () => {
                alt="atribute"
                className={classUniversal.pictAtributeLong}
             />
-            Drow Ranger
+            Weaver
          </div>
       </div>
    );
 };
 
-export default DrowRanger;
+export default Weaver;
